@@ -1,0 +1,79 @@
+- generic [ref=f1e4]:
+  - navigation [ref=f1e5]:
+    - generic [ref=f1e6]:
+      - link "Unsplash 홈" [ref=f1e8] [cursor=pointer]:
+        - /url: /ko
+        - img "Unsplash 홈" [ref=f1e9]
+      - button "제품 유형 선택" [ref=f1e12] [cursor=pointer]: 사진
+    - generic [ref=f1e15]:
+      - link "로그인 / 가입" [ref=f1e16] [cursor=pointer]:
+        - /url: /ko/%EB%A1%9C%EA%B7%B8%EC%9D%B8?referrer=%2Fko
+      - button "언어" [ref=f1e19] [cursor=pointer]
+      - button "메뉴" [ref=f1e22] [cursor=pointer]
+  - generic [ref=f1e25]:
+    - generic [ref=f1e26]:
+      - navigation [ref=f1e27]:
+        - search "사이트 전체에서 이미지 찾기" [ref=f1e29]:
+          - button "Unsplash 검색" [ref=f1e30] [cursor=pointer]
+          - combobox [ref=f1e33]:
+            - searchbox "Unsplash 검색" [ref=f1e34]
+            - listbox
+          - button "시각적 검색" [ref=f1e36] [cursor=pointer]
+      - list [ref=f1e44]:
+        - listitem [ref=f1e45]:
+          - link "추천":
+            - /url: /ko
+        - listitem [ref=f1e46]:
+          - link "여름" [ref=f1e47] [cursor=pointer]:
+            - /url: /ko/t/summer
+        - listitem [ref=f1e48]:
+          - link "배경 화면" [ref=f1e49] [cursor=pointer]:
+            - /url: /ko/t/wallpapers
+        - listitem [ref=f1e50]:
+          - link "3D 렌더링" [ref=f1e51] [cursor=pointer]:
+            - /url: /ko/t/3d-renders
+        - listitem [ref=f1e52]:
+          - link "자연" [ref=f1e53] [cursor=pointer]:
+            - /url: /ko/t/nature
+        - listitem [ref=f1e54]:
+          - link "텍스처" [ref=f1e55] [cursor=pointer]:
+            - /url: /ko/t/textures-patterns
+        - listitem [ref=f1e56]:
+          - link "필름" [ref=f1e57] [cursor=pointer]:
+            - /url: /ko/t/film
+        - listitem [ref=f1e58]:
+          - link "건축학" [ref=f1e59] [cursor=pointer]:
+            - /url: /ko/t/architecture-interior
+        - listitem [ref=f1e60]:
+          - link "거리 사진" [ref=f1e61] [cursor=pointer]:
+            - /url: /ko/t/street-photography
+        - listitem [ref=f1e62]:
+          - link "실험적인" [ref=f1e63] [cursor=pointer]:
+            - /url: /ko/t/experimental
+        - listitem [ref=f1e64]:
+          - link "여행" [ref=f1e65] [cursor=pointer]:
+            - /url: /ko/t/travel
+        - listitem [ref=f1e66]:
+          - link "인류" [ref=f1e67] [cursor=pointer]:
+            - /url: /ko/t/people
+      - generic [ref=f1e71]:
+        - generic [ref=f1e73]:
+          - generic [ref=f1e74]:
+            - text: Unsplash
+            - heading "인터넷의 시각 자료 출처입니다." [level=1] [ref=f1e76]
+            - paragraph [ref=f1e77]: 모든 지역에 있는 크리에이터들의 지원을 받습니다.
+          - search "사이트 전체에서 이미지 찾기" [ref=f1e79]:
+            - button "Unsplash 검색" [ref=f1e80] [cursor=pointer]
+            - combobox [ref=f1e83]:
+              - searchbox "Unsplash 검색" [ref=f1e84]
+              - listbox
+            - button "시각적 검색" [ref=f1e86] [cursor=pointer]
+        - link "새로운 프리미엄 시각 자료가 매달 나옵니다. Unsplash+ 회원이라면 이용 가능합니다. Unsplash+ 구독" [ref=f1e90] [cursor=pointer]:
+          - /url: /ko/%ED%94%8C%EB%9F%AC%EC%8A%A4
+          - generic [ref=f1e92]:
+            - generic [ref=f1e95]:
+              - heading "새로운 프리미엄 시각 자료가 매달 나옵니다." [level=2] [ref=f1e96]
+              - paragraph [ref=f1e97]: Unsplash+ 회원이라면 이용 가능합니다.
+            - generic [ref=f1e98]: Unsplash+ 구독
+    - generic:
+      - region "Notifications"

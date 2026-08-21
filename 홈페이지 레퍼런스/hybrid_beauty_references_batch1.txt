@@ -1,0 +1,118 @@
+================================================================================
+[TBD Hybrid Beauty] 웹사이트 기획 레퍼런스 분류 결과 (Total: 20)
+================================================================================
+
+--------------------------------------------------------------------------------
+1. 디자인 무드 중심 (Effortless & Minimal Mood)
+--------------------------------------------------------------------------------
+01. MERIT Beauty - https://meritbeauty.com
+    * 브랜드 소개: Clean, luxury, minimalist makeup for everyday wear, the antidote to oversaturated beauty routines.
+    * 비주얼 무드: 메인 컬러 #FAF8F5 (Soft Cream), #2B2A29. 극도로 깔끔한 여백이 존재하며 과도한 장식 요소를 배제하고 절제된 타이포그래피와 정갈한 스틱/제형 텍스처 중심 비주얼 사용.
+    * 핵심 인사이트: 복잡한 튜토리얼 대신 5분 이내 완료되는 단일 스틱 및 하이브리드 루틴 강조로 진입 장벽을 최소화함.
+
+02. Rhode Skin - https://rhodeskin.com
+    * 브랜드 소개: A line of curated skin essentials formulated for sensitive skin with a glazed, glowing finish.
+    * 비주얼 무드: 메인 컬러 #EAEAEA (Neutral Cool Grey), #000000. 극도의 여백과 타이포그래피 크기 대비를 활용하며, 피부 듀이(Dewy) 수분 광택 텍스처 비주얼 강조.
+    * 핵심 인사이트: 카탈로그 제품 수를 최소화하고 피부 광택 비주얼 중심의 풀스크린 미니멀 뷰어를 통해 독보적인 브랜드 감성을 전달함.
+
+03. Rose Inc - https://roseinc.com
+    * 브랜드 소개: Clean, sustainable beauty powered by bioengineered skincare ingredients and rich pigments.
+    * 비주얼 무드: 메인 컬러 #F4F0EA (Soft Sand), #1C1917. 모던 아키텍처풍의 엄격한 여백 배치와 마이크로 캡슐 피그먼트 버블 텍스처 초근접 컷 활용.
+    * 핵심 인사이트: 피그먼트 세럼 버블 텍스처의 시각적 인터랙션을 통해 세럼과 메이크업 틴트의 결합을 마이크로 단위로 시각화함.
+
+04. Summer Fridays - https://summerfridays.com
+    * 브랜드 소개: Skincare and hybrid beauty essentials designed to bring your skin back to its happiest, most hydrated state.
+    * 비주얼 무드: 메인 컬러 #F2F5F8 (Soft Sky Blue Tinted White), #2C3E50. 파스텔 톤의 차분한 미니멀 여백과 촉촉한 시어 틴트 텍스처 활용.
+    * 핵심 인사이트: 차분하고 감성적인 파스텔 컬러 블록과 보습 세럼 성분 중심의 미니멀 인터페이스로 편안한 브랜드 감성을 구축함.
+
+05. RMS Beauty - https://rmsbeauty.com
+    * 브랜드 소개: Clean, organic makeup infused with living ingredients that nourish, heal, and illuminate skin.
+    * 비주얼 무드: 메인 컬러 #F8F8F6 (Natural Linen White), #2C2C2C. 정갈한 오가닉 여백과 마이크로 플루이드 세럼 제형 초근접 컷 사용.
+    * 핵심 인사이트: 열을 가하지 않은 생(Living) 오가닉 성분의 피부 치유 효과를 세럼 피그먼트 텍스처와 함께 시각화함.
+
+06. hince (힌스) - https://hince.co.kr
+    * 브랜드 소개: 밀착되고 투명하게 피어나는 감성 코스메틱 브랜드, 피부 본연의 결을 살리는 하이브리드 미니멀리즘.
+    * 비주얼 무드: 메인 컬러 #F6F4F0 (Warm Soft Muted Beige), #332E2B. 갤러리 감성의 정갈하고 넉넉한 여백과 실키 스킨 피부 결 텍스처 중심 비주얼.
+    * 핵심 인사이트: '내 피부 같은 밀착감(Second Skin)'을 극도로 정밀한 감성 텍스처 컷과 미니멀 갤러리 UI로 풀어내 몰입감을 증대함.
+
+07. Laka (라카) - https://laka.co.kr
+    * 브랜드 소개: Practical and effortless beauty for all, offering gender-neutral minimalist skincare & color solutions.
+    * 비주얼 무드: 메인 컬러 #F8F9FA (Clean Off-White), #191919. 젠더 뉴트럴 미니멀리즘과 쾌적한 여백, 투명한 워터 글로우 텍스처 사용.
+    * 핵심 인사이트: 젠더 뉴트럴 메시지와 수분감 가득한 투명 텍스처를 직관적이고 여백이 풍부한 미니멀 UI로 전달함.
+
+--------------------------------------------------------------------------------
+2. 하이브리드 기능/UX 중심 (Hybrid UX & Interactive)
+--------------------------------------------------------------------------------
+01. Saie Beauty - https://saiehello.com
+    * 브랜드 소개: Clean makeup infused with skincare ingredients that delivers real performance with zero compromise.
+    * 핵심 UI: 모델별 실물 발색 전/후(Before/After) 인터랙티브 셰이드 지니, Skin Concierge 텍스트 매칭 연결, 텍스처 줌인 비주얼.
+    * 핵심 인사이트: 실감 나는 피부 톤 비교 슬라이더와 텍스처 인클로즈업을 통해 온라인 구매의 톤 선택 불안감을 완벽 해소함.
+
+02. Kosas - https://kosas.com
+    * 브랜드 소개: Makeup for skin lovers. Formula-first, clean cosmetics clinically proven to improve skin over time.
+    * 핵심 UI: 'Clinically Proven Skincare Benefits' 하이라이트 카피, 30개 이상의 다양한 스킨 톤 인터랙티브 Swatch 매처.
+    * 핵심 인사이트: 임상시험 기반의 피부 개선 효과 데이터를 전면에 배치하여 메이크업 이상의 스킨케어 효능감을 입증하는 UI 구조.
+
+03. Jones Road Beauty - https://jonesroadbeauty.com
+    * 브랜드 소개: The epitome of clean, high-performance, effortless beauty founded by Bobbi Brown for all skin types and ages.
+    * 핵심 UI: 'What Is Miracle Balm?' 인터랙티브 사용법 토글, 1-Step multi-use(입술, 볼, 피부) 적용 비주얼 및 가이드.
+    * 핵심 인사이트: 단 하나의 밤(Balm) 제형 제품으로 보습과 컬러를 동시 해결하는 멀티유즈 방식을 직관적인 가이드로 연출함.
+
+04. Tower 28 Beauty - https://tower28beauty.com
+    * 브랜드 소개: 100% clean, non-toxic, sensitive-skin approved beauty inspired by Sunny California.
+    * 핵심 UI: National Eczema Association 안전성 인증 마크 배지, 민감성 피부 전후 비교 슬라이더, SunnyDays SPF30 틴트 돋보기 뷰.
+    * 핵심 인사이트: 민감성 아토피 피부도 안심하고 사용할 수 있는 안전성 인증 배지와 무자극 카피라이팅으로 유저 신뢰를 형성함.
+
+05. Milk Makeup - https://milkmakeup.com
+    * 브랜드 소개: 100% Vegan, Cruelty-free makeup and skincare with high-concept, multi-use stick formats.
+    * 핵심 UI: Sunshine Skin Tint 롤러볼 1-Step 도포 애니메이션, 퀵 스틱 카테고리 필터, 비건 스킨케어 효능 데이터.
+    * 핵심 인사이트: 롤러볼 및 스틱 형태의 신개념 1-Step 도포 방식을 숏폼 및 인터랙티브 UI로 직관 표현함.
+
+06. Ami Colé - https://amicole.com
+    * 브랜드 소개: Clean beauty formulated for melanin-rich skin, highlighting natural beauty with skin-nourishing ingredients.
+    * 핵심 UI: 멜라닌 피그먼트 피부 톤 전용 셰이드 지니, 내추럴 글림 듀얼 비교 뷰, 오일 에센스 성분 탭.
+    * 핵심 인사이트: 풍부한 피부 톤에 최적화된 스킨케어 오일 틴트 텍스처와 다채로운 실물 톤 매칭 UI로 타깃 맞춤형 경험을 제공함.
+
+07. Simihaze Beauty - https://simihazebeauty.com
+    * 브랜드 소개: Minimal effort, maximum impact. High-performance multi-use beauty products in sculptural packaging.
+    * 핵심 UI: 3D 미니멀 조형물 형태의 팩키지 360도 뷰어, 1-Step 멀티유즈(Lips+Cheeks+Skin) 적용 스위처.
+    * 핵심 인사이트: 최소한의 노력으로 최대 효과를 내는 멀티유즈 텍스처 스틱과 오브제풍 미니멀 UI로 트렌디한 감각을 전달함.
+
+--------------------------------------------------------------------------------
+3. 최우수 롤모델 (Top Hybrid Model)
+--------------------------------------------------------------------------------
+01. ILIA Beauty - https://iliabeauty.com
+    * 브랜드 소개: Clean skin-centric beauty with high-performing skincare ingredients and weightless makeup coverage.
+    * 비주얼 무드: 메인 컬러 #F7F5F0 (Warm Beige), #1A1A1A. 높은 여백 활용도와 촉촉한 수분 세럼 텍스처 비주얼 사용.
+    * 핵심 UI: Interactive Shade Matcher, Before/After 듀얼 뷰어, 스킨케어 성분(Niacinamide, Hyaluronic Acid) 레이어드 탭.
+    * 핵심 인사이트: 틴티드 세럼의 액상 텍스처와 임상 성분을 메인 비주얼과 인터랙티브 셰이드 파인더에 녹여 결제까지 매끄럽게 연결함.
+
+02. Typology Paris - https://typology.com
+    * 브랜드 소개: Clean, vegan, and minimalist skincare and skin tints made in France with transparent ingredient listings.
+    * 비주얼 무드: 메인 컬러 #FAFAFA (Monochrome Pure White), #1E1E1E. 실험실풍의 정갈한 미니멀리즘과 틴트 방울 텍스처 사용.
+    * 핵심 UI: 피부 진단 인터랙티브 퀴즈(Diagnostic), 성분 함량(%) 명시형 카피라이팅 UI, 컬러드 틴트 성분 투명도 표시.
+    * 핵심 인사이트: 성분 중심의 투명한 원료 함량 표시와 맞춤형 피부 진단 UX를 메이크업 틴트 제품군에 성공적으로 이식함.
+
+03. Westman Atelier - https://westman-atelier.com
+    * 브랜드 소개: Luxuriously formulated, clean skin-nourishing makeup created by world-renowned makeup artist Gucci Westman.
+    * 비주얼 무드: 메인 컬러 #F5F2EC (Champagne Warm Beige), #1A1817. 럭셔리 미니멀리즘과 여백, 오일 드롭스 텍스처 고화질 컷 사용.
+    * 핵심 UI: Vital Skin Complexion Drops 텍스처 슬라이더, 피부 상태별 메이크업 아티스트 적용 가이드 비디오.
+    * 핵심 인사이트: 럭셔리 스킨케어의 영양 성분과 프로 아티스트의 터치를 1-Step 드롭 텍스처로 시각화하여 프리미엄 하이브리드 시장을 선점함.
+
+04. Iris & Romeo - https://irisandromeo.com
+    * 브랜드 소개: All-in-one skincare and makeup hybrids for modern simplified beauty routines.
+    * 비주얼 무드: 메인 컬러 #F5EFEB (Soft Peach Beige), #222222. 따뜻한 미니멀 여백과 5-in-1 에센스 크림 텍스처 사용.
+    * 핵심 UI: 5-in-1 All In One 인포그래픽 UI (Serum + Moisture + SPF + Tint + Glow), 1단계 아침 루틴 비교 뷰.
+    * 핵심 인사이트: 5단계 화장품을 단 1단계로 줄여주는 '화장품 다이어트' UI 인포그래픽을 통해 하이브리드의 실용성을 명확히 전달함.
+
+05. Glossier - https://glossier.com
+    * 브랜드 소개: Skin first, makeup second. Beauty products inspired by real life.
+    * 비주얼 무드: 메인 컬러 #FAEDF0 (Glossier Pink / White), #111111. 캐주얼하고 대담한 여백과 Futuredew/Skin Tint의 실제 피부 광택 컷 사용.
+    * 핵심 UI: Skin First 모토 중심의 탭 전환, 실물 피부 텍스처 접사 마우스오버, 매끄러운 1-Step 콤보 빌더.
+    * 핵심 인사이트: "피부가 먼저, 메이크업은 그다음"이라는 철학 아래 스킨 틴트와 수분 밤의 시너지를 극대화하는 커스텀 콤보 UI 제공.
+
+06. Violette_FR - https://violettefr.com
+    * 브랜드 소개: French effortless beauty routine. Multi-use skin treatment milk and French minimal color formulas.
+    * 비주얼 무드: 메인 컬러 #F9F7F3 (French Vintage Off-White), #1A1A1A. 에포트리스 프렌치 감성의 정갈한 여백과 밀크 에센스 제형 사용.
+    * 핵심 UI: Boum-Boum Milk 3-in-1(스킨+세럼+미스트) 수분 비주얼, 프랑스 감성 튜토리얼 숏폼, 간결 딜리버리 UI.
+    * 핵심 인사이트: 3-in-1 올인원 에센스 밀크의 보습력과 프렌치 무드의 에포트리스 메이크업 텍스처를 일상적 영상/미니멀 레이아웃으로 결합함.

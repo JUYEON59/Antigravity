@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUNID(누니드) D2C 커머스 인터랙티브 와이어프레임</title>
+  <style>
+    :root {
+      --bg-canvas: #f1f5f9;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f8fafc;
+      --border-color: #cbd5e1;
+      --border-dark: #94a3b8;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-dim: #94a3b8;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #10b981;
+      --accent-light: #d1fae5;
+      --danger: #ef4444;
+      --danger-light: #fee2e2;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Top Control Toolbar */
+    header.control-bar {
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1e293b;
+      z-index: 100;
+      flex-shrink: 0;
+    }
+    .brand-title {
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-badge {
+      background-color: #0284c7;
+      color: #fff;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+    }
+    .toolbar-tools {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .screen-select-wrap select {
+      background-color: #1e293b;
+      color: #ffffff;
+      border: 1px solid #334155;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      outline: none;
+    }
+    .viewport-buttons {
+      display: flex;
+      background-color: #1e293b;
+      border-radius: 6px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .vp-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .vp-btn.active, .vp-btn:hover {
+      background-color: #0284c7;
+      color: #ffffff;
+    }
+
+    /* Main Workspace Layout */
+    .app-body {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* Sidebar Navigation */
+    aside.sidebar {
+      width: 280px;
+      background-color: #ffffff;
+      border-right: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    .sidebar-header {
+      padding: 12px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-color);
+      background-color: var(--bg-subtle);
+    }
+    .sidebar-nav {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px 0;
+    }
+    .nav-category {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      padding: 10px 16px 4px;
+      letter-spacing: 0.5px;
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: var(--text-main);
+      text-decoration: none;
+      cursor: pointer;
+      border-left: 3px solid transparent;
+      transition: background-color 0.1s;
+      gap: 8px;
+    }
+    .nav-item:hover {
+      background-color: var(--bg-subtle);
+    }
+    .nav-item.active {
+      background-color: var(--primary-light);
+      color: var(--primary);
+      border-left-color: var(--primary);
+      font-weight: 700;
+    }
+    .nav-id-badge {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      background-color: #f1f5f9;
+      color: var(--text-muted);
+      padding: 1px 5px;
+      border-radius: 3px;
+      border: 1px solid #e2e8f0;
+    }
+    .nav-item.active .nav-id-badge {
+      background-color: #ffffff;
+      color: var(--primary);
+      border-color: #bae6fd;
+    }
+
+    /* Screen Canvas Frame */
+    main.canvas-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: #cbd5e1;
+      background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    .viewport-frame {
+      background-color: #ffffff;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      border: 1px solid #94a3b8;
+      width: 100%;
+      max-width: 1200px;
+      min-height: 800px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: max-width 0.25s ease;
+      overflow: hidden;
+    }
+    .viewport-frame.tablet { max-width: 768px; }
+    .viewport-frame.mobile { max-width: 375px; }
+
+    .screen-meta-header {
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #0284c7;
+    }
+
+    /* UI Common Components Inside Wireframe */
+    .wf-header {
+      border-bottom: 2px solid var(--text-main);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+    }
+    .wf-logo {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .wf-logo span { color: var(--primary); }
+    .wf-gnb {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    .wf-gnb a {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+      text-decoration: none;
+      cursor: pointer;
+      padding: 4px 6px;
+    }
+    .wf-gnb a:hover { color: var(--primary); }
+    .wf-util {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .wf-cart-btn {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-dark);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .wf-cart-badge {
+      background-color: var(--primary);
+      color: #fff;
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 10px;
+    }
+
+    /* Wireframe Content Pages */
+    .screen-view {
+      display: none;
+      padding: 24px;
+      flex: 1;
+    }
+    .screen-view.active {
+      display: block;
+    }
+
+    /* Wireframe Blocks & Cards */
+    .wf-section {
+      margin-bottom: 30px;
+    }
+    .wf-section-title {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 6px;
+    }
+    .wf-hero {
+      background-color: var(--bg-subtle);
+      border: 2px dashed var(--border-dark);
+      border-radius: 8px;
+      padding: 40px 24px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .wf-hero h1 {
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .wf-hero p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s;
+      text-decoration: none;
+      gap: 6px;
+    }
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+    .btn-primary:hover { background-color: #0369a1; }
+    .btn-secondary {
+      background-color: #ffffff;
+      border-color: var(--border-dark);
+      color: var(--text-main);
+    }
+    .btn-secondary:hover { background-color: var(--bg-subtle); }
+    .btn-dark {
+      background-color: #0f172a;
+      color: #ffffff;
+    }
+
+    /* Filter Tabs */
+    .wf-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+    .wf-tab {
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 30px;
+      border: 1px solid var(--border-color);
+      background-color: #ffffff;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .wf-tab.active {
+      background-color: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
+
+    /* Product Grid */
+    .wf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .wf-card {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background-color: #ffffff;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .wf-img-placeholder {
+      background-color: #e2e8f0;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 12px;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+    .wf-gif-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background-color: rgba(15,23,42,0.8);
+      color: #fff;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+    }
+    .wf-card-body {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .wf-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .wf-card-title {
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .wf-card-spec {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .wf-card-price {
+      font-size: 16px;
+      font-weight: 900;
+      color: #0f172a;
+      margin-top: auto;
+      margin-bottom: 12px;
+    }
+    .wf-card-actions {
+      display: flex;
+      gap: 6px;
+    }
+    .wf-card-actions .btn {
+      flex: 1;
+      padding: 8px 6px;
+      font-size: 12px;
+    }
+
+    /* Data Proof Infographics Box */
+    .wf-data-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .wf-data-card {
+      background-color: var(--primary-light);
+      border: 1px solid #bae6fd;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .wf-data-num {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 4px;
+      font-family: var(--font-mono);
+    }
+    .wf-data-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #0369a1;
+      margin-bottom: 4px;
+    }
+    .wf-data-desc {
+      font-size: 11px;
+      color: #0284c7;
+    }
+
+    /* Modal Overlay (SCR-011) */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(15,23,42,0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      max-width: 780px;
+      width: 100%;
+      border: 2px solid #0284c7;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: modalPop 0.2s ease-out;
+    }
+    @keyframes modalPop {
+      from { transform: scale(0.96); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .modal-header {
+      background-color: #0f172a;
+      color: #fff;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-close {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .modal-body {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      padding: 24px;
+      gap: 24px;
+    }
+    .modal-media {
+      background-color: #f8fafc;
+      border: 1px dashed var(--border-dark);
+      border-radius: 8px;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 16px;
+    }
+    .modal-info h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .modal-info .price {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+    .spec-table th, .spec-table td {
+      border: 1px solid var(--border-color);
+      padding: 6px 10px;
+      text-align: left;
+    }
+    .spec-table th { background-color: var(--bg-subtle); color: var(--text-muted); font-weight: 700; width: 40%; }
+
+    /* Cart Slide Drawer (SCR-051) */
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -420px;
+      width: 380px;
+      height: 100vh;
+      background-color: #ffffff;
+      border-left: 2px solid #0f172a;
+      box-shadow: -10px 0 25px rgba(0,0,0,0.15);
+      z-index: 1000;
+      transition: right 0.25s ease-out;
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-drawer.active {
+      right: 0;
+    }
+    .cart-header {
+      padding: 16px 20px;
+      background-color: #0f172a;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 20px;
+    }
+    .cart-item {
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cart-footer {
+      padding: 20px;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-subtle);
+    }
+
+    /* Forms */
+    .wf-form-group {
+      margin-bottom: 14px;
+    }
+    .wf-form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text-main);
+    }
+    .wf-form-group input, .wf-form-group select, .wf-form-group textarea {
+      width: 100%;
+      padding: 9px 12px;
+      border: 1px solid var(--border-dark);
+      border-radius: 6px;
+      font-size: 13px;
+      outline: none;
+    }
+    .wf-form-group input:focus {
+      border-color: var(--primary);
+    }
+    .wf-footer {
+      border-top: 1px solid var(--border-color);
+      padding: 24px;
+      background-color: #ffffff;
+      margin-top: 40px;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Controller Toolbar -->
+  <header class="control-bar">
+    <div class="brand-title">
+      <span>NUNID (누니드)</span>
+      <span class="brand-badge">화면 설계서 인터랙티브 와이어프레임 v1.0</span>
+    </div>
+    <div class="toolbar-tools">
+      <div class="screen-select-wrap">
+        <select id="screenSelect" onchange="switchScreen(this.value)">
+          <optgroup label="1.0 메인 및 오버레이">
+            <option value="SCR-010">SCR-010 메인 홈 (Main Page)</option>
+            <option value="SCR-011">SCR-011 Quick View 오버레이 모달</option>
+          </optgroup>
+          <optgroup label="2.0 하이브리드 라인업">
+            <option value="SCR-020">SCR-020 하이브리드 제품 라인업</option>
+            <option value="SCR-025">SCR-025 제품 상세 (PDP)</option>
+          </optgroup>
+          <optgroup label="3.0 데이터 & 검증 랩">
+            <option value="SCR-030">SCR-030 데이터 & 검증 랩 (Formula & Proof)</option>
+          </optgroup>
+          <optgroup label="4.0 브랜드 철학">
+            <option value="SCR-040">SCR-040 브랜드 철학 (Philosophy)</option>
+          </optgroup>
+          <optgroup label="5.0 주문 및 결제 흐름">
+            <option value="SCR-051">SCR-051 Quick Slide Cart (장바구니)</option>
+            <option value="SCR-052">SCR-052 Fast Checkout (초고속 결제)</option>
+            <option value="SCR-053">SCR-053 주문 완료 (Order Complete)</option>
+            <option value="SCR-054">SCR-054 결제 실패/오류 (Payment Fail)</option>
+          </optgroup>
+          <optgroup label="6.0 고객지원 & 안심">
+            <option value="SCR-061">SCR-061 첫 구매 안심 가이드</option>
+            <option value="SCR-062">SCR-062 간편 FAQ</option>
+          </optgroup>
+          <optgroup label="7.0 주문조회 & 반품">
+            <option value="SCR-071">SCR-071 비회원 주문/배송 조회</option>
+            <option value="SCR-073">SCR-073 원클릭 간편 반품 접수</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="viewport-buttons">
+        <button class="vp-btn active" onclick="setViewport('desktop', this)">🖥️ Desktop</button>
+        <button class="vp-btn" onclick="setViewport('tablet', this)">📱 Tablet</button>
+        <button class="vp-btn" onclick="setViewport('mobile', this)">📱 Mobile</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">화면 목록 (Navigation)</div>
+      <div class="sidebar-nav">
+        <div class="nav-category">1.0 메인 / 오버레이</div>
+        <div class="nav-item active" onclick="switchScreen('SCR-010')">
+          <span class="nav-id-badge">SCR-010</span> 메인 홈
+        </div>
+        <div class="nav-item" onclick="openModal('quickViewModal')">
+          <span class="nav-id-badge">SCR-011</span> ★ Quick View 모달
+        </div>
+
+        <div class="nav-category">2.0 제품 탐색</div>
+        <div class="nav-item" onclick="switchScreen('SCR-020')">
+          <span class="nav-id-badge">SCR-020</span> All Hybrid 라인업
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-025')">
+          <span class="nav-id-badge">SCR-025</span> 제품 상세 (PDP)
+        </div>
+
+        <div class="nav-category">3.0 검증 / 4.0 철학</div>
+        <div class="nav-item" onclick="switchScreen('SCR-030')">
+          <span class="nav-id-badge">SCR-030</span> Formula & Proof 랩
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-040')">
+          <span class="nav-id-badge">SCR-040</span> Philosophy (철학)
+        </div>
+
+        <div class="nav-category">5.0 주문 / 결제</div>
+        <div class="nav-item" onclick="toggleCart(true)">
+          <span class="nav-id-badge">SCR-051</span> ★ Quick Cart 드로어
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-052')">
+          <span class="nav-id-badge">SCR-052</span> Fast Checkout 결제
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-053')">
+          <span class="nav-id-badge">SCR-053</span> 주문 완료
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-054')">
+          <span class="nav-id-badge">SCR-054</span> 결제 실패 예외
+        </div>
+
+        <div class="nav-category">6.0 안심 / 7.0 조회</div>
+        <div class="nav-item" onclick="switchScreen('SCR-061')">
+          <span class="nav-id-badge">SCR-061</span> 첫구매 안심가이드
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-062')">
+          <span class="nav-id-badge">SCR-062</span> 간편 FAQ
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-071')">
+          <span class="nav-id-badge">SCR-071</span> 비회원 주문조회
+        </div>
+        <div class="nav-item" onclick="switchScreen('SCR-073')">
+          <span class="nav-id-badge">SCR-073</span> 간편 반품 접수
+        </div>
+      </div>
+    </aside>
+
+    <!-- Canvas Frame Container -->
+    <main class="canvas-container">
+      <div id="viewportFrame" class="viewport-frame">
+        
+        <div class="screen-meta-header">
+          <span id="currentScreenBadge">SCREEN ID: SCR-010</span>
+          <span>NUNID LOW-FIDELITY WIREFRAME</span>
+        </div>
+
+        <!-- Global Header Component in Wireframe -->
+        <div class="wf-header">
+          <div class="wf-logo" onclick="switchScreen('SCR-010')">
+            NUNID <span>.</span>
+          </div>
+          <nav>
+            <ul class="wf-gnb">
+              <li><a onclick="switchScreen('SCR-020')">All Hybrid</a></li>
+              <li><a onclick="switchScreen('SCR-030')">Formula & Proof</a></li>
+              <li><a onclick="switchScreen('SCR-040')">Philosophy</a></li>
+            </ul>
+          </nav>
+          <div class="wf-util">
+            <a onclick="switchScreen('SCR-071')" style="font-size:12px; cursor:pointer; color:var(--text-muted);">주문조회</a>
+            <button class="wf-cart-btn" onclick="toggleCart(true)">
+              🛒 Cart <span class="wf-cart-badge" id="cartCountBadge">1</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-010] 메인 홈 (Main Page) -->
+        <!-- ============================================== -->
+        <div id="SCR-010" class="screen-view active">
+          <!-- 1.1 Hero Section -->
+          <div class="wf-hero">
+            <div style="font-size:11px; font-weight:800; color:var(--primary); text-transform:uppercase; margin-bottom:6px;">Minimal Hybrid Beauty Routine</div>
+            <h1>스킨케어와 메이크업의 경계를 허물다</h1>
+            <p>단계를 줄이고 밀착을 완성하는 1단계 고효율 루틴. 20,000원 ~ 50,000원대 합리적 가심비 라인업</p>
+            <button class="btn btn-dark" onclick="scrollToElement('textureFilterSec')">간편 뷰티 루틴 시작하기 ↓</button>
+          </div>
+
+          <!-- 1.2 Interactive Texture Filter -->
+          <div id="textureFilterSec" class="wf-section">
+            <div class="wf-section-title">
+              <span>제형별 빠른 찾기 (Interactive Texture Filter)</span>
+              <span style="font-size:11px; color:var(--text-muted); font-weight:normal;">*전통 카테고리 분리 배제</span>
+            </div>
+            <div class="wf-tabs">
+              <button class="wf-tab active" onclick="filterProducts('all', this)">전체보기 (All)</button>
+              <button class="wf-tab" onclick="filterProducts('water', this)">Water-light (워터라이트)</button>
+              <button class="wf-tab" onclick="filterProducts('balm', this)">Melting Balm (멜팅 밤)</button>
+              <button class="wf-tab" onclick="filterProducts('tint', this)">Tinted Fluid (틴티드 플루이드)</button>
+            </div>
+
+            <!-- 1.3 Modular Product Grid -->
+            <div class="wf-grid" id="productGrid">
+              <!-- Item 1 -->
+              <div class="wf-card" data-cat="water">
+                <div class="wf-img-placeholder">
+                  <span class="wf-gif-badge">1MB GIF</span>
+                  [워터라이트 수분 밀착 텍스처]
+                </div>
+                <div class="wf-card-body">
+                  <div class="wf-tag">Water-light</div>
+                  <div class="wf-card-title">하이드라 수분 밀착 플루이드</div>
+                  <div class="wf-card-spec">밀착 두께 0.02mm · 보습 24hr 유지</div>
+                  <div class="wf-card-price">28,000원</div>
+                  <div class="wf-card-actions">
+                    <button class="btn btn-secondary" onclick="openModal('quickViewModal')">Quick View</button>
+                    <button class="btn btn-primary" onclick="addToCart('하이드라 수분 밀착 플루이드', 28000)">담기</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="wf-card" data-cat="balm">
+                <div class="wf-img-placeholder">
+                  <span class="wf-gif-badge">1MB GIF</span>
+                  [멜팅 밤 고보습 텍스처]
+                </div>
+                <div class="wf-card-body">
+                  <div class="wf-tag">Melting Balm</div>
+                  <div class="wf-card-title">베리어 멜팅 리페어 밤</div>
+                  <div class="wf-card-spec">고영양 코팅 · 장시간 당김 방지</div>
+                  <div class="wf-card-price">34,000원</div>
+                  <div class="wf-card-actions">
+                    <button class="btn btn-secondary" onclick="openModal('quickViewModal')">Quick View</button>
+                    <button class="btn btn-primary" onclick="addToCart('베리어 멜팅 리페어 밤', 34000)">담기</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="wf-card" data-cat="tint">
+                <div class="wf-img-placeholder">
+                  <span class="wf-gif-badge">1MB GIF</span>
+                  [틴티드 투명 톤업 텍스처]
+                </div>
+                <div class="wf-card-body">
+                  <div class="wf-tag">Tinted Fluid</div>
+                  <div class="wf-card-title">누드 스킨 틴티드 플루이드</div>
+                  <div class="wf-card-spec">자연스러운 투명 톤 보정 · 통기성 98.4%</div>
+                  <div class="wf-card-price">32,000원</div>
+                  <div class="wf-card-actions">
+                    <button class="btn btn-secondary" onclick="openModal('quickViewModal')">Quick View</button>
+                    <button class="btn btn-primary" onclick="addToCart('누드 스킨 틴티드 플루이드', 32000)">담기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1.4 Formula & Proof Summary -->
+          <div class="wf-section">
+            <div class="wf-section-title">1.4 Formula & Proof 데이터 요약</div>
+            <div class="wf-data-grid">
+              <div class="wf-data-card">
+                <div class="wf-data-num">0.02 mm</div>
+                <div class="wf-data-label">피부 극박 밀착 두께</div>
+                <div class="wf-data-desc">답답함 없는 투명 레이어링</div>
+              </div>
+              <div class="wf-data-card">
+                <div class="wf-data-num">24 hr</div>
+                <div class="wf-data-label">수분 보습 유지 시간</div>
+                <div class="wf-data-desc">모니터 앞 건조함 방지</div>
+              </div>
+              <div class="wf-data-card">
+                <div class="wf-data-num">98.4 %</div>
+                <div class="wf-data-label">피부 통기성 지수</div>
+                <div class="wf-data-desc">모공 막힘 없는 편안함</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1.5 Real Persona Reviews -->
+          <div class="wf-section">
+            <div class="wf-section-title">1.5 타깃 고객 실용 리뷰 (미사여구 배제)</div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+              <div style="border:1px solid var(--border-color); padding:14px; border-radius:6px; background:#fff;">
+                <div style="font-weight:700; font-size:13px; margin-bottom:4px;">"바쁜 아침 출근 준비 시간이 15분에서 3분으로 줄었습니다."</div>
+                <div style="font-size:11px; color:var(--text-muted);">이지윤 (31세 / IT 서비스 기획자) · Water-light 사용</div>
+              </div>
+              <div style="border:1px solid var(--border-color); padding:14px; border-radius:6px; background:#fff;">
+                <div style="font-weight:700; font-size:13px; margin-bottom:4px;">"밤샘 과제 후에도 피부가 답답하지 않고 투명하게 유지돼요."</div>
+                <div style="font-size:11px; color:var(--text-muted);">박서연 (23세 / 시각디자인과 3학년) · Tinted Fluid 사용</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1.6 Trust & Safety Banner -->
+          <div class="wf-section" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:16px; display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <div style="font-weight:800; color:#166534; font-size:14px;">🎁 첫 구매 100% 무료 반품 안심 약속</div>
+              <div style="font-size:12px; color:#15803d;">본품 개봉 전 동봉된 무료 체험 미니 샘플을 먼저 사용해 보세요.</div>
+            </div>
+            <button class="btn btn-secondary" onclick="switchScreen('SCR-061')">안심 가이드 보기</button>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-020] All Hybrid 라인업 -->
+        <!-- ============================================== -->
+        <div id="SCR-020" class="screen-view">
+          <div class="wf-section-title">SCR-020 하이브리드 전체 라인업 (All Hybrid)</div>
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:16px;">스킨케어와 메이크업 구분을 없앤 제형 중심 탐색</p>
+          <div class="wf-grid">
+            <div class="wf-card">
+              <div class="wf-img-placeholder">[워터라이트 텍스처 컷]</div>
+              <div class="wf-card-body">
+                <div class="wf-tag">Water-light</div>
+                <div class="wf-card-title">하이드라 수분 밀착 플루이드</div>
+                <div class="wf-card-price">28,000원</div>
+                <button class="btn btn-dark" onclick="switchScreen('SCR-025')">상세보기 (PDP)</button>
+              </div>
+            </div>
+            <div class="wf-card">
+              <div class="wf-img-placeholder">[멜팅 밤 텍스처 컷]</div>
+              <div class="wf-card-body">
+                <div class="wf-tag">Melting Balm</div>
+                <div class="wf-card-title">베리어 멜팅 리페어 밤</div>
+                <div class="wf-card-price">34,000원</div>
+                <button class="btn btn-dark" onclick="switchScreen('SCR-025')">상세보기 (PDP)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-025] 제품 상세 (Product PDP) -->
+        <!-- ============================================== -->
+        <div id="SCR-025" class="screen-view">
+          <div class="wf-section-title">SCR-025 제품 상세 (PDP)</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:30px;">
+            <div class="wf-img-placeholder" style="height:320px;">[초근접 매크로 텍스처 고화질 컷]</div>
+            <div>
+              <div class="wf-tag">Water-light Formula</div>
+              <h2 style="font-size:22px; font-weight:900; margin-bottom:8px;">하이드라 수분 밀착 플루이드</h2>
+              <div style="font-size:22px; font-weight:900; color:var(--primary); margin-bottom:16px;">28,000원</div>
+              <table class="spec-table">
+                <tr><th>밀착 두께</th><td>0.02 mm (초극박 밀착)</td></tr>
+                <tr><th>보습 지속</th><td>24시간 임상 확인</td></tr>
+                <tr><th>통기성</th><td>98.4% (답답함 제로)</td></tr>
+                <tr><th>성분 안전성</th><td>EWG 그린 등급 전성분</td></tr>
+              </table>
+              <div style="display:flex; gap:10px;">
+                <button class="btn btn-secondary" style="flex:1;" onclick="addToCart('하이드라 수분 밀착 플루이드', 28000)">장바구니 담기</button>
+                <button class="btn btn-primary" style="flex:1;" onclick="switchScreen('SCR-052')">바로 구매하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-030] Formula & Proof 랩 -->
+        <!-- ============================================== -->
+        <div id="SCR-030" class="screen-view">
+          <div class="wf-section-title">SCR-030 데이터 & 검증 랩 (Formula & Proof)</div>
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:20px;">감성적 카피 대신 수치화된 데이터로 제품의 성능을 입증합니다.</p>
+          <div class="wf-data-grid">
+            <div class="wf-data-card">
+              <div class="wf-data-num">0.02 mm</div>
+              <div class="wf-data-label">밀착 두께 정밀 측정치</div>
+              <div class="wf-data-desc">타사 파운데이션 대비 1/4 두께</div>
+            </div>
+            <div class="wf-data-card">
+              <div class="wf-data-num">24 hr</div>
+              <div class="wf-data-label">수분 잔존율 94.2%</div>
+              <div class="wf-data-desc">장시간 모니터 근무 환경 테스트</div>
+            </div>
+            <div class="wf-data-card">
+              <div class="wf-data-num">100 %</div>
+              <div class="wf-data-label">EWG 그린 안전 등급</div>
+              <div class="wf-data-desc">20가지 주의 성분 완전 배제</div>
+            </div>
+          </div>
+          <div style="text-align:center; padding:20px;">
+            <button class="btn btn-dark" onclick="switchScreen('SCR-020')">검증된 제형 제품 보러가기 →</button>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-040] 브랜드 철학 (Philosophy) -->
+        <!-- ============================================== -->
+        <div id="SCR-040" class="screen-view">
+          <div class="wf-section-title">SCR-040 브랜드 철학 (Philosophy)</div>
+          <div class="wf-hero">
+            <h2>화장 단계를 줄이고 본질에 집중합니다</h2>
+            <p>스킨, 로션, 파운데이션의 구분을 해체한 1단계 하이브리드 루틴</p>
+          </div>
+          <div style="border:1px solid var(--border-color); border-radius:8px; padding:20px; background:#fff; margin-bottom:20px;">
+            <h4 style="margin-bottom:10px;">2만 ~ 5만 원대 정직한 가심비 가격 정책</h4>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.6;">중간 유통 거품과 과도한 마케팅 화보 비용을 제거하여 누구나 부담 없이 매일 사용할 수 있는 합리적인 가격대를 유지합니다.</p>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-052] Fast Checkout 초고속 결제 -->
+        <!-- ============================================== -->
+        <div id="SCR-052" class="screen-view">
+          <div class="wf-section-title">SCR-052 Fast Checkout (초고속 결제)</div>
+          <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap:24px;">
+            <div>
+              <h4 style="margin-bottom:12px;">배송지 정보 입력</h4>
+              <div class="wf-form-group">
+                <label>주문자명</label>
+                <input type="text" value="이지윤" placeholder="이름을 입력하세요">
+              </div>
+              <div class="wf-form-group">
+                <label>휴대폰 번호</label>
+                <input type="text" value="010-1234-5678" placeholder="연락처를 입력하세요">
+              </div>
+              <div class="wf-form-group">
+                <label>배송 주소</label>
+                <input type="text" value="서울특별시 강남구 테헤란로 123" placeholder="기본 주소">
+              </div>
+              <div class="wf-form-group">
+                <label>결제 수단 선택</label>
+                <select>
+                  <option>⚡ 네이버페이 (원클릭 간편결제)</option>
+                  <option>⚡ 카카오페이</option>
+                  <option>⚡ 토스페이</option>
+                  <option>신용/체크카드</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div style="border:1px solid var(--border-color); border-radius:8px; padding:16px; background:#fff;">
+                <h4 style="margin-bottom:12px;">주문 내역</h4>
+                <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:8px;">
+                  <span>하이드라 수분 밀착 플루이드</span>
+                  <span>28,000원</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--accent); margin-bottom:14px;">
+                  <span>[증정] 무료 체험 미니 샘플</span>
+                  <span>0원</span>
+                </div>
+                <div style="border-top:1px solid var(--border-color); padding-top:10px; display:flex; justify-content:space-between; font-weight:900; font-size:16px;">
+                  <span>총 결제금액</span>
+                  <span>28,000원</span>
+                </div>
+                <button class="btn btn-primary" style="width:100%; margin-top:16px;" onclick="switchScreen('SCR-053')">28,000원 결제 완료하기</button>
+                <button class="btn btn-secondary" style="width:100%; margin-top:8px; font-size:11px;" onclick="switchScreen('SCR-054')">[테스트] 결제 오류 시뮬레이션</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-053] 주문 완료 (Order Complete) -->
+        <!-- ============================================== -->
+        <div id="SCR-053" class="screen-view">
+          <div class="wf-hero" style="background:#f0fdf4; border-color:#bbf7d0;">
+            <div style="font-size:32px; margin-bottom:10px;">✅</div>
+            <h2>주문이 정상 접수되었습니다</h2>
+            <p>주문번호: <strong>NUNID-20260817-0012</strong></p>
+            <div style="font-size:13px; color:#166534; background:#dcfce7; padding:10px; border-radius:6px; display:inline-block; margin-bottom:16px;">
+              🎁 본품과 함께 동봉된 미니 샘플을 먼저 사용해 보세요. 100% 무료 반품이 가능합니다.
+            </div>
+            <div>
+              <button class="btn btn-dark" onclick="switchScreen('SCR-071')">배송 조회하기</button>
+              <button class="btn btn-secondary" onclick="switchScreen('SCR-010')">홈으로 이동</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-054] 결제 실패 (Payment Fail) -->
+        <!-- ============================================== -->
+        <div id="SCR-054" class="screen-view">
+          <div class="wf-hero" style="background:var(--danger-light); border-color:#fca5a5;">
+            <div style="font-size:32px; margin-bottom:10px;">⚠️</div>
+            <h2>결제가 완료되지 않았습니다</h2>
+            <p>카드 한도 초과 또는 네트워크 타임아웃으로 승인이 취소되었습니다.</p>
+            <div>
+              <button class="btn btn-dark" onclick="switchScreen('SCR-052')">결제 다시 시도</button>
+              <button class="btn btn-secondary" onclick="toggleCart(true)">장바구니 확인</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-061] 첫 구매 안심 가이드 -->
+        <!-- ============================================== -->
+        <div id="SCR-061" class="screen-view">
+          <div class="wf-section-title">SCR-061 첫 구매 안심 가이드</div>
+          <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; margin-bottom:24px;">
+            <div class="wf-card" style="padding:16px; text-align:center;">
+              <div style="font-size:24px; margin-bottom:8px;">1️⃣</div>
+              <div style="font-weight:700; margin-bottom:4px;">샘플 먼저 테스트</div>
+              <div style="font-size:11px; color:var(--text-muted);">동봉된 미니 샘플을 개봉하여 피부에 발라보세요.</div>
+            </div>
+            <div class="wf-card" style="padding:16px; text-align:center;">
+              <div style="font-size:24px; margin-bottom:8px;">2️⃣</div>
+              <div style="font-weight:700; margin-bottom:4px;">본품 미개봉 유지</div>
+              <div style="font-size:11px; color:var(--text-muted);">피부에 맞지 않을 경우 본품 씰을 뜯지 마세요.</div>
+            </div>
+            <div class="wf-card" style="padding:16px; text-align:center;">
+              <div style="font-size:24px; margin-bottom:8px;">3️⃣</div>
+              <div style="font-weight:700; margin-bottom:4px;">원클릭 무료 수거</div>
+              <div style="font-size:11px; color:var(--text-muted);">웹사이트에서 반품 신청 시 기사님이 방문 수거합니다.</div>
+            </div>
+          </div>
+          <div style="text-align:center;">
+            <button class="btn btn-dark" onclick="switchScreen('SCR-073')">무료 반품 신청하기</button>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-062] 간편 FAQ -->
+        <!-- ============================================== -->
+        <div id="SCR-062" class="screen-view">
+          <div class="wf-section-title">SCR-062 간편 FAQ</div>
+          <div style="border:1px solid var(--border-color); border-radius:6px; margin-bottom:8px; padding:12px; background:#fff;">
+            <strong>Q. 당일 출고 마감 시간은 언제인가요?</strong>
+            <p style="font-size:12px; color:var(--text-muted); margin-top:6px;">오후 2시 이전 결제 완료 건은 당일 출고됩니다.</p>
+          </div>
+          <div style="border:1px solid var(--border-color); border-radius:6px; margin-bottom:8px; padding:12px; background:#fff;">
+            <strong>Q. 무료 반품 시 배송비가 발생하나요?</strong>
+            <p style="font-size:12px; color:var(--text-muted); margin-top:6px;">첫 구매 고객은 본품 미개봉 시 반품 배송비 0원입니다.</p>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-071] 비회원 주문/배송 조회 -->
+        <!-- ============================================== -->
+        <div id="SCR-071" class="screen-view">
+          <div class="wf-section-title">SCR-071 비회원 주문/배송 조회</div>
+          <div style="max-width:400px; margin:0 auto; padding:20px; border:1px solid var(--border-color); border-radius:8px; background:#fff;">
+            <div class="wf-form-group">
+              <label>주문번호</label>
+              <input type="text" value="NUNID-20260817-0012">
+            </div>
+            <div class="wf-form-group">
+              <label>휴대폰번호</label>
+              <input type="text" value="010-1234-5678">
+            </div>
+            <button class="btn btn-dark" style="width:100%; margin-bottom:16px;">조회하기</button>
+            <div style="border-top:1px solid var(--border-color); padding-top:12px; font-size:12px;">
+              <div>상태: <strong style="color:var(--primary);">배송 완료</strong></div>
+              <div style="margin-top:4px;">상품: 하이드라 수분 밀착 플루이드 (1개)</div>
+              <button class="btn btn-secondary" style="width:100%; margin-top:10px;" onclick="switchScreen('SCR-073')">100% 무료 반품 신청</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- [SCR-073] 간편 반품 접수 -->
+        <!-- ============================================== -->
+        <div id="SCR-073" class="screen-view">
+          <div class="wf-section-title">SCR-073 원클릭 간편 반품 접수</div>
+          <div style="max-width:480px; margin:0 auto; padding:20px; border:1px solid var(--border-color); border-radius:8px; background:#fff;">
+            <h4 style="margin-bottom:10px;">반품 사유 선택</h4>
+            <div style="font-size:13px; margin-bottom:14px; display:flex; flex-direction:column; gap:6px;">
+              <label><input type="radio" name="reason" checked> 미니 샘플 테스트 후 피부 타입 불일치</label>
+              <label><input type="radio" name="reason"> 단순 변심</label>
+              <label><input type="radio" name="reason"> 상품 파손 및 오배송</label>
+            </div>
+            <div class="wf-form-group">
+              <label>수거지 주소</label>
+              <input type="text" value="서울특별시 강남구 테헤란로 123">
+            </div>
+            <button class="btn btn-primary" style="width:100%;" onclick="alert('무료 반품 수거가 정상 접수되었습니다. 기사님이 방문 예정입니다.'); switchScreen('SCR-010');">무료 반품 수거 접수 완료</button>
+          </div>
+        </div>
+
+        <!-- Footer Component in Wireframe -->
+        <div class="wf-footer">
+          <div style="font-weight:700; color:var(--text-main); margin-bottom:4px;">NUNID (누니드) D2C 커머스</div>
+          <div>대표: 한지민 · 사업자등록번호: 000-00-00000 · 통신판매업신고: 2026-서울강남-0000</div>
+          <div>고객센터: 1588-0000 · 100% 무료 반품 안심 약속 센터</div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- [SCR-011] Quick View Modal Overlay -->
+  <!-- ============================================== -->
+  <div id="quickViewModal" class="modal-overlay" onclick="closeModalOnBg(event, this)">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span style="font-weight:800; font-size:13px;">★ QUICK VIEW (상세 이동 없는 오버레이)</span>
+        <button class="modal-close" onclick="closeModal('quickViewModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-media">
+          <span class="wf-gif-badge" style="position:static; margin-bottom:8px;">1MB 미만 GIF</span>
+          [초근접 제형 발림성 숏폼]
+          <div style="font-size:11px; color:var(--text-muted); margin-top:8px;">피부에 얇게 밀착되는 텍스처 시연</div>
+        </div>
+        <div class="modal-info">
+          <div class="wf-tag">Water-light Formula</div>
+          <h3>하이드라 수분 밀착 플루이드</h3>
+          <div class="price">28,000원 <span style="font-size:11px; color:#166534; background:#dcfce7; padding:2px 6px; border-radius:4px; font-weight:normal;">무료샘플동봉</span></div>
+          
+          <table class="spec-table">
+            <tr><th>밀착 두께</th><td>0.02 mm 극박 밀착</td></tr>
+            <tr><th>보습 지속</th><td>24시간 임상 완료</td></tr>
+            <tr><th>통기성</th><td>98.4% 모공 편안함</td></tr>
+            <tr><th>전성분</th><td>EWG 그린 등급</td></tr>
+          </table>
+
+          <div style="display:flex; gap:8px;">
+            <button class="btn btn-secondary" style="flex:1;" onclick="closeModal('quickViewModal'); addToCart('하이드라 수분 밀착 플루이드', 28000);">장바구니 담기</button>
+            <button class="btn btn-primary" style="flex:1;" onclick="closeModal('quickViewModal'); switchScreen('SCR-052');">원클릭 빠른 구매</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- [SCR-051] Quick Slide Cart Drawer -->
+  <!-- ============================================== -->
+  <div id="quickSlideCart" class="cart-drawer">
+    <div class="cart-header">
+      <span style="font-weight:800; font-size:14px;">장바구니 (Quick Cart)</span>
+      <button class="modal-close" onclick="toggleCart(false)">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItemList">
+      <div class="cart-item">
+        <div>
+          <div style="font-weight:800; font-size:13px;">하이드라 수분 밀착 플루이드</div>
+          <div style="font-size:11px; color:var(--text-muted);">수량: 1개 · 28,000원</div>
+        </div>
+        <button style="border:none; background:transparent; color:var(--danger); cursor:pointer; font-size:12px;" onclick="removeItem(this)">삭제</button>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px;">
+        <span>배송비</span>
+        <span style="color:var(--accent); font-weight:700;">무료배송</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; font-weight:900; font-size:16px; margin-bottom:14px;">
+        <span>총 금액</span>
+        <span id="cartTotalSum">28,000원</span>
+      </div>
+      <button class="btn btn-primary" style="width:100%;" onclick="toggleCart(false); switchScreen('SCR-052');">Fast Checkout (빠른 결제)</button>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    function switchScreen(screenId) {
+      document.querySelectorAll('.screen-view').forEach(el => el.classList.remove('active'));
+      const target = document.getElementById(screenId);
+      if (target) {
+        target.classList.add('active');
+        document.getElementById('screenSelect').value = screenId;
+        document.getElementById('currentScreenBadge').innerText = 'SCREEN ID: ' + screenId;
+        
+        document.querySelectorAll('.sidebar-nav .nav-item').forEach(item => {
+          if (item.getAttribute('onclick') && item.getAttribute('onclick').includes(screenId)) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+        document.querySelector('.canvas-container').scrollTop = 0;
+      }
+    }
+
+    function setViewport(mode, btn) {
+      document.querySelectorAll('.vp-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const frame = document.getElementById('viewportFrame');
+      frame.className = 'viewport-frame ' + (mode === 'desktop' ? '' : mode);
+    }
+
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.add('active');
+    }
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('active');
+    }
+    function closeModalOnBg(e, overlay) {
+      if (e.target === overlay) closeModal(overlay.id);
+    }
+
+    function toggleCart(show) {
+      const drawer = document.getElementById('quickSlideCart');
+      if (show) drawer.classList.add('active');
+      else drawer.classList.remove('active');
+    }
+
+    function filterProducts(cat, tabBtn) {
+      document.querySelectorAll('.wf-tab').forEach(t => t.classList.remove('active'));
+      tabBtn.classList.add('active');
+      const cards = document.querySelectorAll('#productGrid .wf-card');
+      cards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function addToCart(title, price) {
+      alert(`[${title}] 상품이 장바구니에 담겼습니다.`);
+      toggleCart(true);
+    }
+
+    function removeItem(btn) {
+      btn.closest('.cart-item').remove();
+      document.getElementById('cartTotalSum').innerText = '0원';
+      document.getElementById('cartCountBadge').innerText = '0';
+    }
+
+    function scrollToElement(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

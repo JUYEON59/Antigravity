@@ -1,0 +1,396 @@
+- generic [active] [ref=f20e1]:
+  - generic [ref=f20e4]:
+    - banner:
+      - link "콘텐츠로 건너뛰기":
+        - /url: "#"
+      - generic [ref=f20e15]:
+        - generic [ref=f20e18]:
+          - generic:
+            - img "검색 아이콘"
+          - combobox "검색" [ref=f20e20]
+          - generic "이미지 업로드" [ref=f20e23]:
+            - button "Pinterest 렌즈" [ref=f20e24] [cursor=pointer]
+        - link "내 프로필" [ref=f20e33] [cursor=pointer]:
+          - /url: /a24136533/
+        - button "계정" [ref=f20e45] [cursor=pointer]
+    - navigation [ref=f20e50]:
+      - generic [ref=f20e52]:
+        - generic [ref=f20e53]:
+          - generic "홈" [ref=f20e57]:
+            - link "홈" [ref=f20e58] [cursor=pointer]:
+              - /url: /
+          - generic "홈" [ref=f20e65]:
+            - link "홈" [ref=f20e66] [cursor=pointer]:
+              - /url: /
+          - generic "내 보드" [ref=f20e73]:
+            - link "내 보드" [ref=f20e74] [cursor=pointer]:
+              - /url: /a24136533/
+          - generic "만들기" [ref=f20e81]:
+            - button "만들기" [ref=f20e82] [cursor=pointer]
+          - generic "업데이트" [ref=f20e91]:
+            - button "업데이트" [ref=f20e92] [cursor=pointer]
+          - generic "메시지" [ref=f20e101]:
+            - button "메시지" [ref=f20e102] [cursor=pointer]
+        - generic "설정 및 지원" [ref=f20e110]:
+          - button "설정 및 지원" [ref=f20e111] [cursor=pointer]
+    - generic:
+      - complementary "꼬리말 부동 버튼"
+    - main [ref=f20e116]:
+      - generic [ref=f20e125]:
+        - button "뒤로" [ref=f20e127] [cursor=pointer]
+        - generic [ref=f20e136]:
+          - generic [ref=f20e137]: 관련 상품 결과를 불러오는 중
+          - list [ref=f20e142]:
+            - listitem [ref=f20e143]:
+              - group "Closeup content container" [ref=f20e150]:
+                - generic [ref=f20e155]:
+                  - region "핀 이미지 및 탐색할 항목" [ref=f20e158]:
+                    - generic [ref=f20e170]:
+                      - button "더 크게 보기" [ref=f20e172] [cursor=pointer]:
+                        - generic [ref=f20e174]:
+                          - generic: 더 크게 보기
+                          - img "더 크게 보기" [ref=f20e176]
+                      - button "이미지 검색" [ref=f20e181] [cursor=pointer]:
+                        - generic [ref=f20e183]:
+                          - generic: 이미지 검색
+                          - img "이미지 검색" [ref=f20e185]
+                      - link "사이트 방문" [ref=f20e192] [cursor=pointer]:
+                        - /url: https://www.levista.art/monogram/universal/nd-monogram/?utm_source=Pinterest&utm_campaign=Levista monogram&utm_medium=cpc&utm_term=adtribes
+                  - generic [ref=f20e197]:
+                    - generic [ref=f20e200]:
+                      - list [ref=f20e201]:
+                        - generic [ref=f20e202]:
+                          - listitem [ref=f20e204]:
+                            - generic "반응" [ref=f20e207]:
+                              - button "반응" [ref=f20e208] [cursor=pointer]
+                            - generic [ref=f20e213]: "2"
+                          - listitem [ref=f20e215]:
+                            - generic "댓글" [ref=f20e218]:
+                              - button "댓글" [ref=f20e219] [cursor=pointer]
+                          - listitem [ref=f20e225]:
+                            - generic "공유" [ref=f20e229]:
+                              - button "이 핀 공유" [ref=f20e232] [cursor=pointer]
+                          - listitem [ref=f20e238]:
+                            - generic "추가 작업" [ref=f20e243]:
+                              - button "추가 작업" [ref=f20e246] [cursor=pointer]
+                      - generic [ref=f20e256]:
+                        - 'button "저장할 보드 선택: 로고" [ref=f20e259] [cursor=pointer]':
+                          - generic "로고" [ref=f20e262]
+                        - button "저장" [ref=f20e268] [cursor=pointer]
+                    - generic [ref=f20e276]:
+                      - generic [ref=f20e285]:
+                        - link [ref=f20e287] [cursor=pointer]:
+                          - /url: /levistastudio/
+                          - img "Levista.art • exclusive monograms • brand design 아바타 링크" [ref=f20e294]
+                        - link [ref=f20e298] [cursor=pointer]:
+                          - /url: /levistastudio/
+                          - heading [level=2] [ref=f20e299]:
+                            - generic [ref=f20e301]:
+                              - text: Levista.art • exclusive monograms • brand
+                              - generic [ref=f20e302]:
+                                - text: design
+                                - generic "이 소매업체는 Pinterest 판매자 가이드라인을 충족합니다" [ref=f20e305]:
+                                  - button [ref=f20e307]:
+                                    - img "판매자 인증 배지" [ref=f20e308]
+                      - generic [ref=f20e310]:
+                        - generic [ref=f20e312]:
+                          - link [ref=f20e319] [cursor=pointer]:
+                            - /url: https://www.levista.art/monogram/universal/nd-monogram/?utm_source=Pinterest&utm_campaign=Levista monogram&utm_medium=cpc&utm_term=adtribes
+                            - heading "ND Monogram, ND Initials logo | Letter logo design" [level=1] [ref=f20e320]
+                          - link "사이트 방문" [ref=f20e328] [cursor=pointer]:
+                            - /url: https://www.levista.art/monogram/universal/nd-monogram/?utm_source=Pinterest&utm_campaign=Levista%20monogram&utm_medium=cpc&utm_term=adtribes
+                        - generic [ref=f20e332]:
+                          - heading "설명" [level=4] [ref=f20e333]
+                          - generic [ref=f20e334]: "ND Monogram logo is crafted to complement your story — perfect as a personal logo, a wedding symbol, or a business logo (See Terms of Use). WHAT YOU RECEIVE: Monogram — ready to use and provided in a complete set of high-quality design files. PERFECT FOR: Printing, social media design & digital use, signboards, engraving & embossing, foil stamping, wax seals, light projections, and more. INSTANT DELIVERY: You receive your monogram logo instantly after purchase ."
+                          - button "더 보기" [ref=f20e339] [cursor=pointer]
+                    - generic [ref=f20e349]:
+                      - generic [ref=f20e351]:
+                        - button [ref=f20e353]
+                        - generic [ref=f20e357]:
+                          - generic: 댓글을 추가하고 대화를 시작하세요.
+                          - combobox "댓글을 추가하고 대화를 시작하세요." [ref=f20e359]
+                      - generic [ref=f20e368]:
+                        - button "이모티콘 선택" [ref=f20e369] [cursor=pointer]
+                        - button "스티커 선택" [ref=f20e374] [cursor=pointer]
+                        - button "사진을 선택합니다." [ref=f20e380] [cursor=pointer]
+            - listitem [ref=f20e385]:
+              - button [ref=f20e387] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e389]:
+                  - generic [ref=f20e391]:
+                    - link "Logomark for Fashion Influencer with a Modern Twist 핀 페이지" [ref=f20e393]:
+                      - /url: /pin/1130966525243103448/
+                      - 'img "포함된 이미지: Logomark for Fashion Influencer with a Modern Twist" [ref=f20e403]'
+                    - generic [ref=f20e408]:
+                      - heading [level=2] [ref=f20e414]:
+                        - link "Logomark for Fashion Influencer with a Modern Twist 핀 페이지" [ref=f20e416]:
+                          - /url: /pin/1130966525243103448/
+                          - text: Logomark for Fashion Influencer with a Modern Twist
+                      - generic "추가 작업" [ref=f20e419]:
+                        - button "추가 작업" [ref=f20e420]
+            - listitem [ref=f20e425]:
+              - button [ref=f20e427] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e429]:
+                  - generic [ref=f20e431]:
+                    - link "Logo 핀 페이지" [ref=f20e433]:
+                      - /url: /pin/1027454102528036879/
+                      - 'img "포함된 이미지: Logo" [ref=f20e443]'
+                    - generic [ref=f20e448]:
+                      - heading [level=2] [ref=f20e454]:
+                        - link "Logo 핀 페이지" [ref=f20e456]:
+                          - /url: /pin/1027454102528036879/
+                          - text: Logo
+                      - generic "추가 작업" [ref=f20e459]:
+                        - button "추가 작업" [ref=f20e460]
+            - listitem [ref=f20e465]:
+              - button [ref=f20e467] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e470]:
+                  - generic [ref=f20e472]:
+                    - link [ref=f20e474]:
+                      - /url: /pin/923026886463277241/
+                      - generic [ref=f20e481]:
+                        - img "포함된 이미지:" [ref=f20e485]
+                        - img "포함된 이미지:" [ref=f20e489]
+                    - generic [ref=f20e492]:
+                      - generic [ref=f20e495]:
+                        - button "2개 슬라이드 중 1번으로 이동" [ref=f20e497]
+                        - button "2개 슬라이드 중 2번으로 이동" [ref=f20e500]
+                      - generic "추가 작업" [ref=f20e507]:
+                        - button "추가 작업" [ref=f20e508]
+            - listitem [ref=f20e513]:
+              - button [ref=f20e515] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e517]:
+                  - generic [ref=f20e519]:
+                    - link "2015-01-09 핀 페이지" [ref=f20e521]:
+                      - /url: /pin/523684262896048080/
+                      - img "포함된 이미지:" [ref=f20e531]
+                    - generic "추가 작업" [ref=f20e540]:
+                      - button "추가 작업" [ref=f20e541]
+            - listitem [ref=f20e546]:
+              - button [ref=f20e548] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e550]:
+                  - generic [ref=f20e552]:
+                    - link "ND Wedding Monogram | Elegant &amp; Personalized Design for Invitations &amp; Keepsakes 핀 페이지" [ref=f20e554]:
+                      - /url: /pin/407857310025751511/
+                      - 'img "포함된 이미지: ND Wedding Monogram | Elegant & Personalized Design for Invitations & Keepsakes" [ref=f20e564]'
+                    - generic [ref=f20e569]:
+                      - heading [level=2] [ref=f20e575]:
+                        - link "ND Wedding Monogram | Elegant &amp; Personalized Design for Invitations &amp; Keepsakes 핀 페이지" [ref=f20e577]:
+                          - /url: /pin/407857310025751511/
+                          - text: ND Wedding Monogram | Elegant & Personalized Design for Invitations & Keepsakes
+                      - generic "추가 작업" [ref=f20e580]:
+                        - button "추가 작업" [ref=f20e581]
+            - listitem [ref=f20e586]:
+              - button [ref=f20e588] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e590]:
+                  - generic [ref=f20e592]:
+                    - link "creativemarket.com" [ref=f20e596]:
+                      - /url: https://creativemarket.com/milkak/16534367-AJ-Monogram-Logo?utm_term=ROAS+10%2B+Cost+5%2B&utm_campaign=626754960093&cvg_adid=4260609141916&utm_medium=cpc&cvg_source=pinterest&utm_source=pinterest&utm_content=4260609141916&cvg_cid=626754960093&pp=0
+                      - 'img "포함된 이미지: Aj Monogram Logo by" [ref=f20e606]'
+                    - generic [ref=f20e610]:
+                      - generic [ref=f20e611]:
+                        - heading [level=2] [ref=f20e616]:
+                          - link "Aj Monogram Logo by Linked Letters Studio | Creative Market (creativemarket.com)" [ref=f20e620]:
+                            - /url: https://creativemarket.com/milkak/16534367-AJ-Monogram-Logo?utm_term=ROAS+10%2B+Cost+5%2B&utm_campaign=626754960093&cvg_adid=4260609141916&utm_medium=cpc&cvg_source=pinterest&utm_source=pinterest&utm_content=4260609141916&cvg_cid=626754960093&pp=0
+                            - text: Aj Monogram Logo by Linked Letters Studio | Creative Market
+                        - link "후원 핀" [ref=f20e623]:
+                          - /url: /creativemarket/
+                          - generic [ref=f20e625]:
+                            - generic [ref=f20e626]: Creative Market
+                            - generic "후원 핀" [ref=f20e632]
+                      - generic "추가 작업" [ref=f20e635]:
+                        - button "추가 작업" [ref=f20e636]
+            - listitem [ref=f20e641]:
+              - button [ref=f20e643] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e645]:
+                  - generic [ref=f20e647]:
+                    - link "coloso.co.kr" [ref=f20e651]:
+                      - /url: https://coloso.co.kr/products/graphicdesign_choijaehoon?utm_medium=paid&utm_source=pinterest&utm_campaign=con_graphicdesign_graphicdesign_choijaehoon_conv_plus&utm_content=dt-graphicdesign_pinterest_graphicdesign-choijaehoon_conv_plus_speaker-img-260112&pp=0
+                      - 'img "포함된 이미지: 나이키, 삼성, 네이버가 선택한 최재훈의" [ref=f20e661]'
+                    - generic [ref=f20e665]:
+                      - generic [ref=f20e666]:
+                        - heading [level=2] [ref=f20e671]:
+                          - link "나이키, 삼성, 네이버가 선택한 최재훈의 그래픽디자인 클래스 (coloso.co.kr)" [ref=f20e675]:
+                            - /url: https://coloso.co.kr/products/graphicdesign_choijaehoon?utm_medium=paid&utm_source=pinterest&utm_campaign=con_graphicdesign_graphicdesign_choijaehoon_conv_plus&utm_content=dt-graphicdesign_pinterest_graphicdesign-choijaehoon_conv_plus_speaker-img-260112&pp=0
+                            - text: 나이키, 삼성, 네이버가 선택한 최재훈의 그래픽디자인 클래스
+                        - link "후원 핀" [ref=f20e678]:
+                          - /url: /ColosoKR/
+                          - generic [ref=f20e680]:
+                            - generic [ref=f20e681]: Coloso
+                            - generic "후원 핀" [ref=f20e687]
+                      - generic "추가 작업" [ref=f20e690]:
+                        - button "추가 작업" [ref=f20e691]
+            - listitem [ref=f20e696]:
+              - button [ref=f20e698] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e700]:
+                  - generic [ref=f20e702]:
+                    - link "제목 없음 핀 페이지" [ref=f20e704]:
+                      - /url: /pin/829717931387396257/
+                      - img "포함된 이미지:" [ref=f20e714]
+                    - generic "추가 작업" [ref=f20e723]:
+                      - button "추가 작업" [ref=f20e724]
+            - listitem [ref=f20e729]:
+              - button [ref=f20e731] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e734]:
+                  - generic [ref=f20e736]:
+                    - link [ref=f20e738]:
+                      - /url: /pin/1142084786781141560/
+                      - generic [ref=f20e745]:
+                        - 'img "N & D #vowmark #monogramwedding #weddinglogo #initiallogo #weddingidentity" [ref=f20e749]'
+                        - 'img "N & D #vowmark #monogramwedding #weddinglogo #initiallogo #weddingidentity" [ref=f20e753]'
+                    - generic [ref=f20e756]:
+                      - generic [ref=f20e759]:
+                        - button "2개 슬라이드 중 1번으로 이동" [ref=f20e761]
+                        - button "2개 슬라이드 중 2번으로 이동" [ref=f20e764]
+                      - generic "추가 작업" [ref=f20e771]:
+                        - button "추가 작업" [ref=f20e772]
+            - listitem [ref=f20e777]:
+              - button [ref=f20e779] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e781]:
+                  - generic [ref=f20e783]:
+                    - link "제목 없음 핀 페이지" [ref=f20e785]:
+                      - /url: /pin/916060380474516257/
+                      - img "포함된 이미지:" [ref=f20e795]
+                    - generic "추가 작업" [ref=f20e804]:
+                      - button "추가 작업" [ref=f20e805]
+            - listitem [ref=f20e810]:
+              - button [ref=f20e812] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e814]:
+                  - generic [ref=f20e816]:
+                    - link "제목 없음 핀 페이지" [ref=f20e818]:
+                      - /url: /pin/761389880783242654/
+                      - img "포함된 이미지:" [ref=f20e828]
+                    - generic "추가 작업" [ref=f20e837]:
+                      - button "추가 작업" [ref=f20e838]
+            - listitem [ref=f20e843]:
+              - button [ref=f20e845] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e847]:
+                  - generic [ref=f20e849]:
+                    - link "monogram ND logo design vector Stock Vector 핀 페이지" [ref=f20e851]:
+                      - /url: /pin/422212533835881443/
+                      - 'img "포함된 이미지: monogram ND logo design vector Stock Vector" [ref=f20e861]'
+                    - generic [ref=f20e866]:
+                      - heading [level=2] [ref=f20e872]:
+                        - link "monogram ND logo design vector Stock Vector 핀 페이지" [ref=f20e874]:
+                          - /url: /pin/422212533835881443/
+                          - text: monogram ND logo design vector Stock Vector
+                      - generic "추가 작업" [ref=f20e877]:
+                        - button "추가 작업" [ref=f20e878]
+            - listitem [ref=f20e883]:
+              - button [ref=f20e885] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e887]:
+                  - generic [ref=f20e889]:
+                    - link "제목 없음 핀 페이지" [ref=f20e891]:
+                      - /url: /pin/576249714803541238/
+                      - img "포함된 이미지:" [ref=f20e901]
+                    - generic "추가 작업" [ref=f20e910]:
+                      - button "추가 작업" [ref=f20e911]
+            - listitem [ref=f20e916]:
+              - button [ref=f20e918] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e920]:
+                  - generic [ref=f20e922]:
+                    - link "제목 없음 핀 페이지" [ref=f20e924]:
+                      - /url: /pin/82753711897776930/
+                      - img "포함된 이미지:" [ref=f20e934]
+                    - generic "추가 작업" [ref=f20e943]:
+                      - button "추가 작업" [ref=f20e944]
+            - listitem [ref=f20e949]:
+              - generic [ref=f20e951]:
+                - heading "회원님이 좋아할 만한 아이디어" [level=2] [ref=f20e953]
+                - list [ref=f20e954]:
+                  - listitem [ref=f20e955]:
+                    - link "로고" [ref=f20e957] [cursor=pointer]:
+                      - /url: /search/pins/?q=%EB%A1%9C%EA%B3%A0&rs=srs&b_id=5512280822474031954&source_id=5512280834845129157&request_params=%7B%221%22%3A%20%22139%22%2C%20%228%22%3A%20%225512280822474031954%22%2C%20%227%22%3A%20%225512280834845129157%22%7D&view_parameter_type=3903&pins_display=3&quick_save_icon=1
+                  - listitem [ref=f20e965]:
+                    - link "글자" [ref=f20e967] [cursor=pointer]:
+                      - /url: /search/pins/?q=%EA%B8%80%EC%9E%90&rs=srs&b_id=5512280822474031955&source_id=5512280834845129157&request_params=%7B%221%22%3A%20%22139%22%2C%20%228%22%3A%20%225512280822474031955%22%2C%20%227%22%3A%20%225512280834845129157%22%7D&view_parameter_type=3903&pins_display=3&quick_save_icon=1
+                  - listitem [ref=f20e975]:
+                    - link "타이포그래피" [ref=f20e977] [cursor=pointer]:
+                      - /url: /search/pins/?q=%ED%83%80%EC%9D%B4%ED%8F%AC%EA%B7%B8%EB%9E%98%ED%94%BC&rs=srs&b_id=5512280822474031956&source_id=5512280834845129157&request_params=%7B%221%22%3A%20%22139%22%2C%20%228%22%3A%20%225512280822474031956%22%2C%20%227%22%3A%20%225512280834845129157%22%7D&view_parameter_type=3903&pins_display=3&quick_save_icon=1
+                  - listitem [ref=f20e985]:
+                    - link "디자인" [ref=f20e987] [cursor=pointer]:
+                      - /url: /search/pins/?q=%EB%94%94%EC%9E%90%EC%9D%B8&rs=srs&b_id=5512280822474031957&source_id=5512280834845129157&request_params=%7B%221%22%3A%20%22139%22%2C%20%228%22%3A%20%225512280822474031957%22%2C%20%227%22%3A%20%225512280834845129157%22%7D&view_parameter_type=3903&pins_display=3&quick_save_icon=1
+            - listitem [ref=f20e995]:
+              - button [ref=f20e997] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e999]:
+                  - generic [ref=f20e1001]:
+                    - link "제목 없음 핀 페이지" [ref=f20e1003]:
+                      - /url: /pin/1096626578016732809/
+                      - img "포함된 이미지:" [ref=f20e1013]
+                    - generic "추가 작업" [ref=f20e1022]:
+                      - button "추가 작업" [ref=f20e1023]
+            - listitem [ref=f20e1028]:
+              - button [ref=f20e1030] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e1032]:
+                  - generic [ref=f20e1034]:
+                    - link "It’s Time to Create Something Beautiful With a Dreamy Aesthetic 핀 페이지" [ref=f20e1036]:
+                      - /url: /pin/1040401951433602651/
+                      - 'img "포함된 이미지: It’s Time to Create Something Beautiful With a Dreamy Aesthetic" [ref=f20e1046]'
+                    - generic [ref=f20e1051]:
+                      - heading [level=2] [ref=f20e1057]:
+                        - link "It’s Time to Create Something Beautiful With a Dreamy Aesthetic 핀 페이지" [ref=f20e1059]:
+                          - /url: /pin/1040401951433602651/
+                          - text: It’s Time to Create Something Beautiful With a Dreamy Aesthetic
+                      - generic "추가 작업" [ref=f20e1062]:
+                        - button "추가 작업" [ref=f20e1063]
+            - listitem [ref=f20e1068]:
+              - button [ref=f20e1070] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e1072]:
+                  - generic [ref=f20e1074]:
+                    - link "Logo design 핀 페이지" [ref=f20e1076]:
+                      - /url: /pin/871094752940404898/
+                      - 'img "포함된 이미지: Logo design" [ref=f20e1086]'
+                    - generic [ref=f20e1091]:
+                      - heading [level=2] [ref=f20e1097]:
+                        - link "Logo design 핀 페이지" [ref=f20e1099]:
+                          - /url: /pin/871094752940404898/
+                          - text: Logo design
+                      - generic "추가 작업" [ref=f20e1102]:
+                        - button "추가 작업" [ref=f20e1103]
+            - listitem [ref=f20e1108]:
+              - button [ref=f20e1110] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e1112]:
+                  - generic [ref=f20e1114]:
+                    - link "제목 없음 핀 페이지" [ref=f20e1116]:
+                      - /url: /pin/929008229367158648/
+                      - img "포함된 이미지:" [ref=f20e1126]
+                    - generic "추가 작업" [ref=f20e1135]:
+                      - button "추가 작업" [ref=f20e1136]
+            - listitem [ref=f20e1141]:
+              - button [ref=f20e1143] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e1145]:
+                  - generic [ref=f20e1147]:
+                    - link "I will do minimalist monogram and initial letters clothing brand logo design 핀 페이지" [ref=f20e1149]:
+                      - /url: /pin/917749230379748871/
+                      - 'img "포함된 이미지: I will do minimalist monogram and initial letters clothing brand logo design" [ref=f20e1159]'
+                    - generic [ref=f20e1164]:
+                      - heading [level=2] [ref=f20e1170]:
+                        - link "I will do minimalist monogram and initial letters clothing brand logo design 핀 페이지" [ref=f20e1172]:
+                          - /url: /pin/917749230379748871/
+                          - text: I will do minimalist monogram and initial letters clothing brand logo design
+                      - generic "추가 작업" [ref=f20e1175]:
+                        - button "추가 작업" [ref=f20e1176]
+            - listitem [ref=f20e1181]:
+              - button [ref=f20e1183] [cursor=pointer]:
+                - group "핀 카드" [ref=f20e1186]:
+                  - generic [ref=f20e1188]:
+                    - link [ref=f20e1190]:
+                      - /url: /pin/1124985181893677047/
+                      - generic [ref=f20e1197]:
+                        - img "AN N Letter Linked Luxury Premium" [ref=f20e1201]
+                        - img "AN N Letter Linked Luxury Premium" [ref=f20e1205]
+                    - generic [ref=f20e1208]:
+                      - generic [ref=f20e1211]:
+                        - button "AN N Letter Linked Luxury Premium" [ref=f20e1213]
+                        - button "AN N Letter Linked Luxury Premium" [ref=f20e1216]
+                      - generic [ref=f20e1219]:
+                        - heading [level=2] [ref=f20e1225]:
+                          - link "AN N Letter Linked Luxury Premium" [ref=f20e1227]:
+                            - /url: /pin/1124985181893677047/
+                        - generic "추가 작업" [ref=f20e1230]:
+                          - button "추가 작업" [ref=f20e1231]
+    - generic:
+      - contentinfo "꼬리말"
+  - generic:
+    - generic:
+      - region "Toast notification"
+      - region "Toast notification"

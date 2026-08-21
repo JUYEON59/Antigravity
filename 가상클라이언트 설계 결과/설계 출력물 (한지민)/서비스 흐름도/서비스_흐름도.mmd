@@ -1,0 +1,70 @@
+flowchart TD
+    %% Global Nodes & Styles
+    classDef startEnd fill:#0F172A,stroke:#0F172A,stroke-width:2px,color:#FFFFFF;
+    classDef screenNode fill:#F8FAFC,stroke:#0284C7,stroke-width:2px,color:#0F172A;
+    classDef modalNode fill:#E0F2FE,stroke:#0284C7,stroke-width:3px,stroke-dasharray: 4 4,color:#0369A1;
+    classDef actionNode fill:#F0FDF4,stroke:#16A34A,stroke-width:2px,color:#14532D;
+    classDef decisionNode fill:#FEF3C7,stroke:#D97706,stroke-width:2px,color:#78350F;
+    classDef errorNode fill:#FEF2F2,stroke:#DC2626,stroke-width:2px,color:#991B1B;
+
+    %% Entry Points
+    Start(["● 사용자 웹사이트 접속"]):::startEnd
+    ReturnStart(["● 수령 후 샘플 불만족/배송조회"]):::startEnd
+
+    %% 1.0 Exploration
+    Start --> Main["1.0 Main Page (메인 홈)"]:::screenNode
+    Main --> FilterAction["1.2 제형 탭 필터 선택\n(Water-light / Melting Balm / Tinted Fluid)"]:::actionNode
+    FilterAction --> GridView["1.3 Modular Product Grid\n(2~5만원대 가격 & 1MB GIF 확인)"]:::screenNode
+
+    %% Choice: PDP or Quick View
+    GridView --> ChooseDetail{"탐색 방식 선택"}:::decisionNode
+    ChooseDetail -->|카드 클릭 추천| QV["★ Quick View 오버레이 모달\n(스펙표 / 발림성 GIF / EWG 성분)"]:::modalNode
+    ChooseDetail -->|상세 링크 클릭| PDP["2.5 Product PDP (상세페이지)"]:::screenNode
+    ChooseDetail -->|데이터 검증 클릭| Proof["3.0 Formula & Proof (데이터 랩)"]:::screenNode
+    Proof -->|추천 제형 클릭| QV
+
+    %% Quick View Actions
+    QV --> ActionQV{"모달 내 사용자 행동"}:::decisionNode
+    ActionQV -->|X 닫기 또는 ESC| Main
+    ActionQV -->|장바구니 담기| SlideCart["★ Sticky Quick Slide Cart\n(우측 간편 장바구니 드로어)"]:::modalNode
+    ActionQV -->|원클릭 빠른 구매| Checkout["5.2 Fast Checkout\n(단일 페이지 주문서 & 결제)"]:::screenNode
+
+    PDP -->|장바구니 담기| SlideCart
+    PDP -->|바로 구매| Checkout
+    SlideCart -->|계속 쇼핑| Main
+    SlideCart -->|Fast Checkout 클릭| Checkout
+
+    %% Checkout & Validation
+    Checkout --> FormInput["주문자/배송지 정보 & 결제수단 입력"]:::actionNode
+    FormInput --> ValidateInput{"입력값 유효성 검사"}:::decisionNode
+    ValidateInput -->|오류 누락 및 형식 오류| FormError["인라인 경고 메시지 표시\n(입력란 포커스)"]:::errorNode
+    FormError --> FormInput
+
+    ValidateInput -->|검증 성공| PaymentProcess[["PG사 결제 승인 처리"]]:::actionNode
+    PaymentProcess --> PaymentResult{"결제 승인 결과"}:::decisionNode
+    
+    %% Payment Failure
+    PaymentResult -->|승인 실패 및 오류| PayFail["5.4 Payment Fail [가정]\n(실패 사유 안내)"]:::errorNode
+    PayFail -->|결제 재시도 또는 수단 변경| Checkout
+    PayFail -->|취소| Main
+
+    %% Payment Success
+    PaymentResult -->|승인 성공| OrderDone["5.3 Order Complete\n(주문 완료 & 무료 샘플 동봉 안내)"]:::screenNode
+    OrderDone --> EndBuy(["★ 구매 완료"]):::startEnd
+
+    %% Tracking & Return Flow
+    ReturnStart --> GuestTrack["7.1 비회원 주문/배송 조회"]:::screenNode
+    OrderDone -.->|배송 상태 확인| GuestTrack
+    GuestTrack --> TrackInput["주문번호 + 휴대폰번호 입력"]:::actionNode
+    TrackInput --> AuthCheck{"주문 정보 일치 여부"}:::decisionNode
+    AuthCheck -->|불일치| TrackError["조회 오류 안내 / 재입력"]:::errorNode
+    TrackError --> TrackInput
+    AuthCheck -->|일치| TrackResult["실시간 배송 현황 & 수령 확인"]:::screenNode
+
+    TrackResult --> ReturnDecision{"반품 희망 여부"}:::decisionNode
+    ReturnDecision -->|반품 신청| ReturnForm["7.3 원클릭 간편 반품 접수\n(무료 반품 신청 폼)"]:::screenNode
+    ReturnDecision -->|이용 완료| EndUse(["★ 서비스 이용 완료"]):::startEnd
+    
+    ReturnForm --> ReturnSubmit["사유 선택 & 수거 주소지 확인"]:::actionNode
+    ReturnSubmit --> ReturnDone["100% 무료 반품 접수 완료\n(기사 자동 방문 수거)"]:::screenNode
+    ReturnDone --> EndReturn(["★ 무료 반품 완료"]):::startEnd

@@ -1,0 +1,155 @@
+flowchart TD
+    %% Global Nodes
+    Root["NUNID D2C Commerce Platform (김유진)"]
+
+    %% 1.0 Main
+    subgraph S1["1.0 Main (메인 홈)"]
+        M1["1.1 Hero Section\n(하이브리드 슬로건 & 메인/보조 CTA)"]
+        M2["1.2 Problem & Solution\n(기존 문제 대비 하이브리드 솔루션)"]
+        M3["1.3 Signature Routine\n(3-Step 루틴 프로세스 & 히어로 제품)"]
+        M4["1.4 Texture & Proof\n(제형 클로즈업 & 3대 제품 원칙)"]
+        M5["1.5 Category Grid\n(SUN / FACE / CHEEK / LIP / SET 탭)"]
+        M6["1.6 Trust & Care Banner\n(피부 저자극 & 안심 케어 정보)"]
+        QV["★ Quick Spec & Buy 모달\n(제형/스펙 요약 & 원클릭 구매)"]
+        R_CTA["★ 루틴 세트 바로구매 CTA\n(3종 완성 세트 일괄 담기)"]
+    end
+
+    %% 2.0 Routine
+    subgraph S2["2.0 Routine (대표 뷰티 루틴)"]
+        R_All["2.1 3-Step Full Routine\n(단계별 순서 및 결 정돈 가이드)"]
+        R_S1["2.2 Step 1 Sun & Base\n(선케어 & 피부결 정돈 베이스)"]
+        R_S2["2.3 Step 2 Face Tone\n(자연스러운 결 톤업 페이스)"]
+        R_S3["2.4 Step 3 Accent\n(생기 부여 치크 & 립 밤)"]
+        R_SET["2.5 Routine Set Details\n(대표 3종 세트 구성 & 패키지 안내)"]
+    end
+
+    %% 3.0 Products
+    subgraph S3["3.0 Products (제품 탐색 & 카테고리)"]
+        P_All["3.1 All Products\n(전체 하이브리드 라인업)"]
+        P_SUN["3.2 SUN\n(수분 밀착 선케어 라인)"]
+        P_FACE["3.3 FACE\n(자연스러운 톤업 베이스 라인)"]
+        P_CHEEK["3.4 CHEEK\n(투명 멜팅 치크밤 라인)"]
+        P_LIP["3.5 LIP\n(고보습 틴티드 립 라인)"]
+        P_SET["3.6 SET\n(대표 루틴 패키지 세트)"]
+        PDP["3.7 Product PDP\n(제형 클로즈업 & 스펙 요약표)"]
+    end
+
+    %% 4.0 Texture & Proof
+    subgraph S4["4.0 Texture & Proof (제형 & 원칙 랩)"]
+        PR1["4.1 Texture Visual Lab\n(초근접 질감 & 발림성 시각화)"]
+        PR2["4.2 3 Core Principles\n(간결한 단계 / 편안함 / 자연스러운 결)"]
+        PR3["4.3 Clean & Safety\n(피부 저자극 기준 & 전성분 투명성)"]
+    end
+
+    %% 5.0 Philosophy
+    subgraph S5["5.0 Philosophy (브랜드 철학)"]
+        PH1["5.1 Hybrid Routine Story\n(스킨케어·메이크업 경계 해체)"]
+        PH2["5.2 Time & Skin Freedom\n(단계를 축소한 미니멀 일상)"]
+        PH3["5.3 Transparent Price\n(2만~5만 원대 합리적 가심비)"]
+    end
+
+    %% 6.0 Order & Checkout
+    subgraph S6["6.0 Order & Checkout (주문 및 결제)"]
+        QC["★ Sticky Quick Cart\n(상시 접근 간편 장바구니 드로어)"]
+        CO["6.2 Checkout Page\n(단일 페이지 초고속 결제)"]
+        OC["6.3 Order Complete\n(주문 완료 & 루틴 가이드 안내)"]
+        PF["6.4 Payment Fail [가정]\n(결제 실패/재시도 페이지)"]
+    end
+
+    %% 7.0 Support
+    subgraph S7["7.0 Support & Care (고객지원 & 안심)"]
+        SP1["7.1 Routine & FAQ\n(루틴/제형/배송/교환 아코디언)"]
+        SP2["7.2 1:1 Fast Support [가정]\n(실시간 문의/채팅)"]
+        SP3["7.3 Terms & Privacy [가정]\n(이용약관 & 개인정보처리방침)"]
+    end
+
+    %% 8.0 My Page & Tracking
+    subgraph S8["8.0 My Page & Tracking (주문 조회 & 계정)"]
+        MP1["8.1 비회원 주문/배송 조회\n(주문번호 + 휴대폰 인증)"]
+        MP2["8.2 회원 마이페이지 [가정]\n(주문 내역 & 루틴 저장)"]
+        MP3["8.3 간편 교환/반품 접수\n(원클릭 안심 접수 폼)"]
+    end
+
+    %% Root Connections
+    Root --> M1
+    Root --> R_All
+    Root --> P_All
+    Root --> PR1
+    Root --> PH1
+    Root --> SP1
+    Root --> MP1
+
+    %% Main Internal Section Flow
+    M1 -->|스크롤 탐색| M2
+    M2 --> M3
+    M3 --> M4
+    M4 --> M5
+    M5 --> M6
+
+    %% CTA Pathways from Hero
+    M1 -.->|루틴 시작하기 클릭| M3
+    M1 -.->|제품 둘러보기 클릭| M5
+
+    %% Routine & Product Actions
+    M3 -->|루틴 세트 바로구매| R_CTA
+    R_CTA -->|장바구니 담기| QC
+    R_CTA -->|즉시 결제| CO
+    M3 -.->|루틴 상세 가이드| R_All
+
+    %% Category Exploration & Quick View
+    M5 -.->|카드 빠른 확인| QV
+    QV -->|원클릭 빠른 구매| CO
+    QV -->|장바구니 담기| QC
+    M5 -->|상세페이지 진입| PDP
+
+    %% Routine Sub-pages
+    R_All --> R_S1
+    R_All --> R_S2
+    R_All --> R_S3
+    R_All --> R_SET
+    R_SET -->|세트 구매| CO
+    R_SET -->|담기| QC
+
+    %% Products Hierarchy
+    P_All --> P_SUN
+    P_All --> P_FACE
+    P_All --> P_CHEEK
+    P_All --> P_LIP
+    P_All --> P_SET
+    P_SUN --> PDP
+    P_FACE --> PDP
+    P_CHEEK --> PDP
+    P_LIP --> PDP
+    P_SET --> R_SET
+    PDP -->|원클릭 결제| CO
+    PDP -->|장바구니 담기| QC
+
+    %% Proof & Philosophy to Flow
+    PR1 -.->|제형 라인업 확인| P_All
+    PR2 -.->|루틴 적용| M3
+    PH2 -.->|루틴 시작| M1
+    PH3 -.->|가격 확인| M5
+
+    %% Checkout Flow
+    QC -->|주문서 작성 클릭| CO
+    CO -->|결제 성공| OC
+    CO -->|결제 실패| PF
+    PF -->|재시도| CO
+
+    %% Support & Tracking Connections
+    M6 --> SP1
+    SP1 --> MP3
+    MP1 --> MP3
+    MP2 --> MP3
+    OC -->|배송 조회| MP1
+
+    %% Class Styling
+    classDef mainNode fill:#F8FAFC,stroke:#0EA5E9,stroke-width:2px,color:#0F172A;
+    classDef modalNode fill:#E0F2FE,stroke:#0284C7,stroke-width:3px,stroke-dasharray: 4 4,color:#0369A1;
+    classDef actionNode fill:#F0FDF4,stroke:#16A34A,stroke-width:2px,color:#14532D;
+    classDef subNode fill:#FFFFFF,stroke:#94A3B8,stroke-width:1.5px,color:#334155;
+
+    class Root,M1,R_All,P_All,PR1,PH1,CO mainNode;
+    class QV,QC,R_CTA modalNode;
+    class OC,MP3 actionNode;
+    class M2,M3,M4,M5,M6,R_S1,R_S2,R_S3,R_SET,P_SUN,P_FACE,P_CHEEK,P_LIP,P_SET,PDP,PR2,PR3,PH2,PH3,PF,SP1,SP2,SP3,MP1,MP2 subNode;

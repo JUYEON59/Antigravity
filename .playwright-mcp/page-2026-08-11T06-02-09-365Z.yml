@@ -1,0 +1,47 @@
+- generic [ref=f3e2]:
+  - navigation [ref=f3e3]:
+    - link "Google 정보" [ref=f3e4] [cursor=pointer]:
+      - /url: https://about.google/?fg=1&utm_source=google-KR&utm_medium=referral&utm_campaign=hp-header
+    - link "스토어" [ref=f3e5] [cursor=pointer]:
+      - /url: https://store.google.com/KR?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=ko-KR
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]:
+        - link "Gmail" [ref=f3e10] [cursor=pointer]:
+          - /url: https://mail.google.com/mail/&ogbl
+        - link "이미지 검색" [ref=f3e12] [cursor=pointer]:
+          - /url: https://www.google.com/imghp?hl=ko&ogbl
+          - text: 이미지
+      - button "Google 앱" [ref=f3e15] [cursor=pointer]
+      - link "로그인" [ref=f3e20] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=ko&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+  - img "Google" [ref=f3e23]
+  - search [ref=f3e31]:
+    - generic [ref=f3e33]:
+      - generic [ref=f3e35]:
+        - button "파일 및 도구 추가" [ref=f3e40] [cursor=pointer]
+        - combobox "검색" [active] [ref=f3e45]
+        - generic [ref=f3e46]:
+          - generic [ref=f3e47]:
+            - button "입력 도구" [ref=f3e50] [cursor=pointer]
+            - button "음성 검색" [ref=f3e56] [cursor=pointer]
+            - button "이미지로 검색" [ref=f3e61] [cursor=pointer]
+          - link "AI 모드" [ref=f3e64] [cursor=pointer]
+      - generic [ref=f3e77]:
+        - button "Google 검색" [ref=f3e78] [cursor=pointer]
+        - button "I’m Feeling Lucky" [ref=f3e79] [cursor=pointer]
+  - contentinfo [ref=f3e82]:
+    - generic [ref=f3e83]: 대한민국
+    - generic [ref=f3e84]:
+      - generic [ref=f3e85]:
+        - link "광고" [ref=f3e86] [cursor=pointer]:
+          - /url: https://www.google.com/intl/ko_kr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+        - link "비즈니스" [ref=f3e87] [cursor=pointer]:
+          - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+        - link "검색의 원리" [ref=f3e88] [cursor=pointer]:
+          - /url: https://google.com/search/howsearchworks/?fg=1
+      - generic [ref=f3e89]:
+        - link "개인정보처리방침" [ref=f3e90] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=ko&fg=1
+        - link "약관" [ref=f3e91] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=ko&fg=1
+        - button "설정" [ref=f3e95] [cursor=pointer]

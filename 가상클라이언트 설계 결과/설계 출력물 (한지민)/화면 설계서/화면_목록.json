@@ -1,0 +1,293 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "NUNID D2C Hybrid Beauty Commerce",
+  "version": "1.0.0",
+  "createdAt": "2026-08-14",
+  "screens": [
+    {
+      "id": "SCR-010",
+      "name": "메인 홈 (Main Page)",
+      "type": "Page",
+      "purpose": "핵심 가치 전달, 제형별 실시간 필터링, 모듈형 제품 목록 노출 및 즉시 탐색 지원",
+      "entryConditions": ["URL 직접 접속", "GNB 로고 클릭", "홈 메뉴 클릭"],
+      "sections": [
+        "Global Header (로고, GNB, 유틸리티, Quick Cart 아이콘)",
+        "1.1 Hero Section (하이브리드 미니멀 슬로건, 루틴 시작 CTA)",
+        "1.2 Interactive Texture Filter (Water-light, Melting Balm, Tinted Fluid 탭)",
+        "1.3 Modular Product Grid (2~5만원대 가격 표기, 1MB GIF, 빠른 구매 버튼)",
+        "1.4 Formula & Proof Summary (밀착 두께 mm, 수분 유지 hr 인포그래픽)",
+        "1.5 Real Persona Reviews (31세 IT기획자, 23세 시각디자인과 실사용 리뷰)",
+        "1.6 Trust & Safety Banner (첫 구매 무료 샘플 동봉, 100% 무료 반품)",
+        "Global Footer (사업자 정보, 고객지원, 약관 링크)"
+      ],
+      "actions": [
+        "제형 필터 탭 클릭 (실시간 필터링)",
+        "루틴 시작하기 CTA 클릭 (필터 영역 스크롤)",
+        "제품 카드 내 Quick View 클릭 (SCR-011 모달 호출)",
+        "제품 카드 내 장바구니 담기 클릭 (SCR-051 드로어 오픈)",
+        "GNB 메뉴 클릭 (해당 화면 이동)"
+      ],
+      "states": ["Default", "Loading (Skeleton)", "Filtered"],
+      "nextScreens": ["SCR-011", "SCR-020", "SCR-030", "SCR-040", "SCR-051"]
+    },
+    {
+      "id": "SCR-011",
+      "name": "Quick View 오버레이 모달 (Quick View Modal)",
+      "type": "Overlay Modal",
+      "purpose": "상세페이지 이동 없이 메인 화면 위에서 제품 스펙, 제형 발림성, 전성분을 확인하고 즉시 구매/담기",
+      "entryConditions": ["SCR-010 또는 SCR-020 제품 카드의 Quick View 버튼 클릭"],
+      "sections": [
+        "Modal Header (제품명, 제형 뱃지, 닫기 X 버튼)",
+        "Media Section (1MB 미만 발림성 GIF / 고해상도 텍스처 컷)",
+        "Spec Data Grid (피부 밀착 두께 0.02mm, 24시간 보습 지속, 통기성 지수 98.4%)",
+        "Ingredient Summary (EWG 그린 등급 전성분표)",
+        "Option Selector (용량/호수 선택)",
+        "Action CTA Group (장바구니 담기, 원클릭 빠른 구매)"
+      ],
+      "actions": [
+        "옵션 선택",
+        "원클릭 빠른 구매 클릭 (SCR-052 이동)",
+        "장바구니 담기 클릭 (SCR-051 드로어 오픈)",
+        "닫기 X 또는 배경 클릭 (모달 닫힘, 메인 위치 유지)"
+      ],
+      "states": ["Default", "Option Changed", "Adding to Cart"],
+      "nextScreens": ["SCR-010", "SCR-051", "SCR-052"]
+    },
+    {
+      "id": "SCR-020",
+      "name": "하이브리드 제품 라인업 (All Hybrid)",
+      "type": "Page",
+      "purpose": "전통적 스킨/로션 카테고리 없이 제형(Water-light/Melting Balm/Tinted Fluid) 중심 전체 제품 목록 브라우징",
+      "entryConditions": ["GNB All Hybrid 메뉴 클릭", "Hero 섹션 둘러보기 클릭"],
+      "sections": [
+        "Lineup Hero Banner (제형별 피부 표현 가이드)",
+        "Texture Filter Bar (Water-light, Melting Balm, Tinted Fluid)",
+        "Product Grid (모듈형 제품 카드 리스트, 실시간 정렬 바)",
+        "Pagination / Infinite Scroll"
+      ],
+      "actions": [
+        "제형 필터 선택",
+        "정렬 기준 변경 (인기순, 가격순, 밀착도순)",
+        "카드 클릭 (SCR-025 PDP 이동)",
+        "Quick View 클릭 (SCR-011 모달 호출)"
+      ],
+      "states": ["Default", "Loading", "Empty (결과 없음)"],
+      "nextScreens": ["SCR-011", "SCR-025", "SCR-051"]
+    },
+    {
+      "id": "SCR-025",
+      "name": "제품 상세 (Product PDP)",
+      "type": "Page",
+      "purpose": "제형의 심층 스펙, 초근접 텍스처, 임상 데이터 및 전성분을 확인하고 구매",
+      "entryConditions": ["제품 카드 클릭", "외부 직접 링크"],
+      "sections": [
+        "Visual Gallery (초근접 텍스처 컷, 1MB 미만 도포 GIF)",
+        "Product Core Info (제품명, 제형, 2~5만원대 가격, 무료샘플 뱃지)",
+        "Clinical Spec Sheet (밀착 두께 mm, 수분 잔존율 %, 통기성 지수)",
+        "Clean Formula Table (EWG 전성분 및 유해물질 20종 배제표)",
+        "Sticky Bottom Bar (가격, 옵션 셀렉터, 장바구니/바로구매 CTA)"
+      ],
+      "actions": [
+        "옵션 선택 및 수량 조절",
+        "바로구매 클릭 (SCR-052 이동)",
+        "장바구니 담기 클릭 (SCR-051 오픈)"
+      ],
+      "states": ["Default", "Option Selected", "Sticky Bar Active", "Out of Stock [가정]"],
+      "nextScreens": ["SCR-051", "SCR-052"]
+    },
+    {
+      "id": "SCR-030",
+      "name": "데이터 & 검증 랩 (Formula & Proof)",
+      "type": "Page",
+      "purpose": "수치적·논리적 의사결정을 선호하는 고객을 위한 객관적 임상 데이터 및 포뮬러 검증 제공",
+      "entryConditions": ["GNB Formula & Proof 메뉴 클릭", "메인 데이터 요약 섹션 더보기 클릭"],
+      "sections": [
+        "Lab Header (데이터 기반 하이브리드 포뮬러 철학)",
+        "Adhesion Lab (피부 밀착 두께 0.02mm 비교 데이터 차트)",
+        "Moisture & Breathability Chart (24시간 수분 잔존율 및 모니터 환경 통기성 지수)",
+        "Clean Safety Table (피부 저자극 테스트 완료 및 EWG 그린 전성분)",
+        "Direct Product Link CTAs (검증된 제형 라인업 바로가기)"
+      ],
+      "actions": [
+        "차트 탭 전환 (밀착력 / 수분 / 통기성)",
+        "추천 제형 바로가기 클릭 (SCR-011 모달 또는 SCR-020 이동)"
+      ],
+      "states": ["Default", "Interactive Chart Active"],
+      "nextScreens": ["SCR-011", "SCR-020"]
+    },
+    {
+      "id": "SCR-040",
+      "name": "브랜드 철학 (Philosophy)",
+      "type": "Page",
+      "purpose": "스킨케어·메이크업 경계 해체, 화장 단계 최소화, 2~5만 원대 합리적 가심비 철학 전달",
+      "entryConditions": ["GNB Philosophy 메뉴 클릭", "푸터 철학 링크 클릭"],
+      "sections": [
+        "Philosophy Hero (Break the Boundary: 스킨케어와 메이크업의 통합)",
+        "Skip-Care Routine Diagram (복잡한 5단계 화장 ➔ NUNID 1단계 루틴)",
+        "Honest Price Structure (중간 유통 거품 제거 D2C 가심비 인포그래픽)",
+        "Brand Promise (첫 구매 무료 샘플 & 100% 무료 반품 약속)"
+      ],
+      "actions": [
+        "루틴 체험하기 클릭 (SCR-010 메인 이동)",
+        "전 제품 보기 클릭 (SCR-020 이동)"
+      ],
+      "states": ["Default"],
+      "nextScreens": ["SCR-010", "SCR-020"]
+    },
+    {
+      "id": "SCR-051",
+      "name": "Quick Slide Cart (장바구니 드로어)",
+      "type": "Sticky Drawer",
+      "purpose": "페이지 이동 없이 화면 우측에서 슬라이드로 열려 담긴 상품을 실시간 관리하고 빠른 결제 연결",
+      "entryConditions": ["GNB 장바구니 아이콘 클릭", "제품 카드/모달에서 장바구니 담기 클릭"],
+      "sections": [
+        "Cart Header (장바구니 N개, 닫기 X 버튼)",
+        "Cart Item List (상품명, 제형, 수량 조절 버튼, 삭제 버튼)",
+        "Free Gift Banner (첫 구매 무료 체험 샘플 자동 동봉 안내)",
+        "Summary Box (상품 합계금액, 배송비 0원, 총 결제 금액)",
+        "Checkout CTA Button (Fast Checkout 빠른 결제)"
+      ],
+      "actions": [
+        "수량 증감 (+, -)",
+        "품목 삭제",
+        "Fast Checkout 클릭 (SCR-052 이동)",
+        "닫기 클릭 / 배경 클릭 (드로어 닫힘)"
+      ],
+      "states": ["Default", "Empty (빈 장바구니)", "Updating"],
+      "nextScreens": ["SCR-052", "이전 화면"]
+    },
+    {
+      "id": "SCR-052",
+      "name": "Fast Checkout (초고속 주문/결제)",
+      "type": "Page",
+      "purpose": "단일 페이지 내에서 배송지 정보 입력 및 결제 수단 선택을 원클릭으로 완료",
+      "entryConditions": ["Quick View 모달의 원클릭 빠른 구매 클릭", "Quick Cart의 Fast Checkout 클릭"],
+      "sections": [
+        "Buyer & Shipping Form (주문자명, 휴대폰번호, 배송지 주소, 배송 메모)",
+        "Order Items Review (주문 상품 목록 및 무료 샘플 포함 여부)",
+        "Payment Method Selector (네이버페이, 카카오페이, 토스페이, 신용카드)",
+        "Agreement Checkbox (비회원 구매 및 결제 진행 동의)",
+        "Submit Button (총 금액 결제하기)"
+      ],
+      "actions": [
+        "배송 정보 입력",
+        "결제 수단 선택",
+        "결제하기 클릭 (유효성 검사 및 PG 결제 승인 호출)"
+      ],
+      "states": ["Default", "Validation Error (인라인 에러 표시)", "Processing Payment"],
+      "nextScreens": ["SCR-053", "SCR-054"]
+    },
+    {
+      "id": "SCR-053",
+      "name": "주문 완료 (Order Complete)",
+      "type": "Page",
+      "purpose": "주문 접수 완료 확인, 주문번호 발급 및 첫 구매 무료 샘플 동봉 안심 안내",
+      "entryConditions": ["SCR-052 결제 승인 완료"],
+      "sections": [
+        "Success Icon & Message (주문이 정상 접수되었습니다)",
+        "Order Summary Box (주문번호 NUNID-..., 결제 금액, 배송지)",
+        "Trust Return Notice (체험용 무료 샘플 먼저 사용 안내 & 무료 반품 보장)",
+        "Action Button Group (배송 조회하기, 메인으로 이동)"
+      ],
+      "actions": [
+        "배송 조회하기 클릭 (SCR-071 이동)",
+        "메인으로 이동 클릭 (SCR-010 이동)"
+      ],
+      "states": ["Default"],
+      "nextScreens": ["SCR-010", "SCR-071"]
+    },
+    {
+      "id": "SCR-054",
+      "name": "결제 실패/오류 (Payment Fail) [가정]",
+      "type": "Exception Page",
+      "purpose": "결제 오류 시 사유 안내 및 장바구니 상태를 유지한 채 재시도 유도",
+      "entryConditions": ["PG 결제 승인 실패, 네트워크 타임아웃, 사용자 결제 취소"],
+      "sections": [
+        "Error Icon & Notice (결제가 완료되지 않았습니다)",
+        "Error Detail (한도 초과 / 카드 정보 불일치 / 통신 오류 등 사유 명시)",
+        "Action Button Group (결제 재시도, 결제수단 변경, 장바구니로 돌아가기)"
+      ],
+      "actions": [
+        "결제 재시도 클릭 (SCR-052 복귀)",
+        "장바구니로 이동 클릭 (SCR-051 오픈)",
+        "홈으로 이동 클릭 (SCR-010 이동)"
+      ],
+      "states": ["Default"],
+      "nextScreens": ["SCR-052", "SCR-051", "SCR-010"]
+    },
+    {
+      "id": "SCR-061",
+      "name": "첫 구매 안심 가이드 (Safety Guide)",
+      "type": "Page",
+      "purpose": "첫 구매 고객의 구매 실패 불안감을 제로화하는 100% 무료 반품 절차 및 샘플 사용법 안내",
+      "entryConditions": ["메인 안심 배너 클릭", "푸터 안심 약속 클릭", "주문완료 안내 링크 클릭"],
+      "sections": [
+        "Guide Header (100% 무료 반품 안심 약속)",
+        "3-Step Process (1. 동봉 미니 샘플 테스트 ➔ 2. 불만족 시 본품 미개봉 유지 ➔ 3. 원클릭 무료 반품 접수)",
+        "Direct Action Button (간편 반품 신청 바로가기)"
+      ],
+      "actions": [
+        "반품 신청 바로가기 클릭 (SCR-073 이동)",
+        "추천 제품 둘러보기 클릭 (SCR-020 이동)"
+      ],
+      "states": ["Default"],
+      "nextScreens": ["SCR-073", "SCR-010"]
+    },
+    {
+      "id": "SCR-062",
+      "name": "간편 FAQ (Fast FAQ)",
+      "type": "Page",
+      "purpose": "배송 일정, 결제 수단, 무료 반품 기준 등 필수 질의응답을 아코디언 UI로 즉시 해결",
+      "entryConditions": ["GNB / 푸터 고객센터 클릭"],
+      "sections": [
+        "FAQ Category Filter (전체, 배송, 반품/교환, 제품/성분)",
+        "Accordion Q&A List (원클릭 토글 아코디언)",
+        "1:1 Fast Support Box (실시간 카카오/채팅 문의 안내 [가정])"
+      ],
+      "actions": [
+        "카테고리 탭 클릭",
+        "아코디언 질문 클릭 (답변 펼침/접힘)"
+      ],
+      "states": ["Default", "Accordion Expanded"],
+      "nextScreens": ["SCR-061", "SCR-071"]
+    },
+    {
+      "id": "SCR-071",
+      "name": "비회원 주문/배송 조회 (Tracking)",
+      "type": "Page",
+      "purpose": "비회원도 주문번호와 휴대폰번호 인증으로 실시간 배송 현황 추적 및 간편 반품 신청",
+      "entryConditions": ["GNB 주문/배송조회 클릭", "주문완료 페이지 링크 클릭"],
+      "sections": [
+        "Tracking Auth Form (주문번호 입력란, 휴대폰번호 입력란, 조회 버튼)",
+        "Order Status Card (주문일자, 상품정보, 배송 상태 단계별 트래커)",
+        "Return CTA Button (배송 완료 시 활성화되는 100% 무료 반품 신청 버튼)"
+      ],
+      "actions": [
+        "주문번호/연락처 입력 후 조회 클릭",
+        "무료 반품 신청 클릭 (SCR-073 이동)"
+      ],
+      "states": ["Form Default", "Search Success (결과 노출)", "Search Error (정보 불일치)"],
+      "nextScreens": ["SCR-073", "SCR-010"]
+    },
+    {
+      "id": "SCR-073",
+      "name": "원클릭 간편 반품 접수 (Return Request)",
+      "type": "Page / Form",
+      "purpose": "첫 구매 무료 반품 약속을 클릭 몇 번으로 즉시 접수하고 자동 택배 기사 방문 수거 처리",
+      "entryConditions": ["SCR-071 주문조회에서 반품 신청 클릭", "SCR-061 안심가이드 링크 클릭"],
+      "sections": [
+        "Return Item Info (반품 대상 품목 및 결제 금액 확인)",
+        "Return Reason Selector (단순 불만족, 제형/피부 맞지 않음, 상품 이상 등)",
+        "Pickup Address Confirmation (기존 배송지 자동 로드 및 기사 방문일 안내)",
+        "Submit CTA Button (무료 반품 수거 접수 완료)"
+      ],
+      "actions": [
+        "반품 사유 라디오 버튼 선택",
+        "수거지 확인 및 수정",
+        "반품 접수 완료 클릭"
+      ],
+      "states": ["Form Default", "Submitting", "Complete Notice"],
+      "nextScreens": ["SCR-010"]
+    }
+  ]
+}

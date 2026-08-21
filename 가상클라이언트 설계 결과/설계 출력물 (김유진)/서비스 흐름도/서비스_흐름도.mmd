@@ -1,0 +1,97 @@
+flowchart TD
+    %% Global Nodes & Styles
+    classDef startEnd fill:#0F172A,stroke:#0F172A,stroke-width:2px,color:#FFFFFF;
+    classDef screenNode fill:#F8FAFC,stroke:#0284C7,stroke-width:2px,color:#0F172A;
+    classDef modalNode fill:#E0F2FE,stroke:#0284C7,stroke-width:3px,stroke-dasharray: 4 4,color:#0369A1;
+    classDef actionNode fill:#F0FDF4,stroke:#16A34A,stroke-width:2px,color:#14532D;
+    classDef decisionNode fill:#FEF3C7,stroke:#D97706,stroke-width:2px,color:#78350F;
+    classDef errorNode fill:#FEF2F2,stroke:#DC2626,stroke-width:2px,color:#991B1B;
+
+    %% Entry Points
+    Start(["● 사용자 웹사이트 접속"]):::startEnd
+    ReturnStart(["● 주문 조회 / 교환·반품 희망"]):::startEnd
+
+    %% 1.0 Main Exploration
+    Start --> Main["1.0 Main Page (메인 홈)"]:::screenNode
+    Main --> Hero["1.1 Hero Section\n(하이브리드 슬로건 & 이원화 CTA)"]:::screenNode
+
+    %% User Journey Choice (Hero CTA)
+    Hero --> ChoosePath{"사용자 탐색 경로 선택"}:::decisionNode
+    ChoosePath -->|메인 CTA: 루틴 시작하기| RoutineSec["1.3 Signature Routine\n(3-Step 루틴 프로세스 바)"]:::screenNode
+    ChoosePath -->|보조 CTA: 제품 둘러보기| CategorySec["1.5 Category Grid\n(SUN/FACE/CHEEK/LIP/SET 탭)"]:::screenNode
+    ChoosePath -->|자유 스크롤 탐색| ProbSol["1.2 Problem & Solution\n(문제 해결 비교)"]:::screenNode
+    ChoosePath -->|GNB 제형 확인| TextureSec["4.0 Texture & Proof\n(초근접 질감 & 3대 원칙)"]:::screenNode
+
+    ProbSol --> RoutineSec
+    RoutineSec --> TextureSec
+    TextureSec --> CategorySec
+
+    %% Routine Pathway (Routine Set Purchase)
+    RoutineSec --> RoutineChoice{"루틴 탐색 행동"}:::decisionNode
+    RoutineChoice -->|3종 완성세트 바로구매| SetCTA["★ 루틴 세트 바로구매 CTA\n(3종 패키지 일괄 담기)"]:::modalNode
+    RoutineChoice -->|루틴 상세 가이드 확인| RoutineGuide["2.1 3-Step Full Routine 가이드"]:::screenNode
+    RoutineChoice -->|단계별 개별 제품 확인| CatFace["3.3 FACE / 3.2 SUN 제품"]:::screenNode
+
+    SetCTA -->|즉시 결제 이동| Checkout["6.2 Checkout Page\n(단일 페이지 주문서 & 결제)"]:::screenNode
+    SetCTA -->|장바구니 보관| QuickCart["★ Sticky Quick Cart\n(우측 간편 장바구니 드로어)"]:::modalNode
+    RoutineGuide --> SetDetails["2.5 Routine Set Details (세트 상세)"]:::screenNode
+    SetDetails -->|세트 주문하기| Checkout
+
+    %% Category Exploration & Quick Spec Modal
+    CategorySec --> TabFilter["5개 카테고리 탭 선택\n(SUN / FACE / CHEEK / LIP / SET)"]:::actionNode
+    TabFilter --> GridCards["제품 카드 확인\n(제형, 2~5만원대 가격, 핵심기능)"]:::screenNode
+    GridCards --> ChooseProductAction{"제품 탐색 방식 선택"}:::decisionNode
+    
+    ChooseProductAction -->|카드 빠른 확인 클릭| QuickModal["★ Quick Spec & Buy 모달\n(제형 질감 / 스펙 요약 / 원클릭 구매)"]:::modalNode
+    ChooseProductAction -->|상세페이지 링크 클릭| PDP["3.7 Product PDP (제품 상세페이지)"]:::screenNode
+
+    %% Quick Spec Modal Actions
+    QuickModal --> ModalAction{"모달 내 사용자 행동"}:::decisionNode
+    ModalAction -->|X 닫기 또는 ESC| CategorySec
+    ModalAction -->|원클릭 빠른 결제| Checkout
+    ModalAction -->|장바구니 담기| QuickCart
+
+    PDP -->|바로구매| Checkout
+    PDP -->|장바구니 담기| QuickCart
+
+    %% Quick Cart Drawer
+    QuickCart --> CartAction{"장바구니 내 행동"}:::decisionNode
+    CartAction -->|쇼핑 계속하기| Main
+    CartAction -->|주문서 작성 클릭| Checkout
+
+    %% Checkout & Form Validation
+    Checkout --> FormInput["배송지 정보 & 결제 수단 입력"]:::actionNode
+    FormInput --> ValidateForm{"입력값 유효성 검사"}:::decisionNode
+    
+    ValidateForm -->|입력 누락 / 형식 오류| FormError["인라인 경고 표시\n(해당 입력란 자동 포커스)"]:::errorNode
+    FormError --> FormInput
+
+    ValidateForm -->|검증 통과| PaymentProcess[["PG사 결제 승인 처리"]]:::actionNode
+    PaymentProcess --> PaymentResult{"결제 승인 결과"}:::decisionNode
+
+    %% Payment Exceptions
+    PaymentResult -->|한도초과 / 통신오류| PayFail["6.4 Payment Fail [가정]\n(실패 사유 안내 & 장바구니 유지)"]:::errorNode
+    PayFail -->|결제 재시도 / 수단 변경| Checkout
+    PayFail -->|주문 취소| Main
+
+    %% Payment Success
+    PaymentResult -->|승인 성공| OrderDone["6.3 Order Complete\n(주문 완료 & 루틴 가이드 안내)"]:::screenNode
+    OrderDone --> EndPurchase(["★ 제품 구매 완료"]):::startEnd
+
+    %% Post-purchase & Tracking Flow
+    ReturnStart --> TrackPage["8.1 비회원 주문/배송 조회"]:::screenNode
+    OrderDone -.->|배송 현황 확인| TrackPage
+    TrackPage --> InputOrderNo["주문번호 + 휴대폰번호 입력"]:::actionNode
+    InputOrderNo --> CheckAuth{"주문 일치 여부"}:::decisionNode
+
+    CheckAuth -->|정보 불일치| AuthError["조회 오류 안내 / 재입력"]:::errorNode
+    AuthError --> InputOrderNo
+    CheckAuth -->|일치| TrackStatus["실시간 배송 현황 확인"]:::screenNode
+
+    TrackStatus --> CareChoice{"고객 상태 확인"}:::decisionNode
+    CareChoice -->|배송 수령 완료 & 만족| EndUse(["★ 루틴 케어 완료"]):::startEnd
+    CareChoice -->|샘플 불만족 / 교환·반품| ReturnForm["8.3 간편 교환/반품 접수\n(원클릭 안심 접수 폼)"]:::screenNode
+
+    ReturnForm --> SubmitReturn["사유 선택 & 수거지 확인 후 접수"]:::actionNode
+    SubmitReturn --> ReturnDone["안심 교환/반품 접수 완료\n(기사 자동 방문 수거)"]:::screenNode
+    ReturnDone --> EndReturn(["★ 교환/반품 처리 완료"]):::startEnd

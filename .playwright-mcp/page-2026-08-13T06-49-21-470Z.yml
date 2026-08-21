@@ -1,0 +1,312 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - banner:
+      - link "콘텐츠로 건너뛰기":
+        - /url: "#"
+      - generic [ref=e15]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - combobox "검색" [ref=e20]: minimalist beauty monogram logo black white
+            - generic [ref=e21]:
+              - button "검색 입력 삭제" [ref=e24] [cursor=pointer]
+              - generic "이미지 업로드" [ref=e30]:
+                - button "Pinterest 렌즈" [ref=e31] [cursor=pointer]
+          - button "모든 핀 드롭다운" [ref=e38] [cursor=pointer]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: 모든 핀
+              - img "드롭다운" [ref=e43]
+        - link "내 프로필" [ref=e49] [cursor=pointer]:
+          - /url: /a24136533/
+        - button "계정" [ref=e61] [cursor=pointer]
+    - navigation [ref=e66]:
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic "홈" [ref=e73]:
+            - link "홈" [ref=e74] [cursor=pointer]:
+              - /url: /
+          - generic "홈" [ref=e81]:
+            - link "홈" [ref=e82] [cursor=pointer]:
+              - /url: /
+          - generic "내 보드" [ref=e89]:
+            - link "내 보드" [ref=e90] [cursor=pointer]:
+              - /url: /a24136533/
+          - generic "만들기" [ref=e97]:
+            - button "만들기" [ref=e98] [cursor=pointer]
+          - generic "업데이트" [ref=e107]:
+            - button "업데이트" [ref=e108] [cursor=pointer]
+          - generic "메시지" [ref=e117]:
+            - button "메시지" [ref=e118] [cursor=pointer]
+        - generic "설정 및 지원" [ref=e126]:
+          - button "설정 및 지원" [ref=e127] [cursor=pointer]
+    - generic:
+      - complementary "꼬리말 부동 버튼"
+    - main [ref=e132]:
+      - generic [ref=e134]:
+        - heading "검색 결과 페이지" [level=1] [ref=e136]
+        - region "필터 및 세분화 검색" [ref=e140]:
+          - button "필터 표시" [ref=e149] [cursor=pointer]
+        - generic [ref=e160]:
+          - generic [ref=e161]: minimalist beauty monogram logo black white 검색 결과를 추가로 표시
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - button [ref=e169] [cursor=pointer]:
+                - group "핀 카드" [ref=e172]:
+                  - generic [ref=e174]:
+                    - link "charming abstract seamless feminine elegant monogram beauty salon branding logo design 핀 페이지" [ref=e176]:
+                      - /url: /pin/710091066289867725/
+                      - 'img "포함된 이미지: charming abstract seamless feminine elegant monogram beauty salon branding logo design" [ref=e186]'
+                    - generic [ref=e191]:
+                      - heading [level=2] [ref=e197]:
+                        - link "charming abstract seamless feminine elegant monogram beauty salon branding logo design 핀 페이지" [ref=e199]:
+                          - /url: /pin/710091066289867725/
+                          - text: charming abstract seamless feminine elegant monogram beauty salon branding logo design
+                      - generic "추가 작업" [ref=e202]:
+                        - button "추가 작업" [ref=e203]
+            - listitem [ref=e208]:
+              - button [ref=e210] [cursor=pointer]:
+                - group "핀 카드" [ref=e213]:
+                  - generic [ref=e215]:
+                    - link "제목 없음 핀 페이지" [ref=e217]:
+                      - /url: /pin/6403624465726432/
+                      - img "포함된 이미지:" [ref=e227]
+                    - generic "추가 작업" [ref=e236]:
+                      - button "추가 작업" [ref=e237]
+            - listitem [ref=e242]:
+              - button [ref=e244] [cursor=pointer]:
+                - group "핀 카드" [ref=e247]:
+                  - generic [ref=e249]:
+                    - link "creativemarket.com" [ref=e253]:
+                      - /url: https://creativemarket.com/sensatype/290949516-Alifira---Beauty-Elegant-Font?utm_term=Featured+Shop+Products&utm_campaign=626757580717&cvg_adid=4260609630146&utm_medium=cpc&cvg_source=pinterest&utm_source=pinterest&utm_content=4260609630146&cvg_cid=626757580717&pp=0
+                      - 'img "포함된 이미지: Alifira - Beauty Elegant" [ref=e263]'
+                    - generic [ref=e267]:
+                      - generic [ref=e268]:
+                        - heading [level=2] [ref=e273]:
+                          - link "Alifira - Beauty Elegant Font by Sensatype | Creative Market (creativemarket.com)" [ref=e277]:
+                            - /url: https://creativemarket.com/sensatype/290949516-Alifira---Beauty-Elegant-Font?utm_term=Featured+Shop+Products&utm_campaign=626757580717&cvg_adid=4260609630146&utm_medium=cpc&cvg_source=pinterest&utm_source=pinterest&utm_content=4260609630146&cvg_cid=626757580717&pp=0
+                            - text: Alifira - Beauty Elegant Font by Sensatype | Creative Market
+                        - link "후원 핀" [ref=e280]:
+                          - /url: /creativemarket/
+                          - generic [ref=e282]:
+                            - generic [ref=e283]: Creative Market
+                            - generic "후원 핀" [ref=e289]
+                      - generic "추가 작업" [ref=e292]:
+                        - button "추가 작업" [ref=e293]
+            - listitem [ref=e298]:
+              - button [ref=e300] [cursor=pointer]:
+                - group "핀 카드" [ref=e303]:
+                  - generic [ref=e305]:
+                    - link "Black and White Simple Minimal Elegant Beauty Salon Logo 핀 페이지" [ref=e307]:
+                      - /url: /pin/249738741835776441/
+                      - 'img "포함된 내용: Black and White Simple Minimal Elegant Beauty Salon Logo" [ref=e317]'
+                    - generic [ref=e322]:
+                      - heading [level=2] [ref=e328]:
+                        - link "Black and White Simple Minimal Elegant Beauty Salon Logo 핀 페이지" [ref=e330]:
+                          - /url: /pin/249738741835776441/
+                          - text: Black and White Simple Minimal Elegant Beauty Salon Logo
+                      - generic "추가 작업" [ref=e333]:
+                        - button "추가 작업" [ref=e334]
+            - listitem [ref=e339]:
+              - button [ref=e341] [cursor=pointer]:
+                - group "핀 카드" [ref=e344]:
+                  - generic [ref=e346]:
+                    - link "Monogram, Interior Studio 핀 페이지" [ref=e348]:
+                      - /url: /pin/1759287348503806/
+                      - 'img "포함된 이미지: Monogram, Interior Studio" [ref=e358]'
+                    - generic [ref=e363]:
+                      - heading [level=2] [ref=e369]:
+                        - link "Monogram, Interior Studio 핀 페이지" [ref=e371]:
+                          - /url: /pin/1759287348503806/
+                          - text: Monogram, Interior Studio
+                      - generic "추가 작업" [ref=e374]:
+                        - button "추가 작업" [ref=e375]
+            - listitem [ref=e380]:
+              - button [ref=e382] [cursor=pointer]:
+                - group "핀 카드" [ref=e385]:
+                  - generic [ref=e387]:
+                    - link "sharex.fastcampus.co.kr" [ref=e391]:
+                      - /url: https://sharex.fastcampus.co.kr/dgn_online_bkid/?utm_source=facebook&utm_medium=social&utm_campaign=prd%5E%5E235525&utm_content=3_1_3%5E235525&pp=0
+                    - generic [ref=e407]:
+                      - generic [ref=e408]:
+                        - heading [level=2] [ref=e413]:
+                          - link "BKID의 제품 디자인 전략 수립부터 프로세스까지 (sharex.fastcampus.co.kr)" [ref=e417]:
+                            - /url: https://sharex.fastcampus.co.kr/dgn_online_bkid/?utm_source=facebook&utm_medium=social&utm_campaign=prd%5E%5E235525&utm_content=3_1_3%5E235525&pp=0
+                            - text: BKID의 제품 디자인 전략 수립부터 프로세스까지
+                        - link "후원 핀" [ref=e420]:
+                          - /url: /sharex_official/
+                          - generic [ref=e422]:
+                            - generic [ref=e423]: ShareX
+                            - generic "후원 핀" [ref=e429]
+                      - generic "추가 작업" [ref=e432]:
+                        - button "추가 작업" [ref=e433]
+            - listitem [ref=e438]:
+              - button [ref=e440] [cursor=pointer]:
+                - group "핀 카드" [ref=e443]:
+                  - generic [ref=e445]:
+                    - link "Instagram 핀 페이지" [ref=e447]:
+                      - /url: /pin/28991991346642557/
+                      - img "포함된 이미지:" [ref=e457]
+                    - generic "추가 작업" [ref=e466]:
+                      - button "추가 작업" [ref=e467]
+            - listitem [ref=e472]:
+              - button [ref=e474] [cursor=pointer]:
+                - group "핀 카드" [ref=e477]:
+                  - generic [ref=e479]:
+                    - link "logotipo minimalista moderno tipografico blanco y negro emprendimiento marca personal - Plantillas de Canva 핀 페이지" [ref=e481]:
+                      - /url: /pin/8796161770229076/
+                      - 'img "포함된 이미지: logotipo minimalista moderno tipografico blanco y negro emprendimiento marca personal - Plantillas de Canva" [ref=e491]'
+                    - generic [ref=e496]:
+                      - generic [ref=e497]:
+                        - heading [level=2] [ref=e502]:
+                          - link "logotipo minimalista moderno tipografico blanco y negro emprendimiento marca personal - Plantillas de Canva 핀 페이지" [ref=e504]:
+                            - /url: /pin/8796161770229076/
+                            - text: logotipo minimalista moderno tipografico blanco y negro emprendimiento marca personal - Plantillas de Canva
+                        - link "Canva" [ref=e507]:
+                          - /url: /canva/
+                          - generic "Canva" [ref=e514]
+                      - generic "추가 작업" [ref=e517]:
+                        - button "추가 작업" [ref=e518]
+            - listitem [ref=e523]:
+              - button [ref=e525] [cursor=pointer]:
+                - group "핀 카드" [ref=e528]:
+                  - generic [ref=e530]:
+                    - link "Logo &amp; Brand Identity Design for Beauty &amp; Cosmetic Salon | STUDIO HERSELF 핀 페이지" [ref=e532]:
+                      - /url: /pin/16466354884982736/
+                      - 'img "포함된 이미지: Logo & Brand Identity Design for Beauty & Cosmetic Salon | STUDIO HERSELF" [ref=e542]'
+                    - generic [ref=e547]:
+                      - heading [level=2] [ref=e553]:
+                        - link "Logo &amp; Brand Identity Design for Beauty &amp; Cosmetic Salon | STUDIO HERSELF 핀 페이지" [ref=e555]:
+                          - /url: /pin/16466354884982736/
+                          - text: Logo & Brand Identity Design for Beauty & Cosmetic Salon | STUDIO HERSELF
+                      - generic "추가 작업" [ref=e558]:
+                        - button "추가 작업" [ref=e559]
+            - listitem [ref=e564]:
+              - button [ref=e566] [cursor=pointer]:
+                - group "핀 카드" [ref=e569]:
+                  - generic [ref=e571]:
+                    - link "Minimal Luxury Beauty Brand Packaging Design Inspiration 핀 페이지" [ref=e573]:
+                      - /url: /pin/257690409924873155/
+                      - 'img "포함된 이미지: Minimal Luxury Beauty Brand Packaging Design Inspiration" [ref=e583]'
+                    - generic [ref=e588]:
+                      - heading [level=2] [ref=e594]:
+                        - link "Minimal Luxury Beauty Brand Packaging Design Inspiration 핀 페이지" [ref=e596]:
+                          - /url: /pin/257690409924873155/
+                          - text: Minimal Luxury Beauty Brand Packaging Design Inspiration
+                      - generic "추가 작업" [ref=e599]:
+                        - button "추가 작업" [ref=e600]
+            - listitem [ref=e605]:
+              - button [ref=e607] [cursor=pointer]:
+                - group "핀 카드" [ref=e610]:
+                  - generic [ref=e612]:
+                    - link "Pola Fijalko Creative - Logofolio 핀 페이지" [ref=e614]:
+                      - /url: /pin/37084396931896726/
+                      - 'img "포함된 이미지: Pola Fijalko Creative - Logofolio" [ref=e624]'
+                    - generic [ref=e629]:
+                      - heading [level=2] [ref=e635]:
+                        - link "Pola Fijalko Creative - Logofolio 핀 페이지" [ref=e637]:
+                          - /url: /pin/37084396931896726/
+                          - text: Pola Fijalko Creative - Logofolio
+                      - generic "추가 작업" [ref=e640]:
+                        - button "추가 작업" [ref=e641]
+            - listitem [ref=e646]:
+              - button [ref=e648] [cursor=pointer]:
+                - group "핀 카드" [ref=e651]:
+                  - generic [ref=e653]:
+                    - link "Elegant monogram for exclusive brand 핀 페이지" [ref=e655]:
+                      - /url: /pin/203647214397038551/
+                      - 'img "포함된 이미지: Elegant monogram for exclusive brand" [ref=e665]'
+                    - generic [ref=e670]:
+                      - heading [level=2] [ref=e676]:
+                        - link "Elegant monogram for exclusive brand 핀 페이지" [ref=e678]:
+                          - /url: /pin/203647214397038551/
+                          - text: Elegant monogram for exclusive brand
+                      - generic "추가 작업" [ref=e681]:
+                        - button "추가 작업" [ref=e682]
+            - listitem [ref=e687]:
+              - button [ref=e689] [cursor=pointer]:
+                - group "핀 카드" [ref=e692]:
+                  - generic [ref=e694]:
+                    - link "SE Monogram Logo Design by Catherine Giaquinto. 핀 페이지" [ref=e696]:
+                      - /url: /pin/97320041944107635/
+                      - 'img "포함된 이미지: SE Monogram Logo Design by Catherine Giaquinto." [ref=e706]'
+                    - generic [ref=e711]:
+                      - heading [level=2] [ref=e717]:
+                        - link "SE Monogram Logo Design by Catherine Giaquinto. 핀 페이지" [ref=e719]:
+                          - /url: /pin/97320041944107635/
+                          - text: SE Monogram Logo Design by Catherine Giaquinto.
+                      - generic "추가 작업" [ref=e722]:
+                        - button "추가 작업" [ref=e723]
+            - listitem [ref=e728]:
+              - button [ref=e730] [cursor=pointer]:
+                - group "핀 카드" [ref=e733]:
+                  - generic [ref=e735]:
+                    - link "Tove 핀 페이지" [ref=e737]:
+                      - /url: /pin/10696117859228153/
+                      - 'img "포함된 이미지: Tove" [ref=e747]'
+                    - generic [ref=e752]:
+                      - heading [level=2] [ref=e758]:
+                        - link "Tove 핀 페이지" [ref=e760]:
+                          - /url: /pin/10696117859228153/
+                          - text: Tove
+                      - generic "추가 작업" [ref=e763]:
+                        - button "추가 작업" [ref=e764]
+            - listitem [ref=e769]:
+              - generic [ref=e773]:
+                - heading "관련 검색어" [level=2] [ref=e781]
+                - generic [ref=e787]:
+                  - group "5개 슬라이드 중 1번" [ref=e788]:
+                    - button "Logo simple elegant" [ref=e790] [cursor=pointer]
+                  - group "5개 슬라이드 중 2번" [ref=e799]:
+                    - button "Modern feminine logo" [ref=e801] [cursor=pointer]
+                  - group "5개 슬라이드 중 3번" [ref=e810]:
+                    - button "Minimal luxury logo" [ref=e812] [cursor=pointer]
+                  - group "5개 슬라이드 중 4번" [ref=e821]:
+                    - button "Modern logo design minimalist" [ref=e823] [cursor=pointer]
+                  - group "5개 슬라이드 중 5번" [ref=e832]:
+                    - button "Modern minimal logo" [ref=e834] [cursor=pointer]
+            - listitem [ref=e843]:
+              - button [ref=e845] [cursor=pointer]:
+                - group "핀 카드" [ref=e848]:
+                  - generic [ref=e850]:
+                    - link "logo for photographer 핀 페이지" [ref=e852]:
+                      - /url: /pin/14636767536349151/
+                      - 'img "포함된 이미지: logo for photographer" [ref=e862]'
+                    - generic [ref=e867]:
+                      - heading [level=2] [ref=e873]:
+                        - link "logo for photographer 핀 페이지" [ref=e875]:
+                          - /url: /pin/14636767536349151/
+                          - text: logo for photographer
+                      - generic "추가 작업" [ref=e878]:
+                        - button "추가 작업" [ref=e879]
+            - listitem [ref=e884]:
+              - button [ref=e886] [cursor=pointer]:
+                - group "핀 카드" [ref=e889]:
+                  - generic [ref=e891]:
+                    - link "Minimal Monogram Logo Design 핀 페이지" [ref=e893]:
+                      - /url: /pin/693765517645084956/
+                      - 'img "포함된 내용: Minimal monogram logo with geometric spacing and monochrome luxury style." [ref=e903]'
+                    - generic [ref=e908]:
+                      - heading [level=2] [ref=e914]:
+                        - link "Minimal Monogram Logo Design 핀 페이지" [ref=e916]:
+                          - /url: /pin/693765517645084956/
+                          - text: Minimal Monogram Logo Design
+                      - generic "추가 작업" [ref=e919]:
+                        - button "추가 작업" [ref=e920]
+            - listitem [ref=e925]:
+              - button [ref=e927] [cursor=pointer]:
+                - group "핀 카드" [ref=e930]:
+                  - generic [ref=e932]:
+                    - link "Feminine Minimalist Premade Monogram Logo Design for Small Business, Hair Salon Branding, Beauty 핀 페이지" [ref=e934]:
+                      - /url: /pin/438326976251124783/
+                      - 'img "포함된 이미지: Feminine Minimalist Premade Monogram Logo Design for Small Business, Hair Salon Branding, Beauty" [ref=e944]'
+                    - generic [ref=e949]:
+                      - heading [level=2] [ref=e955]:
+                        - link "Feminine Minimalist Premade Monogram Logo Design for Small Business, Hair Salon Branding, Beauty 핀 페이지" [ref=e957]:
+                          - /url: /pin/438326976251124783/
+                          - text: Feminine Minimalist Premade Monogram Logo Design for Small Business, Hair Salon Branding, Beauty
+                      - generic "추가 작업" [ref=e960]:
+                        - button "추가 작업" [ref=e961]
+    - generic:
+      - contentinfo "꼬리말"
+  - generic:
+    - generic:
+      - region "Toast notification"
