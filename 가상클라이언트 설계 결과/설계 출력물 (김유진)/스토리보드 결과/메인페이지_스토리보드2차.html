@@ -1372,24 +1372,102 @@
     }
 
     @media (max-width: 860px) {
-      .hero-stage-16-10 { aspect-ratio: auto; min-height: auto; flex-direction: column; }
-      .hero-stage-bg { position: relative; aspect-ratio: 16 / 10; min-height: 260px; }
-      .hero-overlay-card { margin-left: 0; max-width: 100%; width: 100%; border-top: 1px solid #737373; border-left: none; border-right: none; border-bottom: none; box-shadow: none; padding: 24px 20px; }
-      .solution-layout { grid-template-columns: 1fr; }
-      .metric-grid { grid-template-columns: 1fr; }
-      .principles-horizontal-grid { grid-template-columns: 1fr; }
-      .story-sun-layout { grid-template-columns: 1fr; }
-      .story-face-split-grid { grid-template-columns: 1fr; }
-      .palette-swatch-grid { grid-template-columns: repeat(3, 1fr); }
-      .card-grid-3 { grid-template-columns: 1fr; }
-      .card-grid-4 { grid-template-columns: repeat(2, 1fr); }
-      .cycle-grid { flex-direction: column; }
-      .safe-policy-grid { grid-template-columns: 1fr; }
-      .review-faq-layout { grid-template-columns: 1fr; }
-      .set-cta-layout { grid-template-columns: 1fr; }
-      .overlay-grid { grid-template-columns: 1fr; }
-      .footer-columns { grid-template-columns: 1fr 1fr; }
+      /* Base Container Padding & Reset */
+      html, body { overflow-x: hidden; width: 100%; max-width: 100vw; }
+      body { padding-bottom: 70px; }
+      .section-inner { padding: 48px 16px; }
+
+      /* 1. Header */
       .header-gnb { display: none; }
+      .header-inner { padding: 12px 16px; }
+
+      /* 2. Hero Section */
+      .hero-stage-16-10 { aspect-ratio: auto; min-height: auto; flex-direction: column; }
+      .hero-stage-bg { position: relative; aspect-ratio: 16 / 10; min-height: 240px; padding: 20px; }
+      .hero-bg-visual-content { width: 100%; }
+      .hero-overlay-card { margin-left: 0; max-width: 100%; width: 100%; border-top: 1px solid #737373; border-left: none; border-right: none; border-bottom: none; box-shadow: none; padding: 20px 16px; }
+      .hero-btns { flex-wrap: wrap; gap: 8px; }
+      .hero-btns .btn-solid, .hero-btns .btn-outline { flex: 1 1 140px; padding: 11px 12px; font-size: 12px; }
+
+      /* 3. Problem & Solution Section (좌우 1:1 분할 -> 1열 전환) */
+      .problem-visual-split { grid-template-columns: 1fr; gap: 16px; }
+      .solution-layout { grid-template-columns: 1fr; }
+      .metric-grid { grid-template-columns: 1fr; gap: 12px; }
+      .metric-card { padding: 24px 16px; }
+      .metric-val { font-size: 32px; }
+
+      /* 4. Brand Philosophy (40:60 비대칭 -> 1열 전환) */
+      .philosophy-layout { grid-template-columns: 1fr; gap: 24px; }
+      .philosophy-right-visuals { grid-template-columns: 1fr; gap: 12px; }
+      .sub-texture-vertical-list { flex-direction: row; height: auto; gap: 8px; }
+      .sub-texture-item { height: auto; width: 100%; aspect-ratio: 1 / 1; }
+
+      /* 5. Signature 3-Step Routine (지그재그 교차 -> 1열 통일 순서: 이미지 ➔ 설명) */
+      .routine-header-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .routine-zigzag-item { grid-template-columns: 1fr; gap: 20px; padding: 20px 16px; }
+      .routine-zigzag-item.reverse .routine-img-col { order: 1; }
+      .routine-zigzag-item.reverse .routine-text-col { order: 2; }
+      .routine-prod-name { font-size: 18px; }
+
+      /* 6. Tech & Process (2열 가로배치 -> 1열 수직 시간 순서) */
+      .process-layout { grid-template-columns: 1fr; gap: 24px; }
+      .process-left-col { width: 100%; }
+      .process-left-col .img-placeholder { aspect-ratio: 16 / 9; width: 100%; height: auto; padding: 16px; }
+      .process-metric-bar { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+
+      /* 7. Product Principles */
+      .principles-horizontal-grid { grid-template-columns: 1fr; }
+      .card-grid-3 { grid-template-columns: 1fr; gap: 16px; }
+      .principle-card { padding: 20px 16px; }
+
+      /* 8. Situation SUN Focus (1.2:1 분할 -> 1열 전환) */
+      .story-sun-layout { grid-template-columns: 1fr; gap: 20px; }
+      .story-sun-card { padding: 20px 16px; }
+
+      /* 9. Situation FACE Focus (1:1 분할 -> 1열 전환) */
+      .story-face-split-grid { grid-template-columns: 1fr; gap: 20px; }
+      .story-face-card { padding: 20px 16px; }
+
+      /* 10. CHEEK & LIP Palette (6열 -> 3열 2행 전환 & 페어링 1열 전환) */
+      .palette-swatch-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .swatch-cell { padding: 10px 6px; }
+      .color-editorial-layout div[style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; gap: 10px !important; }
+
+      /* 11. All Categories 15 Products (탭 가로 스크롤 & 4열 -> 2열 전환 & 버튼 터치영역 확보) */
+      .tab-bar-row { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; flex-wrap: nowrap; padding-bottom: 4px; }
+      .tab-bar-row::-webkit-scrollbar { display: none; }
+      .tab-btn { flex-shrink: 0; white-space: nowrap; padding: 8px 12px; font-size: 11.5px; }
+      .card-grid-4 { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .wire-product-card .card-info { padding: 12px 8px; }
+      .wire-product-card .card-name { font-size: 12px; }
+      .wire-product-card .card-price-text { font-size: 13px; }
+      .wire-product-card .btn-small { padding: 8px 2px; font-size: 11px; min-height: 32px; display: inline-flex; align-items: center; justify-content: center; }
+
+      /* 12. Safe Test Cycle (가로 4열 -> 세로 1열 전환) */
+      .cycle-grid { flex-direction: column; gap: 10px; }
+      .cycle-arrow { transform: rotate(90deg); margin: 2px auto; }
+      .safe-policy-grid { grid-template-columns: 1fr; gap: 8px; }
+
+      /* 13. Target Review & FAQ (2열 -> 1열 전환) */
+      .review-faq-layout { grid-template-columns: 1fr; gap: 20px; }
+      .persona-spec-grid { grid-template-columns: 1fr; }
+
+      /* 14. Final Set CTA (1+2 비대칭 -> 1열 수직 전환) */
+      .set-cta-layout { grid-template-columns: 1fr; gap: 20px; }
+      .set-hero-card { padding: 20px 16px; }
+
+      /* 15. Direct Overlays (2열 -> 1열 전환 & 모바일 최적화) */
+      .overlay-grid { grid-template-columns: 1fr; gap: 20px; }
+      .overlay-card { padding: 16px; }
+
+      /* 16. Footer (4열 -> 2열 2행 전환) */
+      .footer-columns { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .footer-bottom-row { flex-direction: column; gap: 8px; text-align: center; }
+
+      /* 17. Sticky Floating Quick CTA Bar (모바일 풀위드 & 버튼 균등 배분) */
+      .sticky-quick-bar { width: 100%; left: 0; transform: none; box-sizing: border-box; border-left: none; border-right: none; }
+      .sticky-id-tag { display: none; }
+      .sticky-btn-item { flex: 1; justify-content: center; text-align: center; padding: 12px 6px; font-size: 11px; white-space: normal; line-height: 1.2; }
     }
   </style>
 </head>
@@ -3019,7 +3097,7 @@
         <div class="overlay-card">
           <div class="overlay-top">
             <span>[SCR-011] Quick Spec & Buy 모달</span>
-            <span>[ 닫기 ]</span>
+            <button type="button" class="overlay-close-btn" style="background: none; border: none; font-size: 11px; font-weight: 700; color: #737373; cursor: pointer; padding: 2px 6px;" aria-label="모달 닫기">[ 닫기 ]</button>
           </div>
           <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 14px;">
             <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
@@ -3050,7 +3128,7 @@
         <div class="overlay-card">
           <div class="overlay-top">
             <span>[SCR-061] Sticky Quick Cart 드로어</span>
-            <span>[ 닫기 ]</span>
+            <button type="button" class="overlay-close-btn" style="background: none; border: none; font-size: 11px; font-weight: 700; color: #737373; cursor: pointer; padding: 2px 6px;" aria-label="드로어 닫기">[ 닫기 ]</button>
           </div>
           <div style="flex: 1;">
             <div class="cart-row-wire">
