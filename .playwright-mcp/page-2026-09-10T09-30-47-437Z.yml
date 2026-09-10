@@ -1,0 +1,1033 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "ROUTINE" [ref=e6] [cursor=pointer]:
+            - /url: "#routine-sec"
+        - listitem [ref=e7]:
+          - link "SHOP" [ref=e8] [cursor=pointer]:
+            - /url: "#cat-sec"
+        - listitem [ref=e9]:
+          - link "BRAND" [ref=e10] [cursor=pointer]:
+            - /url: "#about-sec"
+        - listitem [ref=e11]:
+          - link "EVENT" [ref=e12] [cursor=pointer]:
+            - /url: "#faq-sec"
+      - generic [ref=e13]: NUNID
+      - generic [ref=e14]:
+        - link "비회원 주문조회" [ref=e15] [cursor=pointer]:
+          - /url: "#faq-sec"
+        - link "장바구니 (3)" [ref=e16] [cursor=pointer]:
+          - /url: "#cart-sec"
+  - generic [ref=e18]:
+    - generic [ref=e19]: SEC-010-01 / HERO
+    - generic [ref=e20]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: IMAGE SPEC 16:10 [HERO MAIN VISUAL]
+        - generic [ref=e24]: 3-Step 시그니처 루틴 세트 & 제형 텍스처
+        - generic [ref=e25]: · 하이드라 선 쉴드 베이스, 스킨 핏 톤업 플루이드, 듀이 멜팅 립앤치크 밤 풀 패키지 연출 · 동일 높이 나열 지양, 높낮이와 앞뒤 깊이감을 다르게 입체적 오브제 배치 · 워터 라이트 제형, 얇은 플루이드, 멜팅 밤의 질감이 16:10 화면 전체에 펼쳐지는 메인 컷
+      - generic [ref=e26]:
+        - heading "내 피부에 필요한 것만 남긴 루틴, 누니드" [level=1] [ref=e27]
+        - paragraph [ref=e28]: 바쁜 아침, 여러 단계 겹쳐 바르며 피부를 답답하게 만들지 마세요. 피부 본연의 맑은 결을 살리는 NUNID 3-Step 완성 하이브리드 루틴
+        - generic [ref=e29]:
+          - link "NUNID 루틴 시작하기" [ref=e30] [cursor=pointer]:
+            - /url: "#routine-sec"
+          - link "전 제품 둘러보기" [ref=e31] [cursor=pointer]:
+            - /url: "#cat-sec"
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e34]: ✓
+            - text: 10단계에서 3단계로
+          - generic [ref=e35]:
+            - generic [ref=e36]: ✓
+            - text: 0.02mm 극박 밀착
+          - generic [ref=e37]:
+            - generic [ref=e38]: ✓
+            - text: 첫 구매 미니 샘플
+  - generic [ref=e40]:
+    - generic [ref=e41]: SEC-010-02 / PROBLEM & SOLUTION
+    - heading "복잡한 10단계 화장대, 바쁜 아침의 피로가 됩니다" [level=2] [ref=e42]
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]: BEFORE / COMPLEX ROUTINE
+        - generic [ref=e46]:
+          - generic [ref=e47]: IMAGE SPEC 1:1
+          - generic [ref=e48]: 복잡하게 겹쳐진 기존 화장대
+          - generic [ref=e49]: 스킨, 로션, 에센스, 크림, 프라이머, 파운데이션 등10여 개 제품이 어지럽게 늘어선 아침 화장대 풍경
+      - generic [ref=e50]:
+        - generic [ref=e51]: AFTER / NUNID 3-STEP
+        - generic [ref=e52]:
+          - generic [ref=e53]: IMAGE SPEC 1:1
+          - generic [ref=e54]: NUNID 3개 제품으로 정돈된 화장대
+          - generic [ref=e55]: 선 베이스, 톤업 플루이드, 립앤치크 밤 3개 제품만으로여백과 정갈함이 돋보이는 미니멀 화장대 연출
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]: 10단계 → 3단계
+        - generic [ref=e59]: 기존 복잡한 스킨케어·베이스 단계를 3단계로 압축
+      - generic [ref=e60]:
+        - generic [ref=e61]: 0.02 mm
+        - generic [ref=e62]: 모공 막힘 없는 초경량 극박 밀착 두께
+      - generic [ref=e63]:
+        - generic [ref=e64]: 24 시간
+        - generic [ref=e65]: 당김 없는 수분 보습 지속 시간
+    - generic [ref=e66]: ※ 자체 제형 연구소 인체적용시험 및 소비자 사용감 평가 기준.
+  - generic [ref=e68]:
+    - generic [ref=e69]: SEC-010-03 / BRAND PHILOSOPHY
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e72]: BRAND PHILOSOPHY
+        - heading "가리기보다, 피부가 자연스럽게 드러나는 방식을 만듭니다" [level=2] [ref=e73]
+        - paragraph [ref=e74]: NUNID는 더 많은 제품을 겹쳐 바르는 방식에서 출발하지 않습니다. 피부에 필요한 케어와 표현을 가볍고 얇은 제형 안에 담아, 본래의 피부결이 자연스럽게 살아나는 메이크업을 만듭니다.
+        - generic [ref=e75]:
+          - generic [ref=e76]: NUNID가 지키는 3대 기준
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - generic [ref=e79]: PRINCIPLE 01
+              - text: 필요한 기능만 남기는 간결함
+            - generic [ref=e80]:
+              - generic [ref=e81]: PRINCIPLE 02
+              - text: 본래 피부결을 숨기지 않는 표현
+            - generic [ref=e82]:
+              - generic [ref=e83]: PRINCIPLE 03
+              - text: 처음 사용하는 순간의 불안을 줄이는 제품 경험
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]: IMAGE SPEC 4:5 (MAIN)
+          - generic [ref=e87]: 맑은 피부결 내추럴 인물 비주얼
+          - generic [ref=e88]: 두껍게 가리지 않고 자연스러운 본연의 피부결과 투명한 광채가 살아있는 자연광 모델 연출 컷
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: 1:1 SUB 01
+            - generic [ref=e92]: 흐르는 순간
+            - generic [ref=e93]: 워터 라이트 수분감 근접 컷
+          - generic [ref=e94]:
+            - generic [ref=e95]: 1:1 SUB 02
+            - generic [ref=e96]: 펴지는 순간
+            - generic [ref=e97]: 얇은 플루이드 결광 컷
+          - generic [ref=e98]:
+            - generic [ref=e99]: 1:1 SUB 03
+            - generic [ref=e100]: 녹아드는 순간
+            - generic [ref=e101]: 체온 멜팅 밤 근접 질감 컷
+  - generic [ref=e103]:
+    - generic [ref=e104]: SEC-010-04 / SIGNATURE ROUTINE
+    - generic [ref=e105]:
+      - heading "순서대로 완성하는 NUNID Signature 3-Step Routine" [level=2] [ref=e107]
+      - link "3-Step 완성 세트 바로구매 (68,000원)" [ref=e108] [cursor=pointer]:
+        - /url: "#overlay-preview"
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e112]:
+          - generic [ref=e113]: IMAGE SPEC 1:1 (STEP 1)
+          - generic [ref=e114]: 손등 제형 & 실제 도포 장면
+          - generic [ref=e115]: 수분 세럼처럼 가볍게 퍼져나가는 워터 라이트 제형과 피부에 촉촉하게 스며드는 실사용 도포 연출 컷
+        - generic [ref=e116]:
+          - generic [ref=e117]: STEP 01 · SUN BASE
+          - generic [ref=e118]: 하이드라 선 쉴드 베이스
+          - generic [ref=e119]: 50ml · 28,000원
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122]: 사용 시점
+              - generic [ref=e123]: 아침 세안 후 사용하는 첫 단계
+            - generic [ref=e124]:
+              - generic [ref=e125]: 핵심 기능
+              - generic [ref=e126]: 수분 세럼 보습 + 자외선 차단 (밀림 없는 얇은 피부 바탕)
+            - generic [ref=e127]:
+              - generic [ref=e128]: 제형
+              - generic [ref=e129]: 끈적임 없이 스며드는 워터 라이트 제형
+            - generic [ref=e130]:
+              - generic [ref=e131]: 용량 / 가격
+              - strong [ref=e133]: 50ml / 28,000원
+          - generic [ref=e134]:
+            - generic [ref=e135]: 01 / WATER-LIGHT PREP
+            - link "제품 상세보기 →" [ref=e136] [cursor=pointer]:
+              - /url: "#overlay-preview"
+      - generic [ref=e137]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: IMAGE SPEC 1:1 (STEP 2)
+          - generic [ref=e141]: 맨피부 vs 한 겹 도포 비교 (화면 분할)
+          - generic [ref=e142]: 도포 전 붉은기와 칙칙함 대비, 0.02mm 플루이드를 얇게 바른 후 맑은 결광이 살아난 전후 분할 비교 컷
+        - generic [ref=e143]:
+          - generic [ref=e144]: STEP 02 · TONE-UP FLUID
+          - generic [ref=e145]: 스킨 핏 톤업 플루이드
+          - generic [ref=e146]: 30ml · 34,000원
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - generic [ref=e149]: 사용 시점
+              - generic [ref=e150]: 선베이스 다음에 사용하는 톤 보정 단계
+            - generic [ref=e151]:
+              - generic [ref=e152]: 핵심 기능
+              - generic [ref=e153]: 0.02mm 극박 밀착 (붉음·칙칙함 정돈 & 본래 결 보존)
+            - generic [ref=e154]:
+              - generic [ref=e155]: 제형
+              - generic [ref=e156]: 얇게 펴 발리는 실키 극박 플루이드 제형
+            - generic [ref=e157]:
+              - generic [ref=e158]: 용량 / 가격
+              - strong [ref=e160]: 30ml / 34,000원
+          - generic [ref=e161]:
+            - generic [ref=e162]: 02 / SKIN-FIT COVER
+            - link "제품 상세보기 →" [ref=e163] [cursor=pointer]:
+              - /url: "#overlay-preview"
+      - generic [ref=e164]:
+        - generic [ref=e166]:
+          - generic [ref=e167]: IMAGE SPEC 1:1 (STEP 3)
+          - generic [ref=e168]: 입술 & 볼 원-톤 생기 인물 비주얼
+          - generic [ref=e169]: 입술과 양 볼에 같은 멜팅 밤 색상을 얇게 얹어 얼굴 전체 색 온도가 자연스럽게 연결된 투명 생기 연출 컷
+        - generic [ref=e170]:
+          - generic [ref=e171]: STEP 03 · MELTING BALM
+          - generic [ref=e172]: 듀이 멜팅 립앤치크 밤
+          - generic [ref=e173]: 15g · 24,000원
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - generic [ref=e176]: 사용 시점
+              - generic [ref=e177]: 볼과 입술에 함께 사용하는 마지막 단계
+            - generic [ref=e178]:
+              - generic [ref=e179]: 핵심 기능
+              - generic [ref=e180]: 얼굴 전체의 색 온도를 자연스럽게 연결하는 원톤 생기
+            - generic [ref=e181]:
+              - generic [ref=e182]: 제형
+              - generic [ref=e183]: 체온에 부드럽게 녹아드는 멜팅 밤 제형
+            - generic [ref=e184]:
+              - generic [ref=e185]: 용량 / 가격
+              - strong [ref=e187]: 15g / 24,000원
+          - generic [ref=e188]:
+            - generic [ref=e189]: 03 / DEWY MELTING VITALITY
+            - link "제품 상세보기 →" [ref=e190] [cursor=pointer]:
+              - /url: "#overlay-preview"
+  - generic [ref=e192]:
+    - generic [ref=e193]: SEC-010-05 / TECH & PROCESS
+    - heading "피부 편안함을 위한 NUNID의 제품 개발 과정" [level=2] [ref=e194]
+    - paragraph [ref=e195]: 단순히 가리는 화장품이 아닌, 바쁜 아침의 피로를 덜고 민감 피부도 안심할 수 있는 제형을 연구합니다.
+    - generic [ref=e196]:
+      - generic [ref=e198]:
+        - generic [ref=e199]: IMAGE SPEC 4:5 (R&D PROCESS)
+        - generic [ref=e200]: 제형 연구 & 공정 관찰 비주얼
+        - generic [ref=e201]: 비커 속 투명 제형, 투명 필름 위 극박 도포 두께 측정, 피부 밀착 현미경 관찰 및 1:1 샘플 제작 장면을 정밀하게 담은 랩 컷
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - generic [ref=e204]:
+            - generic [ref=e205]: "01"
+            - generic [ref=e206]:
+              - generic [ref=e207]: 관찰
+              - generic [ref=e208]: 바쁜 아침의 단계 수, 여러 제품을 겹쳐 바를 때 생기는 밀림과 들뜸, 민감 피부가 처음 제품을 사용할 때 느끼는 불안을 확인
+          - generic [ref=e209]:
+            - generic [ref=e210]: "02"
+            - generic [ref=e211]:
+              - generic [ref=e212]: 설계
+              - generic [ref=e213]: 선케어, 톤 보정, 수분과 생기 기능을 3단계 안에서 서로 중복되지 않도록 재구성
+          - generic [ref=e214]:
+            - generic [ref=e215]: "03"
+            - generic [ref=e216]:
+              - generic [ref=e217]: 제형 조율
+              - generic [ref=e218]: 워터 라이트, 극박 플루이드와 멜팅 밤을 순서대로 사용했을 때의 밀착감과 마무리감을 반복 비교
+          - generic [ref=e219]:
+            - generic [ref=e220]: "04"
+            - generic [ref=e221]:
+              - generic [ref=e222]: 검증
+              - generic [ref=e223]: 피부 자극, 보습 지속, 밀착 두께와 소비자 사용감처럼 공개 가능한 시험 자료 확인
+          - generic [ref=e224]:
+            - generic [ref=e225]: "05"
+            - generic [ref=e226]:
+              - generic [ref=e227]: 안심 경험
+              - generic [ref=e228]: 본품을 개봉하기 전에 동일 제형의 미니 샘플을 먼저 사용할 수 있도록 구성
+        - generic [ref=e229]:
+          - generic [ref=e230]:
+            - generic [ref=e231]: 10단계 → 3단계
+            - generic [ref=e232]: 70% 루틴 압축 간결화
+          - generic [ref=e233]:
+            - generic [ref=e234]: 0.02 mm
+            - generic [ref=e235]: 극박 밀착 두께
+          - generic [ref=e236]:
+            - generic [ref=e237]: 15개 상품
+            - generic [ref=e238]: 엄선된 라인업
+          - generic [ref=e239]:
+            - generic [ref=e240]: 첫 구매 선테스트
+            - generic [ref=e241]: 무료 반품 안심
+  - generic [ref=e243]:
+    - generic [ref=e244]: SEC-010-06 / 3 PRINCIPLES
+    - heading "NUNID가 지켜가는 3대 제품 원칙" [level=2] [ref=e245]
+    - generic [ref=e246]:
+      - generic [ref=e247]:
+        - generic [ref=e248]: "01"
+        - generic [ref=e249]: 간결한 단계
+        - generic [ref=e250]: 불필요한 스킨케어/베이스 레이어링 단계를 축소하여 단 3단계로 완결합니다.
+        - generic [ref=e251]:
+          - generic [ref=e252]: IMAGE SPEC 1:1 (01 간결한 단계)
+          - generic [ref=e253]: 10개 제품 vs 3개 제품 비교
+          - generic [ref=e254]: · 복잡한 10단계 화장품 병 대비 NUNID 3-Step 제품군 배치 · 화장대 공간 축소 및 단계 간소화 직관적 비교 연출
+        - link "루틴 가이드 보기 →" [ref=e255] [cursor=pointer]:
+          - /url: "#routine-sec"
+      - generic [ref=e256]:
+        - generic [ref=e257]: "02"
+        - generic [ref=e258]: 피부 편안함
+        - generic [ref=e259]: 0.02mm 극박 밀착 및 피부 저자극 테스트 완료(자극도 0.00)로 민감 피부도 편안합니다.
+        - generic [ref=e260]:
+          - generic [ref=e261]: DATA & CLINICAL REPORT
+          - generic [ref=e262]:
+            - generic [ref=e263]:
+              - generic [ref=e264]: 0.02 mm
+              - generic [ref=e265]: 극박 제형 두께
+            - generic [ref=e266]:
+              - generic [ref=e267]: 자극도 0.00
+              - generic [ref=e268]: 저자극 시험 완료
+          - generic [ref=e269]: · 한국피부과학연구원 24시간 첩포 인체적용시험 무자극 판정 · 모공 막힘 없는 초경량 극박 포뮬러 기술 검증
+        - link "저자극 인증서 확인 →" [ref=e270] [cursor=pointer]:
+          - /url: "#proof-sec"
+      - generic [ref=e271]:
+        - generic [ref=e272]: "03"
+        - generic [ref=e273]: 자연스러운 결
+        - generic [ref=e274]: 두꺼운 인위적 커버 대신 본연의 피부결을 맑고 투명하게 정돈합니다.
+        - generic [ref=e275]:
+          - generic [ref=e276]: IMAGE SPEC 1:1 (03 자연스러운 결)
+          - generic [ref=e277]: 두꺼운 커버 vs 얇은 결 보정 근접 비교
+          - generic [ref=e278]: "· [Left] 두꺼운 풀커버: 모공 끼임 및 답답한 마스크감 · [Right] 얇은 결 보정: 0.02mm 투명하고 맑은 결 광채"
+        - link "제형 랩 둘러보기 →" [ref=e279] [cursor=pointer]:
+          - /url: "#cat-sec"
+  - generic [ref=e281]:
+    - generic [ref=e282]: SEC-010-07 / SITUATION PRODUCT STORY (SUN FOCUS)
+    - heading "집에서 바르는 첫 보호막과 밖에서 덧바르는 보호막" [level=2] [ref=e283]
+    - paragraph [ref=e284]: 두 제품은 우열을 가리는 경쟁 관계가 아닙니다. 아침 첫 외출 준비와 야외 덧바름이라는 하루의 시간과 피부 컨디션에 따라 선택하는 상호보완 2-Way 솔루션입니다.
+    - generic [ref=e285]:
+      - generic [ref=e286]:
+        - generic [ref=e287]: SCENE 01 · AM 08:00 집에서 바르는 첫 보호막 (진정 수분막)
+        - heading "시카 릴리프 마일드 선크림" [level=3] [ref=e288]
+        - generic [ref=e289]: 50ml · 26,000원
+        - generic [ref=e290]:
+          - generic [ref=e291]: IMAGE SPEC 1:1 (SUN CREAM · 진정 수분 텍스처)
+          - generic [ref=e292]: 민감한 아침을 위한 시카 수분 진정 텍스처
+          - generic [ref=e293]: · 붉어지고 예민해진 피부에 부드럽고 촉촉하게 스며드는 수분 크림 제형 · 백탁 없이 편안하게 밀착되는 아침 데일리 무기자차 진정 보호막 연출 · 1:1 정방형 구도로 맑은 제형감과 피부 밀착 디테일을 크게 강조
+        - generic [ref=e294]: 아침 세안 후 민감해진 피부를 다독이는 병풀 추출물 진정 수분 선크림입니다. 자극 없이 부드러운 수분막을 형성하여 실내외 자외선과 미세 자극으로부터 하루를 시작하는 피부를 보호합니다.
+        - generic [ref=e295]:
+          - generic [ref=e296]:
+            - generic [ref=e297]: 사용 시점
+            - generic [ref=e298]: AM 08:00 아침 외출 전 첫 스킨케어 마무리 단계
+          - generic [ref=e299]:
+            - generic [ref=e300]: 핵심 기능
+            - generic [ref=e301]: 시카 진정 보습막 & SPF50+ PA++++ 저자극 무기자차
+          - generic [ref=e302]:
+            - generic [ref=e303]: 용량 / 가격
+            - strong [ref=e305]: 50ml / 26,000원
+        - generic [ref=e306]:
+          - link "제품 상세보기 →" [ref=e307] [cursor=pointer]:
+            - /url: "#overlay-preview"
+          - link "장바구니 담기" [ref=e308] [cursor=pointer]:
+            - /url: "#cart-sec"
+      - generic [ref=e309]:
+        - generic [ref=e310]: SCENE 02 · PM 02:00 밖에서 덧바르는 보호막 (보송 피팅)
+        - heading "에어리 피팅 선스틱" [level=3] [ref=e311]
+        - generic [ref=e312]: 20g · 24,000원
+        - generic [ref=e313]:
+          - generic [ref=e314]: IMAGE SPEC 1:1 (SUN STICK · 휴대 및 덧바름)
+          - generic [ref=e315]: 손대지 않고 덧바르는 에어리 피팅
+          - generic [ref=e316]: · 야외에서 메이크업 위에 슥 덧발라도 뭉침 없는 투명 보송 텍스처 · 피지 컨트롤 다공성 파우더의 산뜻한 유분 흡착 마무리감 연출 · 1:1 정방형 구도로 한 손에 쥐어지는 콤팩트한 휴대 사용성 표현
+        - generic [ref=e317]: 외출 중 손에 묻히지 않고 수시로 덧바르는 초경량 선스틱입니다. 피지 흡착 다공성 파우더가 번들거림을 잡아주어 메이크업 위에도 뭉침 없이 깔끔하게 피팅됩니다.
+        - generic [ref=e318]:
+          - generic [ref=e319]:
+            - generic [ref=e320]: 사용 시점
+            - generic [ref=e321]: PM 02:00 오후 야외 활동 및 외출 중 덧바름
+          - generic [ref=e322]:
+            - generic [ref=e323]: 핵심 기능
+            - generic [ref=e324]: 손 안 대는 스틱 타입 & 피지 흡착 보송 피팅
+          - generic [ref=e325]:
+            - generic [ref=e326]: 용량 / 가격
+            - strong [ref=e328]: 20g / 24,000원
+        - generic [ref=e329]:
+          - link "제품 상세보기 →" [ref=e330] [cursor=pointer]:
+            - /url: "#overlay-preview"
+          - link "장바구니 담기" [ref=e331] [cursor=pointer]:
+            - /url: "#cart-sec"
+  - generic [ref=e333]:
+    - generic [ref=e334]: SEC-010-08 / SITUATION PRODUCT STORY (FACE FOCUS)
+    - 'heading "오늘의 피부 마무리 선택 : 투명 결광 VS 소프트 매트" [level=2] [ref=e335]'
+    - paragraph [ref=e336]: 스킨 핏 톤업 플루이드로 가볍게 톤을 정돈한 후, 얼굴 전체를 두껍게 덮지 않고 필요한 부위와 원하는 마무리에 따라 선택하는 NUNID의 미니멀 페이스 설계입니다.
+    - generic [ref=e337]:
+      - generic [ref=e338]:
+        - generic [ref=e339]: FINISH 01 · 촉촉한 결광 피부 (세럼 결광)
+        - heading "세럼 글로우 피팅 쿠션" [level=3] [ref=e340]
+        - generic [ref=e341]: 15g · 36,000원
+        - generic [ref=e342]:
+          - generic [ref=e343]: IMAGE SPEC 1:1 (GLOW CUSHION · 촉촉한 결광 피부)
+          - generic [ref=e344]: 빛을 머금은 촉촉한 세럼 결광 피니시
+          - generic [ref=e345]: · 인위적인 펄감이 아닌 속부터 차오르는 맑은 수분 빛과 매끄러운 결 표현 · 건조하고 푸석한 날 얼굴 전체 또는 볼 부위에 맑은 생기 윤광 연출 · 1:1 정방형 구도로 자연스러운 수분 결광 피부 텍스처 강조
+        - generic [ref=e346]: 건조하고 푸석한 날, 피부에 세럼을 바른 듯 맑고 촉촉한 수분 결광을 더해줍니다. 얇고 가볍게 얹혀 오랜 시간 들뜸 없이 맑은 피부 톤을 유지합니다.
+        - generic [ref=e347]:
+          - generic [ref=e348]:
+            - generic [ref=e349]: 원하는 표현
+            - generic [ref=e350]: 촉촉하고 맑은 수분 결광 (Glow Finish)
+          - generic [ref=e351]:
+            - generic [ref=e352]: 추천 부위
+            - generic [ref=e353]: 얼굴 전체 / 건조하고 칙칙한 부위
+          - generic [ref=e354]:
+            - generic [ref=e355]: 용량 / 가격
+            - strong [ref=e357]: 15g / 36,000원
+        - generic [ref=e358]:
+          - link "제품 상세보기 →" [ref=e359] [cursor=pointer]:
+            - /url: "#overlay-preview"
+          - link "장바구니 담기" [ref=e360] [cursor=pointer]:
+            - /url: "#cart-sec"
+      - generic [ref=e361]:
+        - generic [ref=e362]: FINISH 02 · T존·모공 정돈 소프트 매트
+        - heading "포어 매트 베일 프라이머" [level=3] [ref=e363]
+        - generic [ref=e364]: 30ml · 28,000원
+        - generic [ref=e365]:
+          - generic [ref=e366]: IMAGE SPEC 1:1 (MATTE PRIMER · 소프트 매트 피부)
+          - generic [ref=e367]: T존 & 모공 블러 소프트 실키 피니시
+          - generic [ref=e368]: · 모공 요철을 매끄럽게 메우고 유분을 정돈한 보송한 실크 베일 · T존 및 나비존 유분 번들거림을 잡아주는 산뜻한 블러 연출 · 1:1 정방형 구도로 뭉침 없는 실키 블러 피부 요철 정돈감 표현
+        - generic [ref=e369]: 유분 분비가 많거나 모공 요철이 고민되는 T존 부위에 얇게 펴 발라 실키한 블러 효과를 완성합니다. 모공 막힘 없이 피부 숨결을 온전히 보존합니다.
+        - generic [ref=e370]:
+          - generic [ref=e371]:
+            - generic [ref=e372]: 원하는 표현
+            - generic [ref=e373]: 보송하고 매끄러운 실키 블러 (Soft Matte)
+          - generic [ref=e374]:
+            - generic [ref=e375]: 추천 부위
+            - generic [ref=e376]: T존(이마·코) / 나비존 모공 요철 부위
+          - generic [ref=e377]:
+            - generic [ref=e378]: 용량 / 가격
+            - strong [ref=e380]: 30ml / 28,000원
+        - generic [ref=e381]:
+          - link "제품 상세보기 →" [ref=e382] [cursor=pointer]:
+            - /url: "#overlay-preview"
+          - link "장바구니 담기" [ref=e383] [cursor=pointer]:
+            - /url: "#cart-sec"
+  - generic [ref=e385]:
+    - generic [ref=e386]: SEC-010-09 / SITUATION COLOR STORY (CHEEK & LIP)
+    - heading "피부 본연의 색 온도를 깨우는 저채도 컬러 팔레트" [level=2] [ref=e387]
+    - paragraph [ref=e388]: 과도하고 진한 원색 메이크업이 아닌, 내 혈색처럼 맑고 자연스럽게 스며드는 6가지 저채도 컬러 팔레트입니다.
+    - generic [ref=e389]:
+      - generic [ref=e390]:
+        - generic [ref=e391]: IMAGE SPEC 2:1 (에디토리얼 복합 스와치)
+        - generic [ref=e392]: 입술, 볼, 손등 피부 위 저채도 컬러 스와치 에디토리얼 컷
+        - generic [ref=e393]: · 자연광 아래 맑게 투영되는 수채화 발색과 체온에 녹아드는 은은한 텍스처 광채 대형 연출 · 피치듀 · 로지뮤트 · 누드베이지 · 클리어코랄 · 모브로즈 · 너리싱 립오일 6종의 유기적 톤온톤 조화 · 2:1 와이드 파노라마 구도로 피부 톤에 자연스럽게 녹아드는 소프트 무드 표현
+      - generic [ref=e394]:
+        - generic [ref=e395]:
+          - generic [ref=e396]: PEACH DEW
+          - generic [ref=e397]: CHEEK 01
+          - generic [ref=e398]: 01 피치듀
+          - generic [ref=e399]: 글로우 멜팅 치크밤
+          - generic [ref=e400]:
+            - strong [ref=e401]: "발색:"
+            - text: 맑은 복숭아빛 생기 수채화
+          - generic [ref=e402]:
+            - strong [ref=e403]: "제형:"
+            - text: 체온 멜팅 밤
+          - generic [ref=e404]: 22,000원
+        - generic [ref=e405]:
+          - generic [ref=e406]: ROSY MUTE
+          - generic [ref=e407]: CHEEK 02
+          - generic [ref=e408]: 02 로지뮤트
+          - generic [ref=e409]: 글로우 멜팅 치크밤
+          - generic [ref=e410]:
+            - strong [ref=e411]: "발색:"
+            - text: 차분한 뮤트 로즈 혈색
+          - generic [ref=e412]:
+            - strong [ref=e413]: "제형:"
+            - text: 체온 멜팅 밤
+          - generic [ref=e414]: 22,000원
+        - generic [ref=e415]:
+          - generic [ref=e416]: NUDE BEIGE
+          - generic [ref=e417]: CHEEK 03
+          - generic [ref=e418]: 03 누드베이지
+          - generic [ref=e419]: 소프트 베일 블러셔
+          - generic [ref=e420]:
+            - strong [ref=e421]: "발색:"
+            - text: 자연스러운 소프트 스킨 음영
+          - generic [ref=e422]:
+            - strong [ref=e423]: "제형:"
+            - text: 초미세 실키 파우더
+          - generic [ref=e424]: 22,000원
+        - generic [ref=e425]:
+          - generic [ref=e426]: CLEAR CORAL
+          - generic [ref=e427]: LIP 01
+          - generic [ref=e428]: 01 클리어코랄
+          - generic [ref=e429]: 듀이 틴티드 립밤
+          - generic [ref=e430]:
+            - strong [ref=e431]: "발색:"
+            - text: 화사한 수분 코랄 맑은 착색
+          - generic [ref=e432]:
+            - strong [ref=e433]: "제형:"
+            - text: 수분 틴티드 밤
+          - generic [ref=e434]: 24,000원
+        - generic [ref=e435]:
+          - generic [ref=e436]: MAUVE ROSE
+          - generic [ref=e437]: LIP 02
+          - generic [ref=e438]: 02 모브로즈
+          - generic [ref=e439]: 듀이 틴티드 립밤
+          - generic [ref=e440]:
+            - strong [ref=e441]: "발색:"
+            - text: 은은한 소프트 쿨 모브로즈
+          - generic [ref=e442]:
+            - strong [ref=e443]: "제형:"
+            - text: 수분 틴티드 밤
+          - generic [ref=e444]: 24,000원
+        - generic [ref=e445]:
+          - generic [ref=e446]: LIP OIL
+          - generic [ref=e447]: LIP 03
+          - generic [ref=e448]: 하이드라 너리싱 립오일
+          - generic [ref=e449]: 하이드라 케어 라인
+          - generic [ref=e450]:
+            - strong [ref=e451]: "발색:"
+            - text: 투명 유리알 보습 광택
+          - generic [ref=e452]:
+            - strong [ref=e453]: "제형:"
+            - text: 고영양 딥 케어 오일
+          - generic [ref=e454]: 20,000원
+      - generic [ref=e455]:
+        - generic [ref=e456]:
+          - generic [ref=e457]: NUNID COLOR PAIRING
+          - text: 피부 온도에 맞춘 3가지 시그니처 치크 & 립 추천 조합
+        - generic [ref=e458]:
+          - generic [ref=e459]:
+            - generic [ref=e460]: PAIR 01 · WARM GLOW
+            - generic [ref=e461]: 맑고 따뜻한 생기 조합
+            - generic [ref=e462]: "· 치크: 글로우 멜팅 치크밤 01 피치듀 · 립: 듀이 틴티드 립밤 01 클리어코랄 → 화사하고 맑은 봄 햇살 생기 무드"
+          - generic [ref=e463]:
+            - generic [ref=e464]: PAIR 02 · MUTE COOL
+            - generic [ref=e465]: 차분하고 그윽한 무드 조합
+            - generic [ref=e466]: "· 치크: 글로우 멜팅 치크밤 02 로지뮤트 · 립: 듀이 틴티드 립밤 02 모브로즈 → 우아하고 차분한 소프트 쿨 로즈 무드"
+          - generic [ref=e467]:
+            - generic [ref=e468]: PAIR 03 · NATURAL SHADE
+            - generic [ref=e469]: 자연스러운 음영 & 투명 광택
+            - generic [ref=e470]: "· 치크: 소프트 베일 블러셔 03 누드베이지 · 립: 하이드라 너리싱 립오일 → 자연스러운 스킨 음영과 맑은 유리알 보습"
+  - generic [ref=e472]:
+    - generic [ref=e473]: SEC-010-10 / ALL CATEGORIES (15 PRODUCTS)
+    - heading "NUNID All Categories (전체 15개 상품 모음)" [level=2] [ref=e474]
+    - paragraph [ref=e475]: 앞에서 NUNID의 철학과 핵심 루틴을 확인했다면 이제 15개 전체 상품을 피부 상태와 사용 목적에 따라 비교해보세요.
+    - generic [ref=e476]:
+      - generic [ref=e477] [cursor=pointer]: ALL (15)
+      - generic [ref=e478] [cursor=pointer]: SUN (3)
+      - generic [ref=e479] [cursor=pointer]: FACE (3)
+      - generic [ref=e480] [cursor=pointer]: CHEEK (3)
+      - generic [ref=e481] [cursor=pointer]: LIP (3)
+      - generic [ref=e482] [cursor=pointer]: SET (3)
+    - generic [ref=e483]:
+      - generic [ref=e484]:
+        - generic [ref=e485]: IMAGE 1:1 [SUN 01]
+        - generic [ref=e486]:
+          - generic [ref=e487]: SUN
+          - generic [ref=e488]: 하이드라 선 쉴드 베이스
+          - generic [ref=e489]: 50ml
+          - generic [ref=e490]: "#수분밀착 #백탁제로 #산뜻촉촉"
+          - generic [ref=e491]: 28,000원
+          - generic [ref=e492]:
+            - link "Quick Spec" [ref=e493] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e494] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e495]:
+        - generic [ref=e496]: IMAGE 1:1 [SUN 02]
+        - generic [ref=e497]:
+          - generic [ref=e498]: SUN
+          - generic [ref=e499]: 시카 릴리프 마일드 선크림
+          - generic [ref=e500]: 50ml
+          - generic [ref=e501]: "#진정자차 #저자극EWG #민감피부"
+          - generic [ref=e502]: 26,000원
+          - generic [ref=e503]:
+            - link "Quick Spec" [ref=e504] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e505] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e506]:
+        - generic [ref=e507]: IMAGE 1:1 [SUN 03]
+        - generic [ref=e508]:
+          - generic [ref=e509]: SUN
+          - generic [ref=e510]: 에어리 피팅 선스틱
+          - generic [ref=e511]: 20g
+          - generic [ref=e512]: "#보송마무리 #간편휴대 #덧바름용"
+          - generic [ref=e513]: 24,000원
+          - generic [ref=e514]:
+            - link "Quick Spec" [ref=e515] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e516] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e517]:
+        - generic [ref=e518]: IMAGE 1:1 [FACE 01]
+        - generic [ref=e519]:
+          - generic [ref=e520]: FACE
+          - generic [ref=e521]: 스킨 핏 톤업 플루이드
+          - generic [ref=e522]: 30ml
+          - generic [ref=e523]: "#0.02mm밀착 #자연결 #생기톤업"
+          - generic [ref=e524]: 34,000원
+          - generic [ref=e525]:
+            - link "Quick Spec" [ref=e526] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e527] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e528]:
+        - generic [ref=e529]: IMAGE 1:1 [FACE 02]
+        - generic [ref=e530]:
+          - generic [ref=e531]: FACE
+          - generic [ref=e532]: 세럼 글로우 피팅 쿠션
+          - generic [ref=e533]: 15g
+          - generic [ref=e534]: "#맑은수분결광 #세럼밀착 #건조해결"
+          - generic [ref=e535]: 36,000원
+          - generic [ref=e536]:
+            - link "Quick Spec" [ref=e537] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e538] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e539]:
+        - generic [ref=e540]: IMAGE 1:1 [FACE 03]
+        - generic [ref=e541]:
+          - generic [ref=e542]: FACE
+          - generic [ref=e543]: 포어 매트 베일 프라이머
+          - generic [ref=e544]: 30ml
+          - generic [ref=e545]: "#T존모공블러 #소프트실키 #유분정돈"
+          - generic [ref=e546]: 28,000원
+          - generic [ref=e547]:
+            - link "Quick Spec" [ref=e548] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e549] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e550]:
+        - generic [ref=e551]: IMAGE 1:1 [CHEEK 01]
+        - generic [ref=e552]:
+          - generic [ref=e553]: CHEEK
+          - generic [ref=e554]: 글로우 멜팅 치크밤 01 피치듀
+          - generic [ref=e555]: 15g
+          - generic [ref=e556]: "#맑은복숭아빛 #수채화발색 #체온멜팅"
+          - generic [ref=e557]: 22,000원
+          - generic [ref=e558]:
+            - link "Quick Spec" [ref=e559] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e560] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e561]:
+        - generic [ref=e562]: IMAGE 1:1 [CHEEK 02]
+        - generic [ref=e563]:
+          - generic [ref=e564]: CHEEK
+          - generic [ref=e565]: 글로우 멜팅 치크밤 02 로지뮤트
+          - generic [ref=e566]: 15g
+          - generic [ref=e567]: "#차분한로즈혈색 #그윽한무드 #체온멜팅"
+          - generic [ref=e568]: 22,000원
+          - generic [ref=e569]:
+            - link "Quick Spec" [ref=e570] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e571] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e572]:
+        - generic [ref=e573]: IMAGE 1:1 [CHEEK 03]
+        - generic [ref=e574]:
+          - generic [ref=e575]: CHEEK
+          - generic [ref=e576]: 소프트 베일 블러셔 03 누드베이지
+          - generic [ref=e577]: 15g
+          - generic [ref=e578]: "#소프트스킨음영 #초미세실키 #뭉침제로"
+          - generic [ref=e579]: 22,000원
+          - generic [ref=e580]:
+            - link "Quick Spec" [ref=e581] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e582] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e583]:
+        - generic [ref=e584]: IMAGE 1:1 [LIP 01]
+        - generic [ref=e585]:
+          - generic [ref=e586]: LIP
+          - generic [ref=e587]: 듀이 틴티드 립밤 01 클리어코랄
+          - generic [ref=e588]: 15g
+          - generic [ref=e589]: "#화사한수분코랄 #맑은착색 #고보습케어"
+          - generic [ref=e590]: 24,000원
+          - generic [ref=e591]:
+            - link "Quick Spec" [ref=e592] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e593] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e594]:
+        - generic [ref=e595]: IMAGE 1:1 [LIP 02]
+        - generic [ref=e596]:
+          - generic [ref=e597]: LIP
+          - generic [ref=e598]: 듀이 틴티드 립밤 02 모브로즈
+          - generic [ref=e599]: 15g
+          - generic [ref=e600]: "#소프트모브로즈 #은은한착색 #체온보습"
+          - generic [ref=e601]: 24,000원
+          - generic [ref=e602]:
+            - link "Quick Spec" [ref=e603] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e604] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e605]:
+        - generic [ref=e606]: IMAGE 1:1 [LIP 03]
+        - generic [ref=e607]:
+          - generic [ref=e608]: LIP
+          - generic [ref=e609]: 하이드라 너리싱 립오일
+          - generic [ref=e610]: 15ml
+          - generic [ref=e611]: "#투명유리알광택 #고영양보습 #각질진정"
+          - generic [ref=e612]: 20,000원
+          - generic [ref=e613]:
+            - link "Quick Spec" [ref=e614] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e615] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e616]:
+        - generic [ref=e617]: IMAGE 1:1 [SET 01]
+        - generic [ref=e618]:
+          - generic [ref=e619]: SET
+          - generic [ref=e620]: 3-Step 시그니처 루틴 세트
+          - generic [ref=e621]: 3종 세트 (선+톤업+립치크)
+          - generic [ref=e622]: "#21%할인 #바쁜아침3분 #스타터패키지"
+          - generic [ref=e623]: 68,000원
+          - generic [ref=e624]:
+            - link "Quick Spec" [ref=e625] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e626] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e627]:
+        - generic [ref=e628]: IMAGE 1:1 [SET 02]
+        - generic [ref=e629]:
+          - generic [ref=e630]: SET
+          - generic [ref=e631]: 선 & 톤업 베이스 듀오 세트
+          - generic [ref=e632]: 2종 세트 (선크림+플루이드)
+          - generic [ref=e633]: "#15%할인 #출근준비단축 #자연스런결"
+          - generic [ref=e634]: 52,000원
+          - generic [ref=e635]:
+            - link "Quick Spec" [ref=e636] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e637] [cursor=pointer]:
+              - /url: "#cart-sec"
+      - generic [ref=e638]:
+        - generic [ref=e639]: IMAGE 1:1 [SET 03]
+        - generic [ref=e640]:
+          - generic [ref=e641]: SET
+          - generic [ref=e642]: 립 & 치크 생기 듀오 세트
+          - generic [ref=e643]: 2종 세트 (치크밤+틴티드립)
+          - generic [ref=e644]: "#10%할인 #톤온톤매치 #간편멀티유즈"
+          - generic [ref=e645]: 40,000원
+          - generic [ref=e646]:
+            - link "Quick Spec" [ref=e647] [cursor=pointer]:
+              - /url: "#overlay-preview"
+            - link "담기" [ref=e648] [cursor=pointer]:
+              - /url: "#cart-sec"
+  - generic [ref=e650]:
+    - generic [ref=e651]: SEC-010-11 / SAFE TEST CYCLE
+    - heading "첫 구매 안심 테스트 & 100% 무료 반품 보장" [level=2] [ref=e652]
+    - generic [ref=e653]:
+      - generic [ref=e654]:
+        - generic [ref=e655]: STEP 01
+        - generic [ref=e656]: 본품+미니샘플 수령
+        - generic [ref=e657]: 주문 시 본품과 동일한 체험용 미니 샘플이 안전하게 동봉 배송됩니다.
+        - link "제품 보기 →" [ref=e658] [cursor=pointer]:
+          - /url: "#cat-sec"
+      - generic [ref=e659]: →
+      - generic [ref=e660]:
+        - generic [ref=e661]: STEP 02
+        - generic [ref=e662]: 미니 샘플 선테스트
+        - generic [ref=e663]: 본품 개봉 전 미니 샘플을 먼저 피부에 테스트하여 제형과 밀착감을 확인합니다.
+        - link "성분 확인 →" [ref=e664] [cursor=pointer]:
+          - /url: "#proof-sec"
+      - generic [ref=e665]: →
+      - generic [ref=e666]:
+        - generic [ref=e667]: STEP 03
+        - generic [ref=e668]: 안심 환불 보장
+        - generic [ref=e669]: 피부에 맞지 않을 시 본품 미개봉 상태에서 100% 무료 반품을 지원합니다.
+        - link "안심 가이드 →" [ref=e670] [cursor=pointer]:
+          - /url: "#faq-sec"
+      - generic [ref=e671]: →
+      - generic [ref=e672]:
+        - generic [ref=e673]: STEP 04
+        - generic [ref=e674]: 맞춤 루틴 정착
+        - generic [ref=e675]: 3-Step 시그니처 루틴으로 매일 아침 바쁜 준비 시간을 3분으로 단축합니다.
+        - link "루틴 가이드 →" [ref=e676] [cursor=pointer]:
+          - /url: "#routine-sec"
+    - generic [ref=e677]:
+      - generic [ref=e678]:
+        - generic [ref=e679]: POLICY
+        - text: 안심 테스트 및 100% 무료 반품 공식 운영 정책 안내
+      - generic [ref=e680]: 고객님의 안전한 사전 체험과 신뢰를 보장하기 위해 확정된 공식 운영 기준입니다.
+      - generic [ref=e681]:
+        - generic [ref=e682]:
+          - generic [ref=e683]: 01. 미니 샘플 동봉 대상
+          - generic [ref=e684]: NUNID 시그니처 루틴 세트 첫 구매 고객
+        - generic [ref=e685]:
+          - generic [ref=e686]: 02. 주문당 제공 횟수
+          - generic [ref=e687]: 주문 건당 동일 라인 미니 샘플 1회 자동 동봉 (1회차 첫 구매 한정)
+        - generic [ref=e688]:
+          - generic [ref=e689]: 03. 본품 미개봉 판단 기준
+          - generic [ref=e690]: 본품 단상자(패키지) 개봉 방지 씰(Seal) 미훼손 및 미개봉 상태 유지
+        - generic [ref=e691]:
+          - generic [ref=e692]: 04. 반품 가능 기간
+          - generic [ref=e693]:
+            - text: 제품 수령일로부터
+            - strong [ref=e694]: 14일 이내
+            - text: 마이페이지 1-Click 접수 시
+        - generic [ref=e695]:
+          - generic [ref=e696]: 05. 배송비 부담 주체
+          - generic [ref=e697]:
+            - strong [ref=e698]: NUNID 100% 전액 부담
+            - text: (고객 부담 왕복 배송비 0원)
+        - generic [ref=e699]:
+          - generic [ref=e700]: 06. 환불 처리 절차
+          - generic [ref=e701]: 택배 기사 무료 방문 수거 ➔ 미개봉 검수 후 당일 100% 결제 취소
+  - generic [ref=e703]:
+    - generic [ref=e704]: SEC-010-12 / REVIEW & FAQ
+    - heading "타깃 고객 가상 시나리오 및 자주 묻는 질문" [level=2] [ref=e705]
+    - paragraph [ref=e706]: 포트폴리오 기획용 가상 사용자 시나리오와 NUNID 공식몰의 6대 핵심 운영 정책 FAQ입니다.
+    - generic [ref=e707]:
+      - generic [ref=e708]:
+        - generic [ref=e709]:
+          - generic [ref=e710]:
+            - generic [ref=e711]: 가상 사용자 시나리오 01
+            - generic [ref=e712]: "[후기 콘텐츠 예시]"
+          - generic [ref=e713]:
+            - generic [ref=e714]: USER A
+            - generic [ref=e715]:
+              - generic [ref=e716]: 김민지 (29세 / IT 마케터)
+              - generic [ref=e717]:
+                - text: "피부 타입:"
+                - strong [ref=e718]: 복합성 · 수분부족지성 (수부지)
+          - generic [ref=e719]:
+            - generic [ref=e720]:
+              - generic [ref=e721]: 사용 전 불편
+              - generic [ref=e722]: 아침마다 15분 넘게 4~5개 베이스를 덧발라 화장이 밀리고 오후에 다크닝 발생
+            - generic [ref=e723]:
+              - generic [ref=e724]: 사용 제품
+              - generic [ref=e725]: 하이드라 선 쉴드 베이스 + 스킨 핏 톤업 플루이드 (3-Step 루틴)
+            - generic [ref=e726]:
+              - generic [ref=e727]: 사용 기간
+              - generic [ref=e728]: 4주간 매일 출근 시 사용
+            - generic [ref=e729]:
+              - generic [ref=e730]: 준비시간·표현변화
+              - generic [ref=e731]:
+                - text: 준비 시간
+                - strong [ref=e732]: 15분 ➔ 3분 단축
+                - text: ", 0.02mm 극박 밀착으로 모공 끼임 없는 맑은 속광 유지"
+          - generic [ref=e733]: "\"출근 준비 시간이 획기적으로 줄었어요. 답답한 파운데이션을 안 발라도 플루이드 하나로 하루 종일 피부가 맑고 촉촉하게 유지됩니다.\""
+        - generic [ref=e734]:
+          - generic [ref=e735]:
+            - generic [ref=e736]: 가상 사용자 시나리오 02
+            - generic [ref=e737]: "[후기 콘텐츠 예시]"
+          - generic [ref=e738]:
+            - generic [ref=e739]: USER B
+            - generic [ref=e740]:
+              - generic [ref=e741]: 이서연 (23세 / 대학생)
+              - generic [ref=e742]:
+                - text: "피부 타입:"
+                - strong [ref=e743]: 민감성 · 쉽게 붉어지는 건성 피부
+          - generic [ref=e744]:
+            - generic [ref=e745]:
+              - generic [ref=e746]: 사용 전 불편
+              - generic [ref=e747]: 자극적인 색조 제품 사용 시 붉은기 트러블과 건조함으로 각질 부각 빈번
+            - generic [ref=e748]:
+              - generic [ref=e749]: 사용 제품
+              - generic [ref=e750]: 마일드 시카 무기자차 선크림 + 듀이 멜팅 립앤치크 밤 (01 코랄 피치)
+            - generic [ref=e751]:
+              - generic [ref=e752]: 사용 기간
+              - generic [ref=e753]: 3주간 매일 등교 시 사용
+            - generic [ref=e754]:
+              - generic [ref=e755]: 준비시간·표현변화
+              - generic [ref=e756]:
+                - text: 외출 준비
+                - strong [ref=e757]: 20분 ➔ 5분 단축
+                - text: ", 본품 개봉 전 미니 샘플 선테스트로 안심하고 자연스러운 생기 연출"
+          - generic [ref=e758]: "\"민감한 피부라 걱정했는데 미니 샘플 먼저 써보고 정착했어요. 볼과 입술에 톡톡 얹어주면 자연스러운 혈색이 돌아 정말 만족스럽습니다.\""
+      - generic [ref=e759]:
+        - generic [ref=e760]:
+          - generic [ref=e761]:
+            - generic [ref=e762]:
+              - generic [ref=e763]: Q1
+              - generic [ref=e764]: 미니 샘플 제공 조건은 어떻게 되나요?
+              - generic [ref=e765]: ▼
+            - generic [ref=e766]:
+              - strong [ref=e767]: A.
+              - text: NUNID 공식몰에서
+              - strong [ref=e768]: "'시그니처 루틴 세트' 첫 구매 고객"
+              - text: 께 본품과 동일한 체험용 미니 샘플 키트를 1회 0원 자동 동봉하여 배송해 드립니다. (단품 구매 시 제외)
+          - generic [ref=e769]:
+            - generic [ref=e770]:
+              - generic [ref=e771]: Q2
+              - generic [ref=e772]: 본품 미개봉 판단 기준은 무엇인가요?
+              - generic [ref=e773]: ▼
+            - generic [ref=e774]:
+              - strong [ref=e775]: A.
+              - text: 본품 패키지 단상자의
+              - strong [ref=e776]: 개봉 방지 씰(Seal)이 훼손되지 않은 상태
+              - text: 를 기준으로 합니다. 동봉된 미니 샘플은 피부 테스트를 위해 모두 사용하셨더라도 본품 씰이 온전하면 100% 반품 및 환불이 가능합니다.
+          - generic [ref=e777]:
+            - generic [ref=e778]:
+              - generic [ref=e779]: Q3
+              - generic [ref=e780]: 무료 반품 가능 기간과 배송비 부담은 어떻게 되나요?
+              - generic [ref=e781]: ▼
+            - generic [ref=e782]:
+              - strong [ref=e783]: A.
+              - text: 제품
+              - strong [ref=e784]: 수령일로부터 14일 이내
+              - text: 에 마이페이지 1-Click 접수 시 택배 기사가 무료 방문 수거하며, 반품에 따른
+              - strong [ref=e785]: 왕복 배송비는 NUNID가 100% 전액 부담
+              - text: 합니다.
+          - generic [ref=e786]:
+            - generic [ref=e787]:
+              - generic [ref=e788]: Q4
+              - generic [ref=e789]: 민감 피부의 권장 사전 테스트 방법은 무엇인가요?
+              - generic [ref=e790]: ▼
+            - generic [ref=e791]:
+              - strong [ref=e792]: A.
+              - text: 본품 개봉 전, 동봉된 미니 샘플을
+              - strong [ref=e793]: 손목 안쪽이나 귀 뒤, 턱선 부위
+              - text: 에 소량 도포하여 2~3일간 피부 적합성(붉어짐, 가려움 등)과 0.02mm 밀착감을 먼저 확인하시는 것을 권장합니다.
+          - generic [ref=e794]:
+            - generic [ref=e795]:
+              - generic [ref=e796]: Q5
+              - generic [ref=e797]: 세트 상품 할인 혜택과 배송비 기준은 무엇인가요?
+              - generic [ref=e798]: ▼
+            - generic [ref=e799]:
+              - strong [ref=e800]: A.
+              - text: 3-Step 시그니처 루틴 세트는
+              - strong [ref=e801]: 정가 대비 21% 할인된 68,000원
+              - text: 에 제공되며, 2종 듀오 세트는 10~15% 할인이 적용됩니다. NUNID 공식몰의 모든 주문은
+              - strong [ref=e802]: 금액 조건 없이 전 품목 무료 배송
+              - text: 됩니다.
+          - generic [ref=e803]:
+            - generic [ref=e804]:
+              - generic [ref=e805]: Q6
+              - generic [ref=e806]: 제품별 권장 사용 순서는 어떻게 되나요?
+              - generic [ref=e807]: ▼
+            - generic [ref=e808]:
+              - strong [ref=e809]: A.
+              - text: 스킨케어 후
+              - strong [ref=e810]: "① STEP 1 (SUN: 하이드라 선 쉴드) ➔ ② STEP 2 (FACE: 스킨 핏 톤업 플루이드) ➔ ③ STEP 3 (CHEEK & LIP: 듀이 멜팅 밤)"
+              - text: 순으로 레이어링하시면 3분 안에 완벽한 하이브리드 루틴이 완성됩니다.
+        - link "고객지원 FAQ 전체보기 →" [ref=e812] [cursor=pointer]:
+          - /url: "#faq-sec"
+  - generic [ref=e814]:
+    - generic [ref=e815]: SEC-010-13 / FINAL CTA & SET PACKAGES
+    - heading "내 일상에 맞는 시그니처 루틴 세트 선택" [level=2] [ref=e816]
+    - paragraph [ref=e817]: 단품 대비 최대 21% 할인 혜택과 전 품목 무료 배송으로 시작하는 NUNID 하이브리드 루틴
+    - generic [ref=e818]:
+      - generic [ref=e819]:
+        - generic [ref=e820]:
+          - generic [ref=e821]: IMAGE SPEC 1:1 [HERO SET]
+          - generic [ref=e822]: 3-Step 시그니처 루틴 세트 풀 패키지
+          - generic [ref=e823]: 선 쉴드 베이스(50ml) + 톤업 플루이드(35ml) + 멜팅 립치크밤(15g) & 미니 3종 키트
+        - generic [ref=e824]:
+          - generic [ref=e825]: SIGNATURE ROUTINE · 21% OFF
+          - generic [ref=e826]: 3-Step 시그니처 루틴 세트
+          - generic [ref=e827]: 3종 본품 세트 (선베이스 + 톤업 플루이드 + 멜팅 립치크)
+          - generic [ref=e828]: 바쁜 아침 복잡한 10단계를 3분으로 단축하는 올인원 시그니처 루틴. 본품 개봉 전 미니 3종 키트 선테스트와 100% 무료 반품을 보장합니다.
+          - generic [ref=e829]:
+            - generic [ref=e830]: 86,000원
+            - generic [ref=e831]: 21% OFF
+            - generic [ref=e832]: 68,000원
+            - generic [ref=e833]: (무료배송)
+          - link "3-Step 루틴 세트 바로구매 (Fast Checkout) →" [ref=e834] [cursor=pointer]:
+            - /url: "#routine-sec"
+      - generic [ref=e835]:
+        - generic [ref=e837]:
+          - generic [ref=e838]:
+            - generic [ref=e839]: DUO SET 01 · 15% OFF
+            - generic [ref=e840]: 선 & 톤업 베이스 듀오 세트
+            - generic [ref=e841]: 2종 본품 (하이드라 선 쉴드 + 스킨 핏 톤업 플루이드)
+            - generic [ref=e842]: 강력한 자외선 차단과 피부 굴곡을 매끄럽게 정돈하여 모공 끼임 없이 맑고 투명한 피부결을 완성하는 데일리 베이스 듀오
+          - generic [ref=e843]:
+            - generic [ref=e844]:
+              - generic [ref=e845]: 61,000원
+              - generic [ref=e846]: 52,000원
+              - generic [ref=e847]: (15% OFF · 무료배송)
+            - generic [ref=e848]:
+              - link "구성 확인" [ref=e849] [cursor=pointer]:
+                - /url: "#routine-sec"
+              - link "장바구니 담기" [ref=e850] [cursor=pointer]:
+                - /url: "#cat-sec"
+        - generic [ref=e852]:
+          - generic [ref=e853]:
+            - generic [ref=e854]: DUO SET 02 · 10% OFF
+            - generic [ref=e855]: 립 & 치크 생기 듀오 세트
+            - generic [ref=e856]: 2종 본품 (글로우 멜팅 치크밤 + 듀이 틴티드 립밤)
+            - generic [ref=e857]: 양 볼과 입술에 맑고 생기 있는 톤온톤 혈색을 부여하고 끈적임 없는 맑은 광채를 연출하는 에센셜 컬러 듀오
+          - generic [ref=e858]:
+            - generic [ref=e859]:
+              - generic [ref=e860]: 44,000원
+              - generic [ref=e861]: 40,000원
+              - generic [ref=e862]: (10% OFF · 무료배송)
+            - generic [ref=e863]:
+              - link "구성 확인" [ref=e864] [cursor=pointer]:
+                - /url: "#routine-sec"
+              - link "장바구니 담기" [ref=e865] [cursor=pointer]:
+                - /url: "#cat-sec"
+    - generic [ref=e866]: ※ 전 품목 무료 배송 혜택이 적용되며, 3-Step 시그니처 루틴 세트 주문 시 미니 3종 키트 0원 동봉 및 100% 무료 반품이 보장됩니다.
+  - generic [ref=e868]:
+    - generic [ref=e869]: SEC-010-14 / OVERLAY PREVIEW
+    - heading "직결 오버레이 인터랙션 와이어프레임 (Modal & Drawer)" [level=2] [ref=e870]
+    - generic [ref=e871]: 페이지 이동 없이 메인 화면 위에서 3초 만에 스펙 확인 및 결제 연결
+    - generic [ref=e872]:
+      - generic [ref=e873]:
+        - generic [ref=e874]:
+          - generic [ref=e875]: "[SCR-011] Quick Spec & Buy 모달"
+          - generic [ref=e876]: "[ 닫기 ]"
+        - generic [ref=e877]:
+          - generic [ref=e878]: 초근접 제형 텍스처 매크로 뷰 컷 (1:1)
+          - generic [ref=e879]:
+            - generic [ref=e880]: SUN
+            - generic [ref=e881]: 하이드라 선 쉴드 베이스
+            - generic [ref=e882]: 28,000원
+            - table [ref=e883]:
+              - rowgroup [ref=e884]:
+                - row [ref=e885]:
+                  - rowheader "제형특성" [ref=e886]
+                  - cell "워터라이트 수분 베이스" [ref=e887]
+                - row [ref=e888]:
+                  - rowheader "밀착두께" [ref=e889]
+                  - cell "0.02 mm 극박 밀착" [ref=e890]
+                - row [ref=e891]:
+                  - rowheader "결정돈" [ref=e892]
+                  - cell "백탁 없는 맑은 결" [ref=e893]
+                - row [ref=e894]:
+                  - rowheader "저자극" [ref=e895]
+                  - cell "자극도 0.00 인증" [ref=e896]
+            - generic [ref=e897]:
+              - link "장바구니 담기" [ref=e898] [cursor=pointer]:
+                - /url: "#cart-sec"
+              - link "원클릭 빠른 결제" [ref=e899] [cursor=pointer]:
+                - /url: "#cart-sec"
+      - generic [ref=e900]:
+        - generic [ref=e901]:
+          - generic [ref=e902]: "[SCR-061] Sticky Quick Cart 드로어"
+          - generic [ref=e903]: "[ 닫기 ]"
+        - generic [ref=e904]:
+          - generic [ref=e905]:
+            - generic [ref=e906]:
+              - generic [ref=e907]: 하이드라 선 쉴드 베이스
+              - generic [ref=e908]: "수량: 1개 · 28,000원"
+            - generic [ref=e909] [cursor=pointer]: "[ 삭제 ]"
+          - generic [ref=e910]:
+            - generic [ref=e911]:
+              - generic [ref=e912]: 스킨 핏 톤업 플루이드
+              - generic [ref=e913]: "수량: 1개 · 34,000원"
+            - generic [ref=e914] [cursor=pointer]: "[ 삭제 ]"
+          - generic [ref=e915]: 전 품목 무료 배송 & 무료 미니 샘플 0원 자동 동봉
+        - generic [ref=e916]:
+          - generic [ref=e917]:
+            - generic [ref=e918]: 배송비
+            - generic [ref=e919]: 무료
+          - generic [ref=e920]:
+            - generic [ref=e921]: 총 결제금액
+            - generic [ref=e922]: 62,000원
+          - link "주문서 작성 (Fast Checkout) →" [ref=e923] [cursor=pointer]:
+            - /url: "#cart-sec"
+  - contentinfo [ref=e924]:
+    - generic [ref=e925]:
+      - generic [ref=e926]:
+        - generic [ref=e927]:
+          - generic [ref=e928]: NUNID
+          - generic [ref=e929]: 내 피부에 필요한 것만 남긴 루틴, 누니드
+        - generic [ref=e930]:
+          - generic [ref=e931]: 브랜드 & 루틴
+          - list [ref=e932]:
+            - listitem [ref=e933]: 브랜드 철학 (SCR-050)
+            - listitem [ref=e934]: 3-Step 루틴 가이드 (SCR-020)
+            - listitem [ref=e935]: Texture & Proof Lab (SCR-040)
+        - generic [ref=e936]:
+          - generic [ref=e937]: 체험 & 지원
+          - list [ref=e938]:
+            - listitem [ref=e939]: 무료 미니 샘플 안심 케어
+            - listitem [ref=e940]: 100% 무료 반품 약속
+            - listitem [ref=e941]: 자주 묻는 질문 (FAQ) (SCR-071)
+        - generic [ref=e942]:
+          - generic [ref=e943]: 운영 및 사업자 정보
+          - generic [ref=e944]: "(주)NUNID | 대표: 김유진 사업자등록번호: 123-45-67890 통신판매업신고: 2026-서울강남-01234 고객센터: 1588-0000 (평일 10:00 ~ 17:00) 이용약관 / 개인정보처리방침"
+      - generic [ref=e945]:
+        - generic [ref=e946]: © 2026 NUNID. All rights reserved. 본 사이트는 미니멀 하이브리드 루틴 D2C 커머스 와이어프레임입니다.
+        - link "맨 위로 ↑" [ref=e948] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=e949]:
+    - generic [ref=e950]: SEC-010-13 / QUICK CTA
+    - link "3-Step 루틴 세트 바로구매 (68,000원)" [ref=e951] [cursor=pointer]:
+      - /url: "#routine-sec"
+    - link "전 제품 5대 카테고리 둘러보기" [ref=e952] [cursor=pointer]:
+      - /url: "#cat-sec"

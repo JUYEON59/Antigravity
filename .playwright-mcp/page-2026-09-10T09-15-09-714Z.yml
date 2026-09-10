@@ -1,0 +1,245 @@
+- generic [ref=f1e5]:
+  - generic [ref=f1e6]:
+    - generic [ref=f1e7]:
+      - generic [ref=f1e10]:
+        - application "Figma Design" [active] [ref=f1e831]
+        - status [ref=f1e20]: 현재 보드에 대한 스크린 리더 지원이 비활성화되어 있습니다. 접근성 설정에서 사용 설정하려면 Ctrl+K을(를) 누르고, 접근성 설정을 입력한 후 Enter 키를 누릅니다. 사용 가능한 키보드 단축키를 보려면 Ctrl+Shift+물음표을(를) 입력하세요.
+        - status [ref=f1e22]
+        - generic:
+          - generic:
+            - generic:
+              - region "캔버스 댓글 영역":
+                - button "새 댓글 만들기"
+        - region "왼쪽 사이드바" [ref=f1e832]:
+          - toolbar "탐색 표시줄" [ref=f1e833]:
+            - generic [ref=f1e26]:
+              - button "메인 메뉴" [ref=f1e834]
+              - separator [ref=f1e28]
+              - button "파일" [expanded] [ref=f1e835]
+              - button "에셋" [ref=f1e836]
+              - button "도구" [ref=f1e837]
+              - separator [ref=f1e32]
+              - button "변수" [ref=f1e838]
+            - generic [ref=f1e34]:
+              - status
+          - generic [ref=f1e35]:
+            - generic [ref=f1e37]:
+              - generic [ref=f1e38]:
+                - generic [ref=f1e39]:
+                  - generic [ref=f1e41]:
+                    - generic [ref=f1e43]:
+                      - button "박주연, 파일 이름" [ref=f1e839]: 박주연
+                      - generic [ref=f1e45]: 파일 이름
+                    - button "파일 편집 메뉴" [ref=f1e840]
+                  - button "UI 최소화" [ref=f1e841]
+                - link "Team project" [ref=f1e842]:
+                  - /url: https://www.figma.com/files/project/604082686
+              - generic [ref=f1e54]:
+                - generic [ref=f1e56]:
+                  - heading [level=2] [ref=f1e843]:
+                    - generic [ref=f1e58]:
+                      - button "페이지" [expanded] [ref=f1e844]
+                      - button "찾기" [ref=f1e845]
+                      - button "새 페이지 추가" [ref=f1e846]
+                  - generic [ref=f1e67]:
+                    - grid [ref=f1e75]:
+                      - row [ref=f1e847]:
+                        - gridcell [ref=f1e848]:
+                          - button "AI" [ref=f1e849]
+                      - row [ref=f1e850]:
+                        - gridcell [ref=f1e851]:
+                          - button "반응형 사이트" [ref=f1e852]
+                      - row [ref=f1e853]:
+                        - gridcell [ref=f1e854]:
+                          - button "flex 학습" [ref=f1e855]
+                      - row [ref=f1e856]:
+                        - gridcell [ref=f1e857]:
+                          - button "figma(Auto Layout) &Coding" [ref=f1e858]
+                      - row [ref=f1e859]:
+                        - gridcell [ref=f1e860]:
+                          - button "코딩 평가" [ref=f1e861]
+                      - row [ref=f1e862]:
+                        - gridcell [ref=f1e863]:
+                          - button "시각디자인 리서치 조사" [ref=f1e864]
+                      - row [ref=f1e865]:
+                        - gridcell [ref=f1e866]:
+                          - button "시각디자인 리서치 분석" [ref=f1e867]
+                      - row [ref=f1e868]:
+                        - gridcell [ref=f1e869]:
+                          - button "패키지" [ref=f1e870]
+                      - row [ref=f1e871]:
+                        - gridcell [ref=f1e872]:
+                          - button "웹디자인" [ref=f1e873]
+                    - slider "크기 조정 핸들" [ref=f1e874]
+                - generic [ref=f1e151]:
+                  - heading [level=2] [ref=f1e875]:
+                    - button "레이어" [expanded] [ref=f1e876]
+                  - treegrid [ref=f1e157]:
+                    - generic [ref=f1e159]:
+                      - row [ref=f1e877]:
+                        - generic [ref=f1e162]:
+                          - gridcell [aria-hidden] [ref=f1e165]
+                          - 'gridcell "역할: 너는 웹사이트 설계 전문가야. UI/UX 전문가야. 목적: 수건을 판매를 위해서 웹사이트를 만들거야. 사람들이 보기 쉽고 감성적으로 만들어서 판매할거야. 그래서 사람들이 보기 쉽고 좋은 웹사이트를 만들거야. 우리상태: 우리의 상태는 웹디자인너와 웹개발하는 사람들이야. 우리는 웹사이트를 여러번 만들어봤어. 그래서 이번에 웹사이트를 만들건데 사람들이 원하는 것이 무엇인지를 알고 싶어서 그래. 나는 내 브랜드에 잘 어울리는 웹사이트 설계를 하고 싶어. 우선 스토리 보드를 탄탄하게 짜고 웹사이트 ux설계를 디테일하게 짜서 화면 설계서까지 기깔나게 만들거야. 내가 기본틀을 줄테니까 최상의 결과물을 만들 수 있는 프롬프트로 디벨로해서 작성해줘. 나는 내가 만든 [브랜드] 기반 [웹 사이트 설계] 진행 [브랜드]기반 [스토리보드].[웹사이트 UX 설계],[화면 설계서] [기본틀] 기반 기본틀=[ 역할: 기획 및 설계자 목적: 웹사이트 기획 및 설계와 와이어 플레임 구현, 스토리 보드와 화면 설계서 작성 우리상태: 6개월 장기 프로젝트 실무자 1년차 ]" [ref=f1e878]'
+                      - row [ref=f1e879]:
+                        - generic [ref=f1e178]:
+                          - generic [ref=f1e179]:
+                            - button [aria-hidden] [ref=f1e180]
+                            - gridcell [aria-hidden] [ref=f1e181]
+                          - gridcell "Frame 1" [ref=f1e880]
+                      - row [ref=f1e881]:
+                        - generic [ref=f1e194]:
+                          - generic [ref=f1e195]:
+                            - button [aria-hidden] [ref=f1e196]
+                            - gridcell [aria-hidden] [ref=f1e197]
+                          - gridcell "GPT‑5.6 모델과 추론 수준 선택 가이드" [ref=f1e882]
+            - slider "크기 조정 핸들" [ref=f1e883]
+        - generic:
+          - generic:
+            - region "오른쪽 사이드바":
+              - generic [ref=f1e211]:
+                - generic [ref=f1e213]:
+                  - generic [ref=f1e215]:
+                    - button "멀티플레이어 도구" [ref=f1e884]
+                    - generic [ref=f1e235]:
+                      - group "프로토타입 보기" [ref=f1e885]:
+                        - button "프레젠테이션" [ref=f1e886]
+                        - button "프로토타입 보기" [ref=f1e887]
+                      - generic [ref=f1e239]:
+                        - button "공유하기" [ref=f1e888]
+                        - status
+                  - generic [ref=f1e241]:
+                    - tablist [ref=f1e243]:
+                      - tab "디자인" [selected] [ref=f1e889]:
+                        - generic [aria-hidden] [ref=f1e245]: 디자인
+                      - tab "프로토타입" [ref=f1e890]:
+                        - generic [aria-hidden] [ref=f1e248]: 프로토타입
+                    - button "7%, 확대/축소 및 보기 옵션" [ref=f1e891]: 7%
+                  - generic [ref=f1e257]:
+                    - generic [ref=f1e260]:
+                      - generic [ref=f1e261]: 페이지
+                      - generic [ref=f1e266]:
+                        - generic [ref=f1e268]:
+                          - 'button "단색 hex: F5F5F5" [ref=f1e892]'
+                          - generic [ref=f1e270]:
+                            - generic [ref=f1e271]: 색상
+                            - spinbutton "색상" [ref=f1e893]: F5F5F5
+                          - generic [ref=f1e276]:
+                            - textbox "%" [ref=f1e894]: "100"
+                            - generic [ref=f1e278]: "%"
+                        - generic [ref=f1e282]:
+                          - checkbox "표시 전환" [checked] [ref=f1e895]
+                          - generic: 표시 전환
+                    - generic [ref=f1e286]:
+                      - generic [ref=f1e287]:
+                        - heading "스타일" [level=2] [ref=f1e896]
+                        - button "스타일 만들기" [ref=f1e897]
+                      - generic [ref=f1e291]:
+                        - generic [ref=f1e292]:
+                          - heading "텍스트 스타일" [level=3] [ref=f1e898]
+                          - button "텍스트 스타일 만들기" [ref=f1e899]
+                        - tree [ref=f1e296]:
+                          - treeitem "window window · 16/Auto" [ref=f1e900]:
+                            - gridcell [ref=f1e901]:
+                              - img "window" [ref=f1e902]
+                            - generic [ref=f1e301]:
+                              - button "window" [ref=f1e903]
+                              - generic [ref=f1e303]: · 16/Auto
+                          - row [level=1] [ref=f1e904]:
+                            - gridcell [ref=f1e905]:
+                              - button "폴더 전환" [ref=f1e906]
+                            - gridcell [ref=f1e907]:
+                              - button "beautyofjoseon.co.kr" [ref=f1e908]
+                            - gridcell [ref=f1e909]:
+                              - button "스타일 만들기" [ref=f1e910]
+                          - row [level=1] [ref=f1e911]:
+                            - gridcell [ref=f1e912]:
+                              - button "폴더 전환" [ref=f1e913]
+                            - gridcell [ref=f1e914]:
+                              - button "www.ssense.com" [ref=f1e915]
+                            - gridcell [ref=f1e916]:
+                              - button "스타일 만들기" [ref=f1e917]
+                      - generic [ref=f1e323]:
+                        - generic [ref=f1e324]:
+                          - heading "색상 스타일" [level=3] [ref=f1e918]
+                          - button "색상 스타일 만들기" [ref=f1e919]
+                        - tree [ref=f1e328]:
+                          - row [level=1] [ref=f1e920]:
+                            - gridcell [ref=f1e921]:
+                              - button "폴더 전환" [ref=f1e922]
+                            - gridcell [ref=f1e923]:
+                              - button "beautyofjoseon.co.kr" [ref=f1e924]
+                            - gridcell [ref=f1e925]:
+                              - button "스타일 만들기" [ref=f1e926]
+                          - row [level=1] [ref=f1e927]:
+                            - gridcell [ref=f1e928]:
+                              - button "폴더 전환" [ref=f1e929]
+                            - gridcell [ref=f1e930]:
+                              - button "www.ssense.com" [ref=f1e931]
+                            - gridcell [ref=f1e932]:
+                              - button "스타일 만들기" [ref=f1e933]
+                    - generic [ref=f1e351]:
+                      - button "내보내기" [ref=f1e934]
+                      - button "내보내기 설정 추가" [ref=f1e935]
+                    - generic [ref=f1e358]:
+                      - generic [ref=f1e364]:
+                        - generic [ref=f1e365]: MCP
+                        - strong [ref=f1e367]:
+                          - generic [ref=f1e368]: 1개 연결
+                      - button "Figma MCP용 에이전트 설정" [ref=f1e936]
+                    - generic [ref=f1e372]:
+                      - heading "도구" [level=2] [ref=f1e937]
+                      - grid [ref=f1e380]:
+                        - row [ref=f1e938]:
+                          - gridcell [ref=f1e939]:
+                            - button "Open html.to.design 실행" [ref=f1e940]:
+                              - generic: Open html.to.design
+                          - gridcell [ref=f1e941]:
+                            - button "Open html.to.design 제거" [ref=f1e942]
+                - slider "크기 조정 핸들" [ref=f1e943]
+      - generic:
+        - generic:
+          - generic:
+            - region "애플리케이션 도구 모음":
+              - toolbar "편집기" [ref=f1e389]:
+                - generic [ref=f1e395]:
+                  - group "이동" [ref=f1e396]:
+                    - button "이동" [pressed] [ref=f1e397]
+                    - button "이동 도구" [ref=f1e398]
+                  - group "프레임" [ref=f1e399]:
+                    - button "프레임" [ref=f1e400]
+                    - button "영역 도구" [ref=f1e401]
+                  - group "직사각형" [ref=f1e402]:
+                    - button "직사각형" [ref=f1e403]
+                    - button "모양 도구" [ref=f1e404]
+                  - group "펜" [ref=f1e405]:
+                    - button "펜" [ref=f1e406]
+                    - button "창작 도구" [ref=f1e407]
+                  - group "텍스트" [ref=f1e408]:
+                    - button "텍스트" [ref=f1e409]
+                    - button "문자 도구" [ref=f1e410]
+                  - group "댓글" [ref=f1e411]:
+                    - button "댓글" [ref=f1e412]
+                    - button "댓글 도구" [ref=f1e413]
+                  - button "작업" [ref=f1e414]
+                - radiogroup "공구 벨트 모드" [ref=f1e418]:
+                  - generic [ref=f1e420]:
+                    - generic [ref=f1e422]:
+                      - radio "그리기" [ref=f1e423]
+                      - generic [ref=f1e427]: 그리기
+                    - generic [ref=f1e428]:
+                      - radio "디자인" [checked] [ref=f1e429]
+                      - generic [ref=f1e433]: 디자인
+                    - generic [ref=f1e434]:
+                      - radio "모션" [ref=f1e435]
+                      - generic [ref=f1e439]: 모션
+                    - generic [ref=f1e440]:
+                      - radio "Dev Mode" [ref=f1e441]
+                      - generic [ref=f1e445]: Dev Mode
+    - region "도움말/확대/축소 도구 모음" [ref=f1e448]:
+      - toolbar "도움말/확대/축소 도구 모음" [ref=f1e450]:
+        - button "도움말" [ref=f1e452]
+  - generic:
+    - status
+    - group [ref=f1e454]:
+      - alert [ref=f1e456]
+      - alert [ref=f1e458]

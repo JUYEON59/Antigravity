@@ -1,0 +1,18 @@
+- generic [ref=e4]:
+  - generic [ref=e12]:
+    - heading "이 파일을 확인하고 싶으신가요? 가입 또는 로그인하세요" [level=1] [ref=e14]
+    - button "Google 계정으로 계속하기" [active] [ref=e15] [cursor=pointer]
+    - paragraph [ref=e25]: 또는
+    - generic [ref=e26]:
+      - generic [ref=e27]: 이메일
+      - textbox "이메일" [ref=e28]
+    - button "이메일로 계속하기" [ref=e29] [cursor=pointer]
+  - region "동의 관리자" [ref=e31]:
+    - generic [ref=e32]:
+      - text: 이 웹사이트는 성능, 개인화, 마케팅 목적으로 쿠키, 픽셀 태그, 로컬 저장소를 사용합니다. 당사는 자체 쿠키와 서드파티 쿠키 일부를 사용합니다. 필수 쿠키만 기본적으로 켜져 있습니다.
+      - link "쿠키 설정" [ref=e33]:
+        - /url: /ko-kr/consent-preferences/
+    - generic [ref=e34]:
+      - button "쿠키 허용 안 함" [ref=e35] [cursor=pointer]
+      - button "모든 쿠키 허용" [ref=e36] [cursor=pointer]
+    - button "취소" [ref=e38]

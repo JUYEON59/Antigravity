@@ -1435,9 +1435,9 @@
       .story-face-split-grid { grid-template-columns: 1fr; gap: 20px; }
       .story-face-card { padding: 20px 16px; }
 
-      /* 10. CHEEK & LIP Palette (6열 -> 3열 2행 전환 & 페어링 1열 전환) */
-      .palette-swatch-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-      .swatch-cell { padding: 10px 6px; }
+      /* 10. COLOR Focus (4열 -> 모바일 1열 전환 & 페어링 1열 전환) */
+      .palette-swatch-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+      .swatch-cell { padding: 16px 14px; }
       .color-editorial-layout div[style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; gap: 10px !important; }
 
       /* 11. All Categories 15 Products (탭 가로 스크롤 & 4열 -> 2열 전환 & 버튼 터치영역 확보) */
@@ -2279,111 +2279,311 @@
   <div class="section-wrapper" id="color-story-sec">
     <section class="section-inner">
       <div class="sec-id">SEC-010-09 / SITUATION COLOR STORY (COLOR FOCUS)</div>
-      <h2 class="sec-title">피부 본연의 색 온도를 깨우는 저채도 COLOR 에센셜</h2>
+      <h2 class="sec-title">피부 본연의 색 온도를 깨우는 3대 저채도 COLOR 에센셜</h2>
       <p class="sec-desc">
-        과도하고 진한 원색 메이크업 대신, 내 혈색처럼 맑고 자연스럽게 스며드는 NUNID의 4가지 저채도 COLOR 라인업입니다.
+        본래의 색을 과도하게 덮지 않고 피부와 입술에 자연스럽게 스며드는 NUNID의 혈색 설계입니다.<br>
+        <strong>뉴트럴 로즈 · 웜 피치 · 쿨 모브</strong> 3가지 공통 컬러 방향을 바탕으로 제형과 사용 부위에 맞춰 변주된 4가지 에센셜 라인업을 만나보세요.
       </p>
 
       <div class="color-editorial-layout">
         <!-- Top: Editorial Swatch Combined Visual -->
-        <div class="img-placeholder" style="aspect-ratio: 2 / 1; width: 100%; padding: 16px; text-align: center;">
+        <div class="img-placeholder" style="aspect-ratio: 2 / 1; width: 100%; padding: 18px; text-align: center;">
           <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
             [IMAGE GUIDE] 2:1 COLOR EDITORIAL SWATCH
           </div>
           <div style="font-size: 13px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-            저채도 4종 컬러 스와치 &amp; 멜팅 텍스처 연출
+            3대 공통 컬러 방향 &amp; 4종 텍스처 수채화 연출
           </div>
-          <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-            · 립앤치크 · 블러쉬 · 립틴트 · 브로우젤 4종의 맑은 수채화 발색 파노라마 컷
-          </div>
-        </div>
-
-        <!-- Bottom: 4 Palette Swatch Cells (컬러명, 발색 특성, 제형, 가격) -->
-        <div class="palette-swatch-grid" style="grid-template-columns: repeat(4, 1fr);">
-          <!-- Swatch 01 -->
-          <div class="swatch-cell">
-            <div class="swatch-color-chip" style="background-color: #f7d5c9;">LIP &amp; CHEEK</div>
-            <div class="swatch-cell-category">COLOR 01 · HERO</div>
-            <div class="swatch-cell-name">립 앤 치크 밤</div>
-            <div style="font-size: 10px; color: #737373; margin-bottom: 4px;">부드러운 멜팅 밤 (3 Colors)</div>
-            <div class="swatch-cell-tone"><strong>발색:</strong> 투명 소프트 듀이 빌더블</div>
-            <div style="font-size: 10px; color: #525252; margin-bottom: 6px;"><strong>용량:</strong> 8g</div>
-            <div class="swatch-cell-price">28,000원</div>
-          </div>
-
-          <!-- Swatch 02 -->
-          <div class="swatch-cell">
-            <div class="swatch-color-chip" style="background-color: #e5b8b7;">SERUM BLUSH</div>
-            <div class="swatch-cell-category">COLOR 02</div>
-            <div class="swatch-cell-name">세럼 블러쉬</div>
-            <div style="font-size: 10px; color: #737373; margin-bottom: 4px;">워터 세럼 리퀴드 치크 (3 Colors)</div>
-            <div class="swatch-cell-tone"><strong>발색:</strong> 맑고 촉촉한 수채화 글로우</div>
-            <div style="font-size: 10px; color: #525252; margin-bottom: 6px;"><strong>용량:</strong> 8mL</div>
-            <div class="swatch-cell-price">24,000원</div>
-          </div>
-
-          <!-- Swatch 03 -->
-          <div class="swatch-cell">
-            <div class="swatch-color-chip" style="background-color: #fcae9c;">LIP TINT</div>
-            <div class="swatch-cell-category">COLOR 03</div>
-            <div class="swatch-cell-name">트리트먼트 립 틴트</div>
-            <div style="font-size: 10px; color: #737373; margin-bottom: 4px;">가벼운 글로스 틴트 (3 Colors)</div>
-            <div class="swatch-cell-tone"><strong>발색:</strong> 자연스러운 내추럴 스테인</div>
-            <div style="font-size: 10px; color: #525252; margin-bottom: 6px;"><strong>용량:</strong> 5mL</div>
-            <div class="swatch-cell-price">22,000원</div>
-          </div>
-
-          <!-- Swatch 04 -->
-          <div class="swatch-cell">
-            <div class="swatch-color-chip" style="background-color: #7b6d65; color: #ffffff;">BROW GEL</div>
-            <div class="swatch-cell-category">COLOR 04</div>
-            <div class="swatch-cell-name">트리트먼트 브로우 젤</div>
-            <div style="font-size: 10px; color: #737373; margin-bottom: 4px;">가벼운 세럼 젤 (3 Colors)</div>
-            <div class="swatch-cell-tone"><strong>효과:</strong> 결 정돈 &amp; 소프트 고정</div>
-            <div style="font-size: 10px; color: #525252; margin-bottom: 6px;"><strong>용량:</strong> 5g</div>
-            <div class="swatch-cell-price">21,000원</div>
+          <div style="font-size: 10.5px; color: #737373; line-height: 1.5;">
+            · 크리미 멜팅 밤 · 워터리 세럼-젤 · 워터 젤 세럼 틴트 · 유연한 브로우 젤 4종의 맑은 텍스처 스와치<br>
+            · 뉴트럴 로즈, 웜 피치, 쿨 모브 3가지 혈색이 피부 결 위로 얇고 투명하게 스며드는 내추럴 그라데이션 연출
           </div>
         </div>
 
-        <!-- Curated 3 Pairing Combinations -->
-        <div style="background-color: #fafafa; border: 1px solid #e5e5e5; padding: 16px 20px; margin-top: 6px;">
-          <div style="font-size: 11px; font-weight: 800; color: #171717; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
-            <span style="background: #171717; color: #ffffff; padding: 2px 6px; font-size: 10px; border-radius: 2px;">NUNID COLOR PAIRING</span>
-            피부 온도에 맞춘 3가지 시그니처 추천 조합
+        <!-- Middle: 4 Essential Color Product Cards (Category -> Purpose -> Specs -> 3 Shades -> Price) -->
+        <div class="palette-swatch-grid" style="grid-template-columns: repeat(4, 1fr); gap: 14px;">
+          
+          <!-- Card 01: Lip & Cheek Balm (Hero Product · MULTI) -->
+          <div class="swatch-cell" style="text-align: left; padding: 16px 14px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="card-tag" style="background: #171717; color: #ffffff; margin-bottom: 0;">COLOR 01 · HERO</span>
+              <span style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace;">MULTI</span>
+            </div>
+            <div class="swatch-cell-name" style="font-size: 15px; margin-bottom: 2px;">립 앤 치크 밤</div>
+            <div style="font-size: 11px; color: #737373; font-weight: 700; margin-bottom: 8px;">8g · 28,000원</div>
+
+            <div style="font-size: 11.5px; color: #525252; line-height: 1.45; margin-bottom: 12px; background: #fafafa; border: 1px solid #f0f0f0; padding: 8px;">
+              <strong>[선택 이유]</strong> 립과 치크를 제품 하나로 해결하며 본래 혈색처럼 맑은 원-톤 생기를 완성하고 싶을 때
+            </div>
+
+            <div class="routine-spec-table" style="margin-bottom: 12px; font-size: 11px;">
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">제형</span>
+                <span class="spec-val">크리미 멜팅 밤 (체온 멜팅)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">발색/표현</span>
+                <span class="spec-val">투명 소프트 듀이 (빌더블 발색)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">사용 부위</span>
+                <span class="spec-val">양 볼 &amp; 입술 겸용 원-톤 생기</span>
+              </div>
+            </div>
+
+            <!-- 3 Colors Detailed List -->
+            <div style="border-top: 1px dashed #e5e5e5; padding-top: 10px; margin-top: auto;">
+              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 6px; text-transform: uppercase;">
+                3 Colors (빌더블 발색)
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 4px; font-size: 10.5px;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #d98a86; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">SOFT ROSE</span>
+                  <span style="color: #737373; font-size: 9.5px;">뉴트럴 로즈 혈색</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #e59a84; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">NUDE PEACH</span>
+                  <span style="color: #737373; font-size: 9.5px;">웜 피치 생기</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #b5838d; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">SOFT MAUVE</span>
+                  <span style="color: #737373; font-size: 9.5px;">쿨 모브 깊이</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; margin-top: 12px;">
+              <a href="#cat-sec" class="btn-solid" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">상세보기</a>
+              <a href="#routine-sec" class="btn-outline" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">담기</a>
+            </div>
+          </div>
+
+          <!-- Card 02: Serum Blush (FLUSH) -->
+          <div class="swatch-cell" style="text-align: left; padding: 16px 14px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="card-tag" style="background: #525252; color: #ffffff; margin-bottom: 0;">COLOR 02</span>
+              <span style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace;">FLUSH</span>
+            </div>
+            <div class="swatch-cell-name" style="font-size: 15px; margin-bottom: 2px;">세럼 블러쉬</div>
+            <div style="font-size: 11px; color: #737373; font-weight: 700; margin-bottom: 8px;">8mL · 24,000원</div>
+
+            <div style="font-size: 11.5px; color: #525252; line-height: 1.45; margin-bottom: 12px; background: #fafafa; border: 1px solid #f0f0f0; padding: 8px;">
+              <strong>[선택 이유]</strong> 텁텁함 없이 볼에 가장 맑고 투명한 수분 수채화 속광 혈색을 얇게 얹고 싶을 때
+            </div>
+
+            <div class="routine-spec-table" style="margin-bottom: 12px; font-size: 11px;">
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">제형</span>
+                <span class="spec-val">워터리 세럼-젤 (수분진정)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">발색/표현</span>
+                <span class="spec-val">맑은 프레시 글로우 (쉬어 수채화)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">사용 부위</span>
+                <span class="spec-val">양 볼 중심 (치크 전용)</span>
+              </div>
+            </div>
+
+            <!-- 3 Colors Detailed List -->
+            <div style="border-top: 1px dashed #e5e5e5; padding-top: 10px; margin-top: auto;">
+              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 6px; text-transform: uppercase;">
+                3 Colors (쉬어 투명 혈색)
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 4px; font-size: 10.5px;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #e5989b; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">ROSY VEIL</span>
+                  <span style="color: #737373; font-size: 9.5px;">맑게 비치는 로즈</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #f4a261; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">PEACH VEIL</span>
+                  <span style="color: #737373; font-size: 9.5px;">투명한 온기 피치</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #9d8189; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">MAUVE VEIL</span>
+                  <span style="color: #737373; font-size: 9.5px;">차분 서늘 모브</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; margin-top: 12px;">
+              <a href="#cat-sec" class="btn-solid" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">상세보기</a>
+              <a href="#routine-sec" class="btn-outline" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">담기</a>
+            </div>
+          </div>
+
+          <!-- Card 03: Treatment Lip Tint (TINT) -->
+          <div class="swatch-cell" style="text-align: left; padding: 16px 14px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="card-tag" style="background: #525252; color: #ffffff; margin-bottom: 0;">COLOR 03</span>
+              <span style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace;">TINT</span>
+            </div>
+            <div class="swatch-cell-name" style="font-size: 15px; margin-bottom: 2px;">트리트먼트 립 틴트</div>
+            <div style="font-size: 11px; color: #737373; font-weight: 700; margin-bottom: 8px;">5mL · 22,000원</div>
+
+            <div style="font-size: 11.5px; color: #525252; line-height: 1.45; margin-bottom: 12px; background: #fafafa; border: 1px solid #f0f0f0; padding: 8px;">
+              <strong>[선택 이유]</strong> 건조함 없이 촉촉한 보습과 함께 입술에 지워지지 않는 자연스러운 생기가 지속되길 원할 때
+            </div>
+
+            <div class="routine-spec-table" style="margin-bottom: 12px; font-size: 11px;">
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">제형</span>
+                <span class="spec-val">워터 젤 세럼 (입술 보습)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">발색/표현</span>
+                <span class="spec-val">내추럴 소프트 스테인 (자연 착색)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">사용 부위</span>
+                <span class="spec-val">입술 전체 및 안쪽 그라데이션</span>
+              </div>
+            </div>
+
+            <!-- 3 Colors Detailed List -->
+            <div style="border-top: 1px dashed #e5e5e5; padding-top: 10px; margin-top: auto;">
+              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 6px; text-transform: uppercase;">
+                3 Colors (소프트 스테인)
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 4px; font-size: 10.5px;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #c96567; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">ROSE TEA</span>
+                  <span style="color: #737373; font-size: 9.5px;">차분한 혈색 로즈</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #e07a5f; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">SOFT CORAL</span>
+                  <span style="color: #737373; font-size: 9.5px;">따뜻하고 맑은 코랄</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #936874; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">MAUVE BERRY</span>
+                  <span style="color: #737373; font-size: 9.5px;">은은한 베리 모브</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; margin-top: 12px;">
+              <a href="#cat-sec" class="btn-solid" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">상세보기</a>
+              <a href="#routine-sec" class="btn-outline" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">담기</a>
+            </div>
+          </div>
+
+          <!-- Card 04: Treatment Brow Gel (DEFINE) -->
+          <div class="swatch-cell" style="text-align: left; padding: 16px 14px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="card-tag" style="background: #525252; color: #ffffff; margin-bottom: 0;">COLOR 04</span>
+              <span style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace;">DEFINE</span>
+            </div>
+            <div class="swatch-cell-name" style="font-size: 15px; margin-bottom: 2px;">트리트먼트 브로우 젤</div>
+            <div style="font-size: 11px; color: #737373; font-weight: 700; margin-bottom: 8px;">5g · 21,000원</div>
+
+            <div style="font-size: 11.5px; color: #525252; line-height: 1.45; margin-bottom: 12px; background: #fafafa; border: 1px solid #f0f0f0; padding: 8px;">
+              <strong>[선택 이유]</strong> 굳거나 딱딱해지지 않고 본래 눈썹 결을 살리며 모발에 맞게 빈 곳을 자연스럽게 채우고 싶을 때
+            </div>
+
+            <div class="routine-spec-table" style="margin-bottom: 12px; font-size: 11px;">
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">제형</span>
+                <span class="spec-val">세럼-젤 (모발 컨디셔닝)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">발색/표현</span>
+                <span class="spec-val">굳지 않는 유연한 내추럴 세팅</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label" style="width: 55px;">사용 부위</span>
+                <span class="spec-val">눈썹 결 정돈 &amp; 빈 곳 보완</span>
+              </div>
+            </div>
+
+            <!-- 3 Colors Detailed List -->
+            <div style="border-top: 1px dashed #e5e5e5; padding-top: 10px; margin-top: auto;">
+              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 6px; text-transform: uppercase;">
+                3 Colors (모발 명도 조화)
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 4px; font-size: 10.5px;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #8d7b68; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">LIGHT ASH BROWN</span>
+                  <span style="color: #737373; font-size: 9.5px;">밝은/애쉬 모발</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #5c4d3c; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">NATURAL BROWN</span>
+                  <span style="color: #737373; font-size: 9.5px;">중간 뉴트럴 모발</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="width: 12px; height: 12px; background-color: #2b2621; border-radius: 2px; flex-shrink: 0;"></span>
+                  <span style="font-weight: 800; color: #171717;">DEEP BROWN</span>
+                  <span style="color: #737373; font-size: 9.5px;">자연 흑발/짙은 모발</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 4px; margin-top: 12px;">
+              <a href="#cat-sec" class="btn-solid" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">상세보기</a>
+              <a href="#routine-sec" class="btn-outline" style="flex: 1; text-align: center; padding: 7px 2px; font-size: 11px;">담기</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom: Curated 3 Pairing Combinations based on Common Color Direction -->
+        <div style="background-color: #fafafa; border: 1px solid #e5e5e5; padding: 18px 20px; margin-top: 6px;">
+          <div style="font-size: 12px; font-weight: 800; color: #171717; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
+            <span style="background: #171717; color: #ffffff; padding: 2px 7px; font-size: 10px; border-radius: 2px;">NUNID COLOR PAIRING</span>
+            3대 공통 혈색 방향에 맞춘 시그니처 추천 조합
           </div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;">
-            <!-- Pair 01 -->
-            <div style="background: #ffffff; border: 1px solid #d4d4d4; padding: 12px; border-left: 3px solid #f7d5c9;">
-              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 3px;">PAIR 01 · WARM GLOW</div>
-              <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">맑고 따뜻한 생기 조합</div>
-              <div style="font-size: 11px; color: #525252; line-height: 1.4;">
+            
+            <!-- Pair 01: Neutral Rose -->
+            <div style="background: #ffffff; border: 1px solid #d4d4d4; padding: 14px; border-left: 3px solid #d98a86;">
+              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 3px;">PAIR 01 · NEUTRAL ROSE</div>
+              <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">본래 혈색처럼 가장 편안한 데일리 로즈</div>
+              <div style="font-size: 11px; color: #525252; line-height: 1.45;">
+                · 치크 &amp; 립: 립 앤 치크 밤 (SOFT ROSE)<br>
+                · 포인트 립: 트리트먼트 립 틴트 (ROSE TEA)<br>
+                <span style="color: #737373;">→ 웜/쿨 치우침 없이 본연의 맑은 로즈 생기를 더하는 기본 조합</span>
+              </div>
+            </div>
+
+            <!-- Pair 02: Warm Peach -->
+            <div style="background: #ffffff; border: 1px solid #d4d4d4; padding: 14px; border-left: 3px solid #f4a261;">
+              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 3px;">PAIR 02 · WARM PEACH</div>
+              <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">부드러운 온기와 화사함을 깨우는 피치</div>
+              <div style="font-size: 11px; color: #525252; line-height: 1.45;">
                 · 치크 &amp; 립: 립 앤 치크 밤 (NUDE PEACH)<br>
-                · 포인트 립: 트리트먼트 립 틴트 (SOFT CORAL)<br>
-                <span style="color: #737373;">→ 화사하고 맑은 봄 햇살 생기 무드</span>
+                · 수채화 치크: 세럼 블러쉬 (PEACH VEIL)<br>
+                <span style="color: #737373;">→ 과도한 코랄 없이 피부에 따뜻하고 맑은 생기를 불어넣는 웜톤 조합</span>
               </div>
             </div>
 
-            <!-- Pair 02 -->
-            <div style="background: #ffffff; border: 1px solid #d4d4d4; padding: 12px; border-left: 3px solid #e5b8b7;">
-              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 3px;">PAIR 02 · MUTE COOL</div>
-              <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">촉촉하고 차분한 로즈 무드</div>
-              <div style="font-size: 11px; color: #525252; line-height: 1.4;">
-                · 치크: 세럼 블러쉬 (ROSY VEIL)<br>
-                · 립: 트리트먼트 립 틴트 (ROSE TEA)<br>
-                <span style="color: #737373;">→ 은은하게 스며드는 수채화 로즈 무드</span>
+            <!-- Pair 03: Cool Mauve -->
+            <div style="background: #ffffff; border: 1px solid #d4d4d4; padding: 14px; border-left: 3px solid #b5838d;">
+              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 3px;">PAIR 03 · COOL MAUVE</div>
+              <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">차분하고 서늘한 깊이를 더한 맑은 모브</div>
+              <div style="font-size: 11px; color: #525252; line-height: 1.45;">
+                · 치크: 세럼 블러쉬 (MAUVE VEIL)<br>
+                · 포인트 립: 트리트먼트 립 틴트 (MAUVE BERRY)<br>
+                <span style="color: #737373;">→ 회기 없이 맑고 투명하게 정돈된 분위기를 완성하는 쿨톤 조합</span>
               </div>
             </div>
 
-            <!-- Pair 03 -->
-            <div style="background: #ffffff; border: 1px solid #d4d4d4; padding: 12px; border-left: 3px solid #fcf6e6;">
-              <div style="font-size: 10px; font-weight: 800; color: #737373; margin-bottom: 3px;">PAIR 03 · QUICK ALL-IN-ONE</div>
-              <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">10초 원-톤 퀵 생기</div>
-              <div style="font-size: 11px; color: #525252; line-height: 1.4;">
-                · 치크 &amp; 립: 립 앤 치크 밤 (SOFT ROSE) 단독<br>
-                · 브로우: 트리트먼트 브로우 젤 결 정돈<br>
-                <span style="color: #737373;">→ 바쁜 아침 10초 만에 완성하는 자연스러운 생기</span>
-              </div>
-            </div>
+          </div>
+
+          <!-- Brow Matching Tip Footnote inside Pairing box -->
+          <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed #e0e0e0; font-size: 11px; color: #737373; display: flex; align-items: center; gap: 6px;">
+            <span style="font-weight: 800; color: #171717;">💡 브로우 매칭 팁:</span>
+            밝은/탈색 모발은 <strong>LIGHT ASH BROWN</strong>, 자연 갈색 모발은 <strong>NATURAL BROWN</strong>, 자연 흑발은 <strong>DEEP BROWN</strong>으로 본래 눈썹 결을 살려 함께 연출하세요.
           </div>
         </div>
       </div>

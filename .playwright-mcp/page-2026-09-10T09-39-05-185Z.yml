@@ -1,0 +1,326 @@
+- generic [ref=f5e5]:
+  - generic [ref=f5e6]:
+    - generic [ref=f5e7]:
+      - generic [ref=f5e33]:
+        - application "Figma Design 1개의 항목 선택됨" [active] [ref=f5e1260]
+        - status [ref=f5e43]: 현재 보드에 대한 스크린 리더 지원이 비활성화되어 있습니다. 접근성 설정에서 사용 설정하려면 Ctrl+K을(를) 누르고, 접근성 설정을 입력한 후 Enter 키를 누릅니다. 사용 가능한 키보드 단축키를 보려면 Ctrl+Shift+물음표을(를) 입력하세요.
+        - status [ref=f5e45]
+        - generic:
+          - generic:
+            - generic:
+              - region "캔버스 댓글 영역":
+                - button "새 댓글 만들기"
+        - region "왼쪽 사이드바" [ref=f5e47]:
+          - toolbar "탐색 표시줄" [ref=f5e48]:
+            - generic [ref=f5e49]:
+              - button "메인 메뉴" [ref=f5e50]
+              - separator [ref=f5e51]
+              - button "파일" [expanded] [ref=f5e52]
+              - button "에셋" [ref=f5e53]
+              - button "도구" [ref=f5e54]
+              - separator [ref=f5e55]
+              - button "변수" [ref=f5e56]
+            - generic [ref=f5e57]:
+              - generic [ref=f5e58]:
+                - status
+              - button "누락된 글꼴" [ref=f5e59]
+          - generic [ref=f5e60]:
+            - generic [ref=f5e62]:
+              - generic [ref=f5e63]:
+                - generic [ref=f5e64]:
+                  - generic [ref=f5e66]:
+                    - generic [ref=f5e68]:
+                      - button "박주연, 파일 이름" [ref=f5e69]: 박주연
+                      - generic [ref=f5e70]: 파일 이름
+                    - button "파일 편집 메뉴" [ref=f5e74]
+                  - button "UI 최소화" [ref=f5e75]
+                - link "Team project" [ref=f5e78]:
+                  - /url: https://www.figma.com/files/project/604082686
+              - generic [ref=f5e79]:
+                - generic [ref=f5e81]:
+                  - heading [level=2] [ref=f5e82]:
+                    - generic [ref=f5e83]:
+                      - button "페이지" [expanded] [ref=f5e84]
+                      - button "찾기" [ref=f5e87]
+                      - button "새 페이지 추가" [ref=f5e89]
+                  - generic [ref=f5e92]:
+                    - grid [ref=f5e100]:
+                      - row [ref=f5e102]:
+                        - gridcell [ref=f5e103]:
+                          - button "AI" [ref=f5e106]
+                      - row [ref=f5e110]:
+                        - gridcell [ref=f5e111]:
+                          - button "반응형 사이트" [ref=f5e114]
+                      - row [ref=f5e118]:
+                        - gridcell [ref=f5e119]:
+                          - button "flex 학습" [ref=f5e122]
+                      - row [ref=f5e126]:
+                        - gridcell [ref=f5e127]:
+                          - button "figma(Auto Layout) &Coding" [ref=f5e130]
+                      - row [ref=f5e134]:
+                        - gridcell [ref=f5e135]:
+                          - button "코딩 평가" [ref=f5e138]
+                      - row [ref=f5e142]:
+                        - gridcell [ref=f5e143]:
+                          - button "시각디자인 리서치 조사" [ref=f5e146]
+                      - row [ref=f5e150]:
+                        - gridcell [ref=f5e151]:
+                          - button "시각디자인 리서치 분석" [ref=f5e154]
+                      - row [ref=f5e158]:
+                        - gridcell [ref=f5e159]:
+                          - button "패키지" [ref=f5e162]
+                      - row [ref=f5e166]:
+                        - gridcell [ref=f5e167]:
+                          - button "웹디자인" [ref=f5e170]
+                    - slider "크기 조정 핸들" [ref=f5e174]
+                - generic [ref=f5e176]:
+                  - heading [level=2] [ref=f5e2002]:
+                    - generic [ref=f5e178]:
+                      - button "레이어" [expanded] [ref=f5e179]
+                      - button "레이어 접기" [ref=f5e2004]
+                  - treegrid [ref=f5e182]:
+                    - generic [ref=f5e184]:
+                      - row [ref=f5e2005]:
+                        - generic [ref=f5e187]:
+                          - generic [ref=f5e188]:
+                            - button [aria-hidden] [ref=f5e189]
+                            - gridcell [aria-hidden] [ref=f5e190]
+                          - gridcell "메인페이지_스토리보드2차.html" [ref=f5e198]
+                      - row [expanded] [selected] [ref=f5e2591]:
+                        - generic [ref=f5e203]:
+                          - generic [ref=f5e204]:
+                            - button [aria-hidden] [ref=f5e2006]
+                            - gridcell [aria-hidden] [ref=f5e206]
+                          - gridcell "Frame 1" [ref=f5e214]
+                      - row [expanded] [level=1] [selected] [ref=f5e2635]:
+                        - generic [ref=f5e1800]:
+                          - generic [ref=f5e1801]:
+                            - button [aria-hidden] [ref=f5e1802]
+                            - gridcell [aria-hidden] [ref=f5e1803]
+                          - gridcell "메인페이지_스토리보드2차.html" [ref=f5e1811]
+                      - row [level=2] [selected] [ref=f5e2636]:
+                        - generic [ref=f5e2595]:
+                          - generic [ref=f5e2597]:
+                            - button [aria-hidden] [ref=f5e2598]
+                            - gridcell [aria-hidden] [ref=f5e2599]
+                          - gridcell "전체 페이지" [ref=f5e2607]
+                        - generic [ref=f5e2637]:
+                          - gridcell [ref=f5e2638]:
+                            - generic [ref=f5e2639]:
+                              - checkbox "레이어 잠금 전환" [ref=f5e2640]
+                              - generic: 레이어 잠금 전환
+                          - gridcell [ref=f5e2641]:
+                            - generic [ref=f5e2642]:
+                              - checkbox "레이어 표시 전환" [ref=f5e2643]
+                              - generic: 레이어 표시 전환
+                      - row [level=2] [selected] [ref=f5e2611]:
+                        - generic [ref=f5e2613]:
+                          - generic [ref=f5e2615]:
+                            - button [aria-hidden] [ref=f5e2616]
+                            - gridcell [aria-hidden] [ref=f5e2617]
+                          - gridcell "SEC-010-13 / QUICK CTA" [ref=f5e2627]
+            - slider "크기 조정 핸들" [ref=f5e219]
+        - generic:
+          - generic:
+            - region "오른쪽 사이드바":
+              - generic [ref=f5e220]:
+                - generic [ref=f5e222]:
+                  - generic [ref=f5e224]:
+                    - button "멀티플레이어 도구" [ref=f5e228]
+                    - generic [ref=f5e244]:
+                      - group "프로토타입 보기" [ref=f5e245]:
+                        - button "프레젠테이션" [ref=f5e246]
+                        - button "프로토타입 보기" [ref=f5e247]
+                      - generic [ref=f5e248]:
+                        - button "공유하기" [ref=f5e249]
+                        - status
+                  - generic [ref=f5e250]:
+                    - tablist [ref=f5e252]:
+                      - tab "디자인" [selected] [ref=f5e253]:
+                        - generic [aria-hidden] [ref=f5e254]: 디자인
+                      - tab "프로토타입" [ref=f5e256]:
+                        - generic [aria-hidden] [ref=f5e257]: 프로토타입
+                    - button "5%, 확대/축소 및 보기 옵션" [ref=f5e2024]: 5%
+                  - generic [ref=f5e266]:
+                    - generic [ref=f5e2026]:
+                      - button "프레임, 프레임 치수 사전 설정" [ref=f5e2029]:
+                        - generic: 프레임
+                      - generic [ref=f5e2030]:
+                        - generic [ref=f5e2520]:
+                          - checkbox "ready for dev 상태 전환" [ref=f5e2521]
+                          - generic: ready for dev 상태 전환
+                        - button "컴포넌트 만들기" [ref=f5e2037]
+                        - button "추가 액션" [ref=f5e2523]
+                    - generic [ref=f5e2041]:
+                      - heading "위치" [level=2] [ref=f5e2044]
+                      - group "정렬" [ref=f5e2047]:
+                        - generic [ref=f5e2052]:
+                          - button "왼쪽 정렬" [ref=f5e2053]
+                          - button "가로 가운데 정렬" [ref=f5e2054]
+                          - button "오른쪽 정렬" [ref=f5e2055]
+                        - generic [ref=f5e2057]:
+                          - button "상단 정렬" [ref=f5e2058]
+                          - button "세로 가운데 정렬" [ref=f5e2059]
+                          - button "하단 정렬" [ref=f5e2060]
+                        - button "추가 액션" [ref=f5e2063]
+                      - group "위치" [ref=f5e2065]:
+                        - generic [ref=f5e2071]:
+                          - generic [aria-hidden] [ref=f5e2072]:
+                            - generic: X
+                          - spinbutton "X 위치" [ref=f5e2073]: "0"
+                        - generic [ref=f5e2077]:
+                          - generic [aria-hidden] [ref=f5e2078]:
+                            - generic: "Y"
+                          - spinbutton "Y 위치" [ref=f5e2079]: "0"
+                      - group "회전" [ref=f5e2525]:
+                        - spinbutton "회전" [ref=f5e2533]: 0°
+                        - generic [ref=f5e2535]:
+                          - button "오른쪽으로 90˚ 회전" [ref=f5e2536]
+                          - button "좌우 반전" [ref=f5e2537]
+                          - button "상하 반전" [ref=f5e2538]
+                    - generic [ref=f5e2097]:
+                      - generic [ref=f5e2098]:
+                        - heading "레이아웃" [level=2] [ref=f5e2539]
+                        - generic [ref=f5e2101]:
+                          - button "크기에 맞게 조정하기" [ref=f5e2541]
+                          - generic [ref=f5e2104]:
+                            - checkbox "오토레이아웃 전환" [ref=f5e2105]
+                            - generic: 오토레이아웃 전환
+                      - group "흐름" [ref=f5e2106]:
+                        - radiogroup "레이아웃" [ref=f5e2109]:
+                          - generic [ref=f5e2111]:
+                            - generic [ref=f5e2112]:
+                              - radio "자유 입력" [checked] [ref=f5e2113]
+                              - generic [ref=f5e2117]: 자유 입력
+                            - generic [ref=f5e2118]:
+                              - radio "세로" [ref=f5e2119]
+                              - generic [ref=f5e2123]: 세로
+                            - generic [ref=f5e2124]:
+                              - radio "Horizontal(가로)" [ref=f5e2125]
+                              - generic [ref=f5e2129]: Horizontal(가로)
+                            - generic [ref=f5e2130]:
+                              - radio "그리드" [ref=f5e2131]
+                              - generic [ref=f5e2135]: 그리드
+                      - group "크기" [ref=f5e2543]:
+                        - generic "너비" [ref=f5e2554]:
+                          - generic [ref=f5e2555]: W
+                          - textbox "너비" [ref=f5e2558]: "1904"
+                        - generic "높이" [ref=f5e2563]:
+                          - generic [ref=f5e2564]: H
+                          - textbox "높이" [ref=f5e2567]: "15584"
+                        - generic [ref=f5e2570]:
+                          - checkbox "가로 세로 비율 고정" [ref=f5e2571]
+                          - generic: 가로 세로 비율 고정
+                      - generic [ref=f5e2574]:
+                        - checkbox "넘친 콘텐츠 숨기기" [checked] [ref=f5e2576]
+                        - generic [ref=f5e2577]: 넘친 콘텐츠 숨기기
+                    - generic [ref=f5e2174]:
+                      - generic [ref=f5e2175]:
+                        - heading "외형" [level=2] [ref=f5e2177]
+                        - generic [ref=f5e2178]:
+                          - generic [ref=f5e2181]:
+                            - checkbox "숨기기" [ref=f5e2182]
+                            - generic: 숨기기
+                          - button "블렌드 모드 적용" [ref=f5e2183]
+                      - group [ref=f5e2185]:
+                        - generic [aria-hidden] [ref=f5e2186]: 불투명도
+                        - textbox [ref=f5e2194]: 100%
+                        - generic [aria-hidden] [ref=f5e2195]: 모서리 반경
+                        - textbox [ref=f5e2204]: "0"
+                        - button "개별 모서리" [ref=f5e2207]
+                    - generic [ref=f5e2211]:
+                      - generic [ref=f5e2213]:
+                        - heading "채우기" [level=2] [ref=f5e2218]
+                        - generic [ref=f5e2219]:
+                          - button "채우기, 스타일 및 변수 적용" [ref=f5e2222]
+                          - button "채우기 추가" [ref=f5e2227]
+                      - grid [ref=f5e2230]:
+                        - row [ref=f5e2578]:
+                          - 'gridcell "단색 hex: FFFFFF 색상 FFFFFF 100 %" [ref=f5e2579]':
+                            - generic [ref=f5e2237]:
+                              - 'button "단색 hex: FFFFFF" [ref=f5e2580]'
+                              - generic [ref=f5e2581]:
+                                - generic [ref=f5e2582]: 색상
+                                - generic [aria-hidden] [ref=f5e2583]: 자동 입력 가능. 입력하여 제안을 확인하세요.
+                                - combobox "색상" [ref=f5e2586]: FFFFFF
+                              - generic [ref=f5e2588]:
+                                - textbox "%" [ref=f5e2589]: "100"
+                                - generic [ref=f5e2590]: "%"
+                          - gridcell [ref=f5e2249]:
+                            - generic [ref=f5e2251]:
+                              - checkbox "표시 전환" [checked] [ref=f5e2252]
+                              - generic: 표시 전환
+                          - gridcell [ref=f5e2253]:
+                            - button "제거" [ref=f5e2255]
+                    - generic [ref=f5e2260]:
+                      - button "외곽선" [ref=f5e2261]:
+                        - heading "외곽선" [level=2]
+                      - generic [ref=f5e2262]:
+                        - button "외곽선, 스타일 및 변수 적용" [ref=f5e2265]
+                        - button "외곽선 추가" [ref=f5e2270]
+                    - generic [ref=f5e2275]:
+                      - button "효과" [ref=f5e2276]:
+                        - heading "효과" [level=2]
+                      - generic [ref=f5e2277]:
+                        - button "효과, 스타일 적용하기" [ref=f5e2280]
+                        - button "효과 추가" [ref=f5e2285]
+                    - generic [ref=f5e2287]:
+                      - heading "선택 색상" [level=2] [ref=f5e2293]
+                      - button "선택 색상 표시" [ref=f5e2297]
+                    - generic [ref=f5e2302]:
+                      - button "레이아웃 가이드" [ref=f5e2303]:
+                        - heading "레이아웃 가이드" [level=2]
+                      - generic [ref=f5e2304]:
+                        - button "레이아웃 가이드, 스타일 적용하기" [ref=f5e2307]
+                        - button "레이아웃 가이드 추가" [ref=f5e2312]
+                    - generic [ref=f5e360]:
+                      - button "내보내기" [ref=f5e361]
+                      - button "내보내기 설정 추가" [ref=f5e365]
+                - slider "크기 조정 핸들" [ref=f5e395]
+      - generic:
+        - generic:
+          - generic:
+            - region "애플리케이션 도구 모음":
+              - toolbar "편집기" [ref=f5e398]:
+                - generic [ref=f5e404]:
+                  - group "이동" [ref=f5e405]:
+                    - button "이동" [pressed] [ref=f5e406]
+                    - button "이동 도구" [ref=f5e407]
+                  - group "프레임" [ref=f5e408]:
+                    - button "프레임" [ref=f5e409]
+                    - button "영역 도구" [ref=f5e410]
+                  - group "직사각형" [ref=f5e411]:
+                    - button "직사각형" [ref=f5e412]
+                    - button "모양 도구" [ref=f5e413]
+                  - group "펜" [ref=f5e414]:
+                    - button "펜" [ref=f5e415]
+                    - button "창작 도구" [ref=f5e416]
+                  - group "텍스트" [ref=f5e417]:
+                    - button "텍스트" [ref=f5e418]
+                    - button "문자 도구" [ref=f5e419]
+                  - group "댓글" [ref=f5e420]:
+                    - button "댓글" [ref=f5e421]
+                    - button "댓글 도구" [ref=f5e422]
+                  - button "작업" [ref=f5e423]
+                - radiogroup "공구 벨트 모드" [ref=f5e427]:
+                  - generic [ref=f5e429]:
+                    - generic [ref=f5e431]:
+                      - radio "그리기" [ref=f5e432]
+                      - generic [ref=f5e436]: 그리기
+                    - generic [ref=f5e437]:
+                      - radio "디자인" [checked] [ref=f5e438]
+                      - generic [ref=f5e442]: 디자인
+                    - generic [ref=f5e443]:
+                      - radio "모션" [ref=f5e444]
+                      - generic [ref=f5e448]: 모션
+                    - generic [ref=f5e449]:
+                      - radio "Dev Mode" [ref=f5e450]
+                      - generic [ref=f5e454]: Dev Mode
+    - region "도움말/확대/축소 도구 모음" [ref=f5e19]:
+      - toolbar "도움말/확대/축소 도구 모음" [ref=f5e21]:
+        - button "도움말" [ref=f5e23]
+  - generic:
+    - status
+    - group [ref=f5e25]:
+      - alert [ref=f5e2632]
+      - alert [ref=f5e2634]
