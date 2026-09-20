@@ -124,8 +124,8 @@
 
     /* Grey Box Placeholders */
     .img-placeholder {
-      background-color: #e5e5e5;
-      border: 1px solid #737373;
+      background-color: #dde0da;
+      border: none;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1739,23 +1739,20 @@ body > .section-wrapper:first-of-type .sec-id {
 .hero-stage-bg {
   inset: 0 !important;
   padding: 40px 48px !important;
-  background-color: #edf1f2 !important;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(237, 241, 242, 0.9) 100%) !important;
+  background-color: #dde0da !important;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(221, 224, 218, 0.95) 100%) !important;
   display: flex !important;
   justify-content: flex-end !important;
   align-items: center !important;
-  border: 1px dashed rgba(32, 33, 31, 0.22) !important;
+  border: none !important;
 }
 
 .hero-bg-visual-content {
   opacity: 1 !important;
   pointer-events: auto !important;
-  max-width: 440px;
-  background: rgba(255, 255, 255, 0.88);
-  padding: 24px 28px;
-  border-radius: 8px;
-  border: 1px solid rgba(32, 33, 31, 0.12);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .hero-overlay-card {
@@ -1829,9 +1826,10 @@ body > .section-wrapper:first-of-type .sec-id {
 .set-hero-img-box {
   position: relative;
   overflow: hidden;
-  background-color: #f4f5f2 !important;
+  background-color: #dde0da !important;
   background-image: none !important;
-  border: 1px dashed rgba(32, 33, 31, 0.25) !important;
+  border: none !important;
+  border-radius: 4px;
   box-shadow: none !important;
   color: var(--nunid-ink) !important;
   font-size: 11px !important;
@@ -1841,13 +1839,38 @@ body > .section-wrapper:first-of-type .sec-id {
   justify-content: center !important;
   padding: 18px !important;
   text-align: center;
-  transition: background-color 180ms ease, border-color 180ms ease;
+  transition: background-color 180ms ease;
 }
 
 .img-placeholder:hover,
 .set-hero-img-box:hover {
-  background-color: #eceee9 !important;
-  border-color: var(--nunid-coral) !important;
+  background-color: #cfd3cc !important;
+}
+
+.img-badge-simple {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  color: rgba(55, 62, 57, 0.48) !important;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  white-space: nowrap;
+  pointer-events: none;
+  max-width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color 180ms ease, opacity 180ms ease;
+}
+
+.img-placeholder:hover .img-badge-simple,
+.set-hero-img-box:hover .img-badge-simple {
+  color: rgba(55, 62, 57, 0.75) !important;
 }
 
 .img-placeholder > *,
@@ -1857,22 +1880,11 @@ body > .section-wrapper:first-of-type .sec-id {
 }
 
 .img-placeholder::before,
-.set-hero-img-box::before {
-  display: none !important;
-}
-
+.set-hero-img-box::before,
 .img-placeholder::after,
 .set-hero-img-box::after {
-  content: "PLACEHOLDER";
-  display: inline-block;
-  margin-top: 6px;
-  padding: 2px 6px;
-  background: rgba(214, 129, 112, 0.12);
-  color: var(--nunid-coral);
-  font-size: 8.5px;
-  font-weight: 750;
-  letter-spacing: 0.1em;
-  border-radius: 2px;
+  display: none !important;
+  content: none !important;
 }
 
 /* Problem and metric editorial band */
@@ -2454,8 +2466,8 @@ body > .section-wrapper:first-of-type .sec-id {
 .wire-product-card .card-img-top {
   aspect-ratio: 1 / 1 !important;
   width: 100% !important;
-  background-color: #f4f5f2 !important;
-  border: 1px dashed rgba(32, 33, 31, 0.22) !important;
+  background-color: #dde0da !important;
+  border: none !important;
   border-radius: 4px;
   display: flex !important;
   align-items: center !important;
@@ -2464,13 +2476,12 @@ body > .section-wrapper:first-of-type .sec-id {
   font-weight: 800 !important;
   color: #737975 !important;
   font-family: inherit !important;
-  transition: transform 200ms ease, background-color 200ms ease, border-color 200ms ease;
+  transition: transform 200ms ease, background-color 200ms ease;
 }
 
 .wire-product-card:hover .card-img-top {
   transform: translateY(-2px);
-  background-color: #eceee9 !important;
-  border-color: var(--nunid-coral) !important;
+  background-color: #cfd3cc !important;
 }
 
 .wire-product-card:hover .card-img-top {
@@ -3217,21 +3228,8 @@ body > .section-wrapper:first-of-type .sec-id {
       
       <!-- 16:10 Hero Image Stage (16:10 비율 이미지 화면 전체 꽉 차게 배치) -->
       <div class="hero-stage-16-10">
-        <!-- Background Layer: 16:10 Full Visual Image (우측 영역에 배치하여 좌측 오버레이 카드와 글자 겹침 방지) -->
-        <div class="hero-stage-bg">
-          <div class="hero-bg-visual-content">
-            <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-              [IMAGE GUIDE] 16:10 HERO VISUAL
-            </div>
-            <div style="font-size: 13px; font-weight: 800; color: #525252; margin-bottom: 6px;">
-              시그니처 3-Step 풀 패키지 &amp; 텍스처 연출
-            </div>
-            <div style="font-size: 10.5px; color: #737373; line-height: 1.5;">
-              · 프렙 세럼 30mL · 스킨 틴트 50mL · 립앤치크 8g 입체 오브제 배치<br>
-              · 워터 젤 · 0.02mm 극박 결광 · 멜팅 밤 텍스처가 자연스럽게 펼쳐지는 자연광 연출 컷
-            </div>
-          </div>
-        </div>
+        <!-- Background Layer: 16:10 Full Visual Image (Clean Studio Canvas) -->
+        <div class="hero-stage-bg"></div>
 
         <!-- Foreground Layer: 좌측 글 정보가 이미지 위에 겹쳐서 배치 (Overlay) -->
         <div class="hero-overlay-card">
@@ -3269,30 +3267,14 @@ body > .section-wrapper:first-of-type .sec-id {
       <div class="problem-visual-split">
         <div class="problem-visual-col">
           <div class="card-badge before">BEFORE / COMPLEX ROUTINE</div>
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 20px; text-align: center;">
-            <div style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 8px;">
-              IMAGE SPEC 1:1
-            </div>
-            <div style="font-size: 14px; font-weight: 900; color: #171717; margin-bottom: 6px;">
-              복잡하게 겹쳐진 기존 화장대
-            </div>
-            <div style="font-size: 11px; color: #525252; line-height: 1.5;">
-              스킨, 로션, 에센스, 크림, 프라이머, 파운데이션 등<br>10여 개 제품이 어지럽게 늘어선 아침 화장대 풍경
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%;">
+            <span class="img-badge-simple">1:1 · 복잡한 기존 화장대</span>
           </div>
         </div>
         <div class="problem-visual-col">
           <div class="card-badge after">AFTER / NUNID 3-STEP</div>
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 20px; text-align: center;">
-            <div style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 8px;">
-              IMAGE SPEC 1:1
-            </div>
-            <div style="font-size: 14px; font-weight: 900; color: #171717; margin-bottom: 6px;">
-              NUNID 3개 제품으로 정돈된 화장대
-            </div>
-            <div style="font-size: 11px; color: #525252; line-height: 1.5;">
-              프렙 세럼, 세럼 스킨 틴트, 립 앤 치크 밤 3개 제품만으로<br>여백과 정갈함이 돋보이는 미니멀 화장대 연출
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%;">
+            <span class="img-badge-simple">1:1 · NUNID 3개 제품 화장대</span>
           </div>
         </div>
       </div>
@@ -3360,54 +3342,22 @@ body > .section-wrapper:first-of-type .sec-id {
         <!-- Right: 60% Visual Composition (4:5 Main Portrait + 3x 1:1 Sub Textures on the right) -->
         <div class="philosophy-right-visuals">
           <!-- Main Portrait Image (4:5 Ratio) -->
-          <div class="img-placeholder" style="aspect-ratio: 4 / 5; width: 100%; padding: 20px; text-align: center; box-sizing: border-box;">
-            <div style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 8px;">
-              IMAGE SPEC 4:5 (MAIN)
-            </div>
-            <div style="font-size: 15px; font-weight: 900; color: #171717; margin-bottom: 6px;">
-              맑은 피부결 내추럴 인물 비주얼
-            </div>
-            <div style="font-size: 11px; color: #525252; line-height: 1.5; max-width: 280px;">
-              두껍게 가리지 않고 자연스러운 본연의 피부결과 투명한 광채가 살아있는 자연광 모델 연출 컷
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 4 / 5; width: 100%; box-sizing: border-box;">
+            <span class="img-badge-simple">4:5 · 맑은 피부결 인물 비주얼</span>
           </div>
 
           <!-- 3 Sub Texture Images Vertically Stacked (1:1 Ratio each, Equal Total Height to 4:5 Main Image) -->
           <div class="sub-texture-vertical-list">
-            <div class="img-placeholder sub-texture-item" style="padding: 8px; text-align: center;">
-              <div style="font-size: 9px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 1px 4px; margin-bottom: 2px;">
-                1:1 SUB 01
-              </div>
-              <div style="font-size: 11px; font-weight: 800; color: #171717; margin-bottom: 2px;">
-                흐르는 순간
-              </div>
-              <div style="font-size: 9px; color: #525252; line-height: 1.2;">
-                고수분 프렙 세럼 근접 컷
-              </div>
+            <div class="img-placeholder sub-texture-item" style="padding: 6px !important;">
+              <span class="img-badge-simple" style="font-size: 9.5px; white-space: normal; text-align: center; line-height: 1.35;">1:1 · 흐르는 순간 (수분 프렙 텍스처)</span>
             </div>
 
-            <div class="img-placeholder sub-texture-item" style="padding: 8px; text-align: center;">
-              <div style="font-size: 9px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 1px 4px; margin-bottom: 2px;">
-                1:1 SUB 02
-              </div>
-              <div style="font-size: 11px; font-weight: 800; color: #171717; margin-bottom: 2px;">
-                펴지는 순간
-              </div>
-              <div style="font-size: 9px; color: #525252; line-height: 1.2;">
-                세럼 스킨 틴트 극박 결광 컷
-              </div>
+            <div class="img-placeholder sub-texture-item" style="padding: 6px !important;">
+              <span class="img-badge-simple" style="font-size: 9.5px; white-space: normal; text-align: center; line-height: 1.35;">1:1 · 펴지는 순간 (극박 결광 피니시)</span>
             </div>
 
-            <div class="img-placeholder sub-texture-item" style="padding: 8px; text-align: center;">
-              <div style="font-size: 9px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 1px 4px; margin-bottom: 2px;">
-                1:1 SUB 03
-              </div>
-              <div style="font-size: 11px; font-weight: 800; color: #171717; margin-bottom: 2px;">
-                녹아드는 순간
-              </div>
-              <div style="font-size: 9px; color: #525252; line-height: 1.2;">
-                립 앤 치크 밤 멜팅 질감 컷
-              </div>
+            <div class="img-placeholder sub-texture-item" style="padding: 6px !important;">
+              <span class="img-badge-simple" style="font-size: 9.5px; white-space: normal; text-align: center; line-height: 1.35;">1:1 · 녹아드는 순간 (생기 멜팅 질감)</span>
             </div>
           </div>
         </div>
@@ -3433,16 +3383,8 @@ body > .section-wrapper:first-of-type .sec-id {
         <!-- STEP 1: Left Image, Right Description -->
         <div class="routine-zigzag-item">
           <div class="routine-img-col">
-            <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 18px; text-align: center;">
-              <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-                [IMAGE GUIDE] 1:1 STEP 1
-              </div>
-              <div style="font-size: 12px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-                프렙 세럼 제형 &amp; 도포 연출
-              </div>
-              <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-                · 수분길을 여는 워터 젤 제형 실도포 컷
-              </div>
+            <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%;">
+              <span class="img-badge-simple">1:1 · STEP 01 프렙 세럼 제형 &amp; 도포</span>
             </div>
           </div>
           <div class="routine-text-col">
@@ -3480,16 +3422,8 @@ body > .section-wrapper:first-of-type .sec-id {
         <!-- STEP 2: Left Description, Right Image (Reversed) -->
         <div class="routine-zigzag-item reverse">
           <div class="routine-img-col">
-            <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 18px; text-align: center;">
-              <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-                [IMAGE GUIDE] 1:1 STEP 2
-              </div>
-              <div style="font-size: 12px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-                맨피부 vs 스킨 틴트 분할 비교
-              </div>
-              <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-                · 0.02mm 극박 결광 도포 전후 분할 컷
-              </div>
+            <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%;">
+              <span class="img-badge-simple">1:1 · STEP 02 스킨 틴트 결광 비교</span>
             </div>
           </div>
           <div class="routine-text-col">
@@ -3527,16 +3461,8 @@ body > .section-wrapper:first-of-type .sec-id {
         <!-- STEP 3: Left Image, Right Description -->
         <div class="routine-zigzag-item">
           <div class="routine-img-col">
-            <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 18px; text-align: center;">
-              <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-                [IMAGE GUIDE] 1:1 STEP 3
-              </div>
-              <div style="font-size: 12px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-                입술 &amp; 볼 원-톤 생기 연출
-              </div>
-              <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-                · 입술과 양 볼에 자연스럽게 연결된 투명 생기 컷
-              </div>
+            <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%;">
+              <span class="img-badge-simple">1:1 · STEP 03 립앤치크 생기 연출</span>
             </div>
           </div>
           <div class="routine-text-col">
@@ -3588,16 +3514,8 @@ body > .section-wrapper:first-of-type .sec-id {
       <div class="process-layout">
         <!-- Left: 4:5 Process R&D Visual (4:5 Ratio Strictly Maintained, Exact Equal Height to Right) -->
         <div class="process-left-col">
-          <div class="img-placeholder" style="aspect-ratio: 4 / 5; height: 100%; width: auto; max-width: 100%; padding: 24px 20px; text-align: center; box-sizing: border-box;">
-            <div style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 8px;">
-              IMAGE SPEC 4:5 (R&amp;D PROCESS)
-            </div>
-            <div style="font-size: 15px; font-weight: 900; color: #171717; margin-bottom: 6px;">
-              제형 연구 &amp; 공정 관찰 비주얼
-            </div>
-            <div style="font-size: 12px; color: #525252; line-height: 1.5; max-width: 280px;">
-              비커 속 투명 제형, 투명 필름 위 극박 도포 두께 측정, 피부 밀착 현미경 관찰 및 1:1 샘플 제작 장면을 정밀하게 담은 랩 컷
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 4 / 5; height: 100%; width: auto; max-width: 100%; box-sizing: border-box;">
+            <span class="img-badge-simple">4:5 · 제형 연구 &amp; 공정 랩 비주얼</span>
           </div>
         </div>
 
@@ -3703,17 +3621,8 @@ body > .section-wrapper:first-of-type .sec-id {
           <div class="principle-desc">스킨케어와 베이스 기능을 결합한 하이브리드 제형 기술로, 도구 없이 손으로 펴 발라 바쁜 아침 3분 만에 완결되는 경쾌한 루틴 경험을 완성합니다.</div>
           
           <!-- 10개 vs 3개 제품 비교 1:1 이미지 -->
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 14px; text-align: center; margin: 12px 0;">
-            <div style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px;">
-              IMAGE SPEC 1:1 (01 제형과 경험)
-            </div>
-            <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">
-              10개 제품 vs 3개 제품 비교
-            </div>
-            <div style="font-size: 11px; color: #525252; line-height: 1.4;">
-              · [제형 기술] 스킨케어 흡수력과 베이스 밀착력을 결합한 올인원 하이브리드 포뮬러<br>
-              · [사용 경험] 번거로운 도구와 10단계 과정 없이 3분 만에 끝내는 아침 루틴
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; margin: 12px 0;">
+            <span class="img-badge-simple">1:1 · 10단계 vs 3단계 루틴 비교</span>
           </div>
 
           <a href="#routine-sec" class="link-arrow" style="margin-top: auto;">루틴 가이드 보기 →</a>
@@ -3756,17 +3665,8 @@ body > .section-wrapper:first-of-type .sec-id {
           <div class="principle-desc">인위적 파우더로 덮지 않고, 피부 결 사이로 녹아드는 저채도 투명 피그먼트가 각질 부각 없이 본래 피부가 좋은 듯 자연스러운 맑은 속광을 살려냅니다.</div>
           
           <!-- 두꺼운 커버 vs 얇은 결 보정 근접 비교 1:1 이미지 -->
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 14px; text-align: center; margin: 12px 0;">
-            <div style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px;">
-              IMAGE SPEC 1:1 (03 제형과 경험)
-            </div>
-            <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">
-              두꺼운 커버 vs 얇은 결 보정 근접 비교
-            </div>
-            <div style="font-size: 11px; color: #525252; line-height: 1.4;">
-              · [제형 기술] 텁텁함 없이 피부 톤과 부드럽게 어우러지는 수분 분산 결 피그먼트<br>
-              · [사용 경험] 마스크 같은 두꺼운 가면감 없이 하루 종일 투명하고 맑은 결 유지
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; margin: 12px 0;">
+            <span class="img-badge-simple">1:1 · 두꺼운 커버 vs 투명 결광 비교</span>
           </div>
 
           <a href="#cat-sec" class="link-arrow" style="margin-top: auto;">제형 랩 둘러보기 →</a>
@@ -3794,16 +3694,8 @@ body > .section-wrapper:first-of-type .sec-id {
           <div class="story-product-spec">30mL · <span class="price">32,000원</span></div>
 
           <!-- 1:1 Image Placeholder (Compact Guide) -->
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 16px; text-align: center; margin-bottom: 14px;">
-            <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-              [IMAGE GUIDE] 1:1 PREP SERUM
-            </div>
-            <div style="font-size: 12px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-              워터 젤 수분 코팅 텍스처
-            </div>
-            <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-              · 메마른 피부에 촘촘하게 스며드는 가벼운 워터 젤 수분막 연출
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; margin-bottom: 14px;">
+            <span class="img-badge-simple">1:1 · 워터 젤 수분 코팅 텍스처</span>
           </div>
 
           <div class="story-card-desc" style="margin-bottom: 12px;">
@@ -3839,16 +3731,8 @@ body > .section-wrapper:first-of-type .sec-id {
           <div class="story-product-spec">25mL · <span class="price">28,000원</span></div>
 
           <!-- 1:1 Image Placeholder (Compact Guide) -->
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 16px; text-align: center; margin-bottom: 14px;">
-            <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-              [IMAGE GUIDE] 1:1 BLUR PRIMER
-            </div>
-            <div style="font-size: 12px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-              소프트 블러 젤-크림 텍스처
-            </div>
-            <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-              · 모공과 요철을 부드럽게 감싸는 실키 블러 텍스처 연출
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; margin-bottom: 14px;">
+            <span class="img-badge-simple">1:1 · 소프트 블러 실키 텍스처</span>
           </div>
 
           <div class="story-card-desc" style="margin-bottom: 12px;">
@@ -3899,16 +3783,8 @@ body > .section-wrapper:first-of-type .sec-id {
           <div class="story-product-spec">50mL · <span class="price">36,000원</span></div>
 
           <!-- 1:1 Image Placeholder (Compact Guide) -->
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 16px; text-align: center; margin-bottom: 14px;">
-            <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-              [IMAGE GUIDE] 1:1 SKIN TINT
-            </div>
-            <div style="font-size: 12px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-              0.02mm 극박 결광 도포 연출
-            </div>
-            <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-              · 맑은 결이 비치는 얇은 세럼 플루이드 제형 &amp; 투명 톤 보정 연출
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; margin-bottom: 14px;">
+            <span class="img-badge-simple">1:1 · 0.02mm 극박 결광 도포</span>
           </div>
 
           <div class="story-card-desc" style="margin-bottom: 12px;">
@@ -3944,16 +3820,8 @@ body > .section-wrapper:first-of-type .sec-id {
           <div class="story-product-spec">15g · <span class="price">38,000원</span></div>
 
           <!-- 1:1 Image Placeholder (Compact Guide) -->
-          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; padding: 16px; text-align: center; margin-bottom: 14px;">
-            <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-              [IMAGE GUIDE] 1:1 CUSHION
-            </div>
-            <div style="font-size: 12px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-              내추럴 새틴 커버 피팅 연출
-            </div>
-            <div style="font-size: 10.5px; color: #737373; line-height: 1.4;">
-              · 퍼프로 가볍게 두드려 매끄러운 실크 결광을 완성하는 밀착 연출
-            </div>
+          <div class="img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; margin-bottom: 14px;">
+            <span class="img-badge-simple">1:1 · 내추럴 새틴 실크 결광 피팅</span>
           </div>
 
           <div class="story-card-desc" style="margin-bottom: 12px;">
@@ -3999,17 +3867,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
       <div class="color-editorial-layout">
         <!-- Top: Editorial Swatch Combined Visual -->
-        <div class="img-placeholder" style="aspect-ratio: 2 / 1; width: 100%; padding: 18px; text-align: center;">
-          <div style="font-size: 10px; font-weight: 700; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px; display: inline-block;">
-            [IMAGE GUIDE] 2:1 COLOR EDITORIAL SWATCH
-          </div>
-          <div style="font-size: 13px; font-weight: 800; color: #525252; margin-bottom: 4px;">
-            3대 공통 컬러 방향 &amp; 4종 텍스처 수채화 연출
-          </div>
-          <div style="font-size: 10.5px; color: #737373; line-height: 1.5;">
-            · 크리미 멜팅 밤 · 워터리 세럼-젤 · 워터 젤 세럼 틴트 · 유연한 브로우 젤 4종의 맑은 텍스처 스와치<br>
-            · 뉴트럴 로즈, 웜 피치, 쿨 모브 3가지 혈색이 피부 결 위로 얇고 투명하게 스며드는 내추럴 그라데이션 연출
-          </div>
+        <div class="img-placeholder" style="aspect-ratio: 2 / 1; width: 100%;">
+          <span class="img-badge-simple">2:1 · 3대 컬러 스와치 &amp; 텍스처 연출</span>
         </div>
 
         <!-- Middle: 4 Essential Color Product Cards (Category -> Purpose -> Specs -> 3 Shades -> Price) -->
@@ -4326,8 +4185,8 @@ body > .section-wrapper:first-of-type .sec-id {
       <div class="card-grid-4">
         <!-- 01. PREP 1 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [PREP 01]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · PREP 01</span>
           </div>
           <div class="card-info">
             <span class="card-tag">PREP · HERO</span>
@@ -4344,8 +4203,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 02. PREP 2 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [PREP 02]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · PREP 02</span>
           </div>
           <div class="card-info">
             <span class="card-tag">PREP</span>
@@ -4362,8 +4221,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 03. PREP 3 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [PREP 03]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · PREP 03</span>
           </div>
           <div class="card-info">
             <span class="card-tag">PREP</span>
@@ -4380,8 +4239,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 04. PREP 4 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [PREP 04]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · PREP 04</span>
           </div>
           <div class="card-info">
             <span class="card-tag">PREP</span>
@@ -4398,8 +4257,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 05. BASE 1 (Hero) -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [BASE 01]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · BASE 01</span>
           </div>
           <div class="card-info">
             <span class="card-tag">BASE · HERO</span>
@@ -4416,8 +4275,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 06. BASE 2 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [BASE 02]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · BASE 02</span>
           </div>
           <div class="card-info">
             <span class="card-tag">BASE</span>
@@ -4434,8 +4293,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 07. BASE 3 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [BASE 03]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · BASE 03</span>
           </div>
           <div class="card-info">
             <span class="card-tag">BASE</span>
@@ -4452,8 +4311,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 08. BASE 4 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [BASE 04]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · BASE 04</span>
           </div>
           <div class="card-info">
             <span class="card-tag">BASE</span>
@@ -4470,8 +4329,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 09. COLOR 1 (Hero) -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [COLOR 01]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · COLOR 01</span>
           </div>
           <div class="card-info">
             <span class="card-tag">COLOR · HERO</span>
@@ -4488,8 +4347,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 10. COLOR 2 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [COLOR 02]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · COLOR 02</span>
           </div>
           <div class="card-info">
             <span class="card-tag">COLOR</span>
@@ -4506,8 +4365,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 11. COLOR 3 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [COLOR 03]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · COLOR 03</span>
           </div>
           <div class="card-info">
             <span class="card-tag">COLOR</span>
@@ -4524,8 +4383,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 12. COLOR 4 -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [COLOR 04]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · COLOR 04</span>
           </div>
           <div class="card-info">
             <span class="card-tag">COLOR</span>
@@ -4542,8 +4401,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 13. SET 1 (Hero Routine Set) -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [SET 01]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · SET 01</span>
           </div>
           <div class="card-info">
             <span class="card-tag">SET · HERO</span>
@@ -4560,8 +4419,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 14. SET 2 (Touch-Up Duo) -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [SET 02]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · SET 02</span>
           </div>
           <div class="card-info">
             <span class="card-tag">SET</span>
@@ -4578,8 +4437,8 @@ body > .section-wrapper:first-of-type .sec-id {
 
         <!-- 15. SET 3 (Skin Detail Duo) -->
         <div class="wire-product-card">
-          <div class="card-img-top img-placeholder" style="aspect-ratio: 1 / 1; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #737373; font-family: monospace;">
-            IMAGE 1:1 [SET 03]
+          <div class="card-img-top img-placeholder">
+            <span class="img-badge-simple" style="font-size: 10px; padding: 4px 10px;">1:1 · SET 03</span>
           </div>
           <div class="card-info">
             <span class="card-tag">SET · DETAIL</span>
@@ -4880,15 +4739,7 @@ body > .section-wrapper:first-of-type .sec-id {
         <!-- Left: Hero Primary Set (시그니처 3-Step 모닝 루틴 세트) -->
         <div class="set-hero-card">
           <div class="set-hero-img-box">
-            <div style="font-size: 10px; font-weight: 800; color: #737373; font-family: monospace; background: #ffffff; border: 1px solid #d4d4d4; padding: 2px 6px; margin-bottom: 6px;">
-              IMAGE SPEC 1:1 [HERO SET]
-            </div>
-            <div style="font-size: 13px; font-weight: 900; color: #171717; margin-bottom: 4px;">
-              시그니처 3-Step 모닝 루틴 세트 풀 패키지
-            </div>
-            <div style="font-size: 11px; color: #525252;">
-              프렙 세럼(30mL) + 세럼 스킨 틴트(50mL) + 립 앤 치크 밤(8g) &amp; 트라이얼 키트
-            </div>
+            <span class="img-badge-simple">1:1 · 시그니처 3-Step 풀 패키지</span>
           </div>
 
           <div class="set-hero-content">
