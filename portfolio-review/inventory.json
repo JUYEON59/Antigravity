@@ -1,0 +1,1148 @@
+[
+  {
+    "file": "gen_svg_clean.py",
+    "bytes": 0
+  },
+  {
+    "file": "section-labels.css",
+    "bytes": 340
+  },
+  {
+    "file": "브랜드소개페이지.html",
+    "bytes": 17544
+  },
+  {
+    "file": "브랜드제품기준.png",
+    "bytes": 559193,
+    "dimensions": [
+      1913,
+      897
+    ]
+  },
+  {
+    "file": "브랜드탄생배경.png",
+    "bytes": 867211,
+    "dimensions": [
+      1919,
+      944
+    ]
+  },
+  {
+    "file": "브랜드히어로.png",
+    "bytes": 703847,
+    "dimensions": [
+      1918,
+      950
+    ]
+  },
+  {
+    "file": "예시_SOAPHE.pdf",
+    "bytes": 3541376,
+    "pages": 1
+  },
+  {
+    "file": "카테고리.png",
+    "bytes": 364779,
+    "dimensions": [
+      1916,
+      840
+    ]
+  },
+  {
+    "file": "카테고리페이지.html",
+    "bytes": 26089
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-08-11T06-01-33-983Z.log",
+    "bytes": 393
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-08-11T06-01-58-674Z.log",
+    "bytes": 393
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-08-11T07-44-18-811Z.log",
+    "bytes": 94900
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-08-11T07-44-42-936Z.log",
+    "bytes": 1635
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-08-11T08-03-40-496Z.log",
+    "bytes": 309516
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-08-13T06-49-16-440Z.log",
+    "bytes": 546156
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-09-10T09-12-09-181Z.log",
+    "bytes": 7688
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-09-10T09-12-27-307Z.log",
+    "bytes": 5309
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-09-10T09-28-41-246Z.log",
+    "bytes": 4303
+  },
+  {
+    "file": ".playwright-mcp\\console-2026-09-10T09-30-47-164Z.log",
+    "bytes": 144
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T05-58-18-802Z.yml",
+    "bytes": 2675
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T06-01-34-956Z.yml",
+    "bytes": 3760
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T06-01-59-555Z.yml",
+    "bytes": 12986
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T06-02-09-365Z.yml",
+    "bytes": 2747
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T07-44-20-143Z.yml",
+    "bytes": 0
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T07-44-27-475Z.png",
+    "bytes": 198292,
+    "dimensions": [
+      929,
+      869
+    ]
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T08-03-42-337Z.yml",
+    "bytes": 0
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T08-03-56-182Z.png",
+    "bytes": 570690,
+    "dimensions": [
+      1920,
+      953
+    ]
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T08-04-41-358Z.yml",
+    "bytes": 26962
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-11T08-06-22-397Z.png",
+    "bytes": 308390,
+    "dimensions": [
+      1920,
+      953
+    ]
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-08-13T06-49-21-470Z.yml",
+    "bytes": 19884
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-12-10-460Z.yml",
+    "bytes": 0
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-12-27-337Z.yml",
+    "bytes": 1060
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-12-57-607Z.yml",
+    "bytes": 3237
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-14-31-430Z.yml",
+    "bytes": 15656
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-14-40-976Z.yml",
+    "bytes": 16350
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-14-57-207Z.yml",
+    "bytes": 18674
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-15-09-714Z.yml",
+    "bytes": 14665
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-15-20-790Z.yml",
+    "bytes": 14785
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-28-47-116Z.yml",
+    "bytes": 302
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-30-47-437Z.yml",
+    "bytes": 59843
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-32-06-401Z.yml",
+    "bytes": 21263
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-32-25-909Z.yml",
+    "bytes": 17330
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-32-42-344Z.yml",
+    "bytes": 13354
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-33-13-743Z.yml",
+    "bytes": 17392
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-34-11-310Z.yml",
+    "bytes": 17362
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-34-14-946Z.yml",
+    "bytes": 17361
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-34-33-036Z.yml",
+    "bytes": 21428
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-34-42-090Z.yml",
+    "bytes": 17362
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-34-52-430Z.yml",
+    "bytes": 21803
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-36-28-162Z.yml",
+    "bytes": 21749
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-37-14-574Z.yml",
+    "bytes": 17954
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-37-44-683Z.yml",
+    "bytes": 22286
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-38-05-393Z.yml",
+    "bytes": 22286
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-38-08-493Z.yml",
+    "bytes": 22282
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-38-21-750Z.yml",
+    "bytes": 17954
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-38-43-854Z.yml",
+    "bytes": 18722
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-39-05-185Z.yml",
+    "bytes": 18722
+  },
+  {
+    "file": ".playwright-mcp\\page-2026-09-10T09-39-31-406Z.yml",
+    "bytes": 24904
+  },
+  {
+    "file": "jy\\화면 설계서 양식.md",
+    "bytes": 668
+  },
+  {
+    "file": "jy\\Antigravity\\AGENT.md",
+    "bytes": 7690
+  },
+  {
+    "file": "jy\\Antigravity\\명령어 규칙.txt",
+    "bytes": 809
+  },
+  {
+    "file": "jy\\Antigravity\\인수인계.md",
+    "bytes": 7881
+  },
+  {
+    "file": "jy\\Antigravity\\홈페이지_레퍼런스_분석_스킬_예상내용.txt",
+    "bytes": 7156
+  },
+  {
+    "file": "jy\\Antigravity\\homepage-reference-analyzer\\SKILL.md",
+    "bytes": 4904
+  },
+  {
+    "file": "jy\\Antigravity\\homepage-reference-analyzer\\references\\analysis-method.md",
+    "bytes": 2850
+  },
+  {
+    "file": "jy\\Antigravity\\homepage-reference-analyzer\\references\\classification.md",
+    "bytes": 2381
+  },
+  {
+    "file": "jy\\Antigravity\\homepage-reference-analyzer\\references\\item-schema.md",
+    "bytes": 934
+  },
+  {
+    "file": "jy\\Antigravity\\homepage-reference-analyzer\\references\\report-format.md",
+    "bytes": 2215
+  },
+  {
+    "file": "jy\\Antigravity\\user-interview-analyzer\\SKILL.md",
+    "bytes": 2770
+  },
+  {
+    "file": "jy\\Antigravity\\user-interview-analyzer\\examples\\sample_interviews\\sample_interview_01.txt",
+    "bytes": 1292
+  },
+  {
+    "file": "jy\\Antigravity\\user-interview-analyzer\\examples\\sample_interviews\\sample_interview_02.txt",
+    "bytes": 1177
+  },
+  {
+    "file": "jy\\Antigravity\\user-interview-analyzer\\examples\\sample_interviews\\sample_interview_03.txt",
+    "bytes": 1073
+  },
+  {
+    "file": "jy\\Antigravity\\user-interview-analyzer\\references\\classification.md",
+    "bytes": 2783
+  },
+  {
+    "file": "jy\\Antigravity\\user-interview-analyzer\\references\\item-template.md",
+    "bytes": 1633
+  },
+  {
+    "file": "jy\\Antigravity\\user-interview-analyzer\\references\\report-format.md",
+    "bytes": 3278
+  },
+  {
+    "file": "jy\\Antigravity\\리서치\\[리서치 결과]_hybrid_beauty_references_200.txt",
+    "bytes": 92606
+  },
+  {
+    "file": "jy\\MD\\claude.md",
+    "bytes": 2590
+  },
+  {
+    "file": "jy\\MD\\리서치.md",
+    "bytes": 5764
+  },
+  {
+    "file": "jy\\MD\\리서치_skill.md",
+    "bytes": 6187
+  },
+  {
+    "file": "jy\\MD\\분류.md",
+    "bytes": 5202
+  },
+  {
+    "file": "jy\\MD\\분류_skill.md",
+    "bytes": 4443
+  },
+  {
+    "file": "jy\\MD\\분석.md",
+    "bytes": 4005
+  },
+  {
+    "file": "jy\\MD\\분석_skill.md",
+    "bytes": 3723
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.gitignore",
+    "bytes": 65
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\CLAUDE.md",
+    "bytes": 5271
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\OFFICIAL-REFERENCES.md",
+    "bytes": 1965
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\README.md",
+    "bytes": 2447
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\START-HERE.md",
+    "bytes": 2656
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\사용-가이드.txt",
+    "bytes": 13168
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\settings.json",
+    "bytes": 74
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\agents\\presentation-auditor.md",
+    "bytes": 1859
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\agents\\proposal-auditor.md",
+    "bytes": 1792
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\agents\\research-auditor.md",
+    "bytes": 1794
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\agents\\trend-auditor.md",
+    "bytes": 1767
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\presentation\\SKILL.md",
+    "bytes": 4240
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\presentation\\references\\pptx-production.md",
+    "bytes": 2843
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\proposal\\SKILL.md",
+    "bytes": 3715
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\proposal\\references\\kpi-and-traceability.md",
+    "bytes": 1558
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\research\\SKILL.md",
+    "bytes": 3610
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\research\\references\\source-quality.md",
+    "bytes": 1891
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\trend-analysis\\SKILL.md",
+    "bytes": 3597
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\trend-analysis\\references\\trend-scoring.md",
+    "bytes": 1679
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\workflow-council\\SKILL.md",
+    "bytes": 3742
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\.claude\\skills\\workflow-council\\references\\decision-rules.md",
+    "bytes": 2076
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\checklists\\command-cheatsheet.md",
+    "bytes": 1661
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\checklists\\final-validation.md",
+    "bytes": 3956
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\checklists\\grading-rubric.md",
+    "bytes": 2617
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\checklists\\troubleshooting.md",
+    "bytes": 4907
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\input\\client-brief.md",
+    "bytes": 1541
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\input\\topic.md",
+    "bytes": 1396
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\input\\client-brief-examples\\01_ai-webdesign-course-memo.md",
+    "bytes": 1911
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\input\\client-brief-examples\\02_small-business-ai-marketing-memo.md",
+    "bytes": 2012
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\input\\client-brief-examples\\03_youth-employment-service-memo.md",
+    "bytes": 1963
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\input\\client-brief-examples\\04_local-tourism-program-memo.md",
+    "bytes": 2053
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\input\\references\\README.md",
+    "bytes": 915
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\00-instructor-guide.md",
+    "bytes": 4063
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\01-project-rules.md",
+    "bytes": 2969
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\02-skills.md",
+    "bytes": 3078
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\03-research.md",
+    "bytes": 2595
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\04-trend-analysis.md",
+    "bytes": 2520
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\05-proposal.md",
+    "bytes": 2313
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\06-presentation.md",
+    "bytes": 3093
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\07-workflow-validation.md",
+    "bytes": 3293
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\lessons\\08-agent-council.md",
+    "bytes": 3816
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\output\\workflow-status.md",
+    "bytes": 1231
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\output\\01_research\\README.md",
+    "bytes": 278
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\output\\02_trend-analysis\\README.md",
+    "bytes": 318
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\output\\03_proposal\\README.md",
+    "bytes": 309
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\output\\04_presentation\\README.md",
+    "bytes": 384
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\output\\05_council\\README.md",
+    "bytes": 665
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\templates\\presentation-template.md",
+    "bytes": 2044
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\templates\\proposal-template.md",
+    "bytes": 2627
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\templates\\research-template.md",
+    "bytes": 1964
+  },
+  {
+    "file": "jy\\MD\\claude-agent-foundation-class\\templates\\trend-template.md",
+    "bytes": 2183
+  },
+  {
+    "file": "jy\\output\\04_analysis\\analysis-report.md",
+    "bytes": 18191
+  },
+  {
+    "file": "가상클라이언트\\가상클라이언트_김유진.pdf",
+    "bytes": 235931,
+    "pages": 5
+  },
+  {
+    "file": "가상클라이언트\\가상클라이언트_한지민.pdf",
+    "bytes": 126688,
+    "pages": 5
+  },
+  {
+    "file": "가상클라이언트\\가상클라이언트 예시\\가상클라이언트_1_윤서진_모아온.pdf",
+    "bytes": 161741,
+    "pages": 4
+  },
+  {
+    "file": "가상클라이언트\\가상클라이언트 예시\\가상클라이언트_2_박도윤_텐핏.pdf",
+    "bytes": 161658,
+    "pages": 4
+  },
+  {
+    "file": "가상클라이언트\\가상클라이언트 예시\\가상클라이언트_3_이혜원_동행온.pdf",
+    "bytes": 163291,
+    "pages": 4
+  },
+  {
+    "file": "가상클라이언트 분석 결과\\가상클라이언트 기반 분석 결과 작성 양식.md",
+    "bytes": 6791
+  },
+  {
+    "file": "가상클라이언트 분석 결과\\가상클라이언트분석결과_김유진.md",
+    "bytes": 22959
+  },
+  {
+    "file": "가상클라이언트 분석 결과\\가상클라이언트분석결과_한지민.md",
+    "bytes": 6830
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\사이트 구조맵\\사이트맵.md",
+    "bytes": 28728
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\사이트 구조맵\\사이트맵.mmd",
+    "bytes": 6035
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\사이트 구조맵\\사이트맵.svg",
+    "bytes": 75058
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\서비스 흐름도\\서비스_흐름도.md",
+    "bytes": 18999
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\서비스 흐름도\\서비스_흐름도.mmd",
+    "bytes": 5904
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\서비스 흐름도\\서비스_흐름도.svg",
+    "bytes": 75790
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\스토리보드 결과\\메인페이지_스토리보드.md",
+    "bytes": 37969
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\스토리보드 결과\\메인페이지_스토리보드1차.html",
+    "bytes": 55173
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\스토리보드 결과\\메인페이지_스토리보드2차.html",
+    "bytes": 146952
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\스토리보드 결과\\메인페이지_스토리보드3차.html",
+    "bytes": 138867
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\스토리보드 결과\\메인페이지_스토리보드4차.html",
+    "bytes": 155733
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\스토리보드 결과\\메인페이지_스토리보드_최종_프롬프트.txt",
+    "bytes": 2980
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\화면 설계서\\와이어프레임.html",
+    "bytes": 69870
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\화면 설계서\\화면_목록.json",
+    "bytes": 18090
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (김유진)\\화면 설계서\\화면_설계서.md",
+    "bytes": 24598
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\사이트 구조맵\\사이트맵.md",
+    "bytes": 24310
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\사이트 구조맵\\사이트맵.mmd",
+    "bytes": 4712
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\사이트 구조맵\\사이트맵.svg",
+    "bytes": 80377
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\서비스 흐름도\\서비스_흐름도.md",
+    "bytes": 16044
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\서비스 흐름도\\서비스_흐름도.mmd",
+    "bytes": 4241
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\서비스 흐름도\\서비스_흐름도.svg",
+    "bytes": 296130
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\메인페이지_스토리보드.html",
+    "bytes": 35328
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\메인페이지_스토리보드.md",
+    "bytes": 25573
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\메인페이지_스토리보드_최종_프롬프트.txt",
+    "bytes": 2388
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\브랜드소개페이지_스토리보드.html",
+    "bytes": 20355
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\브랜드소개페이지_스토리보드.md",
+    "bytes": 15539
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\브랜드소개페이지_스토리보드_최종_프롬프트.txt",
+    "bytes": 3134
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\카테고리페이지_스토리보드.html",
+    "bytes": 29697
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\카테고리페이지_스토리보드.md",
+    "bytes": 18222
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\스토리보드 결과\\카테고리페이지_스토리보드_최종_프롬프트.txt",
+    "bytes": 2972
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\화면 설계서\\와이어프레임.html",
+    "bytes": 54188
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\화면 설계서\\화면_목록.json",
+    "bytes": 14944
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 출력물 (한지민)\\화면 설계서\\화면_설계서.md",
+    "bytes": 18405
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 프롬프트\\Antigravity 프롬프트.txt",
+    "bytes": 6676
+  },
+  {
+    "file": "가상클라이언트 설계 결과\\설계 프롬프트\\figma 프롬프트.txt",
+    "bytes": 643
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\02_오류_수정_요구서.md",
+    "bytes": 6764
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\03_원인분석_및_수정계획서.md",
+    "bytes": 7215
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\04_수정완료_및_재검증보고서.md",
+    "bytes": 5897
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\05_클라이언트_요구사항_정리서.md",
+    "bytes": 6136
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\가상클라이언트_웹디자인.md",
+    "bytes": 19983
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\메인페이지_와이어프레임_최종.html",
+    "bytes": 146952
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\메인페이지_웹디자인_수정본.html",
+    "bytes": 183580
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\메인페이지_웹디자인_초안.html",
+    "bytes": 180766
+  },
+  {
+    "file": "디지털디자인사후관리_능력단위평가\\메인페이지_웹디자인_최종.html",
+    "bytes": 189818
+  },
+  {
+    "file": "로고\\AGENT.md",
+    "bytes": 4629
+  },
+  {
+    "file": "로고\\logo.md",
+    "bytes": 6196
+  },
+  {
+    "file": "로고\\input\\로고 초안.jpeg",
+    "bytes": 191381,
+    "dimensions": [
+      2400,
+      1800
+    ]
+  },
+  {
+    "file": "로고\\md파일\\pin.md",
+    "bytes": 3226
+  },
+  {
+    "file": "로고\\md파일\\pin분석.md",
+    "bytes": 3685
+  },
+  {
+    "file": "로고\\output\\flow.md",
+    "bytes": 8133
+  },
+  {
+    "file": "로고\\output\\similar_logo_1.jpg",
+    "bytes": 11275,
+    "dimensions": [
+      564,
+      564
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_10.jpg",
+    "bytes": 19850,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_11.jpg",
+    "bytes": 18975,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_12.jpg",
+    "bytes": 14913,
+    "dimensions": [
+      736,
+      552
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_13.jpg",
+    "bytes": 13564,
+    "dimensions": [
+      736,
+      552
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_14.jpg",
+    "bytes": 18424,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_15.jpg",
+    "bytes": 10860,
+    "dimensions": [
+      736,
+      1104
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_16.jpg",
+    "bytes": 14916,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_17.jpg",
+    "bytes": 88971,
+    "dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_18.jpg",
+    "bytes": 66495,
+    "dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_19.jpg",
+    "bytes": 95071,
+    "dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_2.jpg",
+    "bytes": 19969,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_20.jpg",
+    "bytes": 149033,
+    "dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_21.jpg",
+    "bytes": 71308,
+    "dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_22.jpg",
+    "bytes": 111349,
+    "dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_3.jpg",
+    "bytes": 9994,
+    "dimensions": [
+      736,
+      920
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_4.jpg",
+    "bytes": 15024,
+    "dimensions": [
+      736,
+      1103
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_5.jpg",
+    "bytes": 42652,
+    "dimensions": [
+      736,
+      1104
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_6.jpg",
+    "bytes": 13701,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_7.jpg",
+    "bytes": 18359,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_8.jpg",
+    "bytes": 14184,
+    "dimensions": [
+      736,
+      467
+    ]
+  },
+  {
+    "file": "로고\\output\\similar_logo_9.jpg",
+    "bytes": 14816,
+    "dimensions": [
+      736,
+      736
+    ]
+  },
+  {
+    "file": "로고\\레퍼런스\\5adfe53013e6a1419c3b405807df717e.jpg",
+    "bytes": 24630,
+    "dimensions": [
+      736,
+      669
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시1.png",
+    "bytes": 170997,
+    "dimensions": [
+      1331,
+      663
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시2.png",
+    "bytes": 164479,
+    "dimensions": [
+      1327,
+      663
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시3.png",
+    "bytes": 116266,
+    "dimensions": [
+      1326,
+      663
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시4.png",
+    "bytes": 134111,
+    "dimensions": [
+      1330,
+      662
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시5.png",
+    "bytes": 175816,
+    "dimensions": [
+      1327,
+      661
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시6.png",
+    "bytes": 221621,
+    "dimensions": [
+      1329,
+      664
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시7.png",
+    "bytes": 184512,
+    "dimensions": [
+      1327,
+      661
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시8.png",
+    "bytes": 197782,
+    "dimensions": [
+      1327,
+      663
+    ]
+  },
+  {
+    "file": "메인페이지_와이어프레임_예시\\메인페이지_예시9.png",
+    "bytes": 140669,
+    "dimensions": [
+      1327,
+      663
+    ]
+  },
+  {
+    "file": "웹디자인\\웹디자인_1차.html",
+    "bytes": 180429
+  },
+  {
+    "file": "웹디자인\\웹디자인_2차.html",
+    "bytes": 181312
+  },
+  {
+    "file": "웹디자인\\웹디자인_초안.html",
+    "bytes": 793221
+  },
+  {
+    "file": "패키지\\1차\\로고.png",
+    "bytes": 557740,
+    "dimensions": [
+      1528,
+      1528
+    ]
+  },
+  {
+    "file": "패키지\\1차\\메인페이지_스토리보드2차.html",
+    "bytes": 142031
+  },
+  {
+    "file": "패키지\\1차\\메인페이지_최종.png",
+    "bytes": 2218888,
+    "dimensions": [
+      1350,
+      15564
+    ]
+  },
+  {
+    "file": "패키지\\1차\\패키지_기획.txt",
+    "bytes": 35
+  },
+  {
+    "file": "홈페이지 레퍼런스\\(최종200개)hybrid_beauty_references.txt",
+    "bytes": 92605
+  },
+  {
+    "file": "홈페이지 레퍼런스\\batch_execution.py",
+    "bytes": 6111
+  },
+  {
+    "file": "홈페이지 레퍼런스\\build_final_references.py",
+    "bytes": 86209
+  },
+  {
+    "file": "홈페이지 레퍼런스\\CLI MD파일.txt",
+    "bytes": 1247
+  },
+  {
+    "file": "홈페이지 레퍼런스\\deduplicate_and_fetch.py",
+    "bytes": 6659
+  },
+  {
+    "file": "홈페이지 레퍼런스\\hybrid_beauty_references_batch1.txt",
+    "bytes": 12029
+  },
+  {
+    "file": "홈페이지 레퍼런스\\hybrid_beauty_research_batch1.csv",
+    "bytes": 11386
+  },
+  {
+    "file": "홈페이지 레퍼런스\\LLM모델 활용 와이어프레임 설계.txt",
+    "bytes": 8281
+  },
+  {
+    "file": "홈페이지 레퍼런스\\run_pipeline.py",
+    "bytes": 4121
+  },
+  {
+    "file": "홈페이지 레퍼런스\\리서치.md",
+    "bytes": 7447
+  },
+  {
+    "file": "홈페이지 레퍼런스\\리서치md.txt",
+    "bytes": 5407
+  }
+]
